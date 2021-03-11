@@ -39,8 +39,9 @@ As a user I want to:
 
 ### Owner goals
 As the owner of the page I want:
-- 
-- 
+- To make a website with an aesthetic appeal that reflects the person and the brand behind it.
+- To make it easy for the visitor to navigate through the site with a clear navigation menu and buttons that clearly
+displays the action behind it.
 - 
 
 ### Design process
