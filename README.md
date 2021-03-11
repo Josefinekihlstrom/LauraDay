@@ -23,9 +23,19 @@ The UX goals for this website are the following:
 ### User Stories
 The user stories were defined during the Stragety Plane phase of this project.
 As a user I want to:
-- 
-- 
-- 
+- Buy handmade ceramics and artwork.
+- Get to know the person behind the brand.
+- Be able to read more about what's going on and what's new within the brand.
+- Be able to make safe purchases on the site.
+- Be able to navigate easy on the site.
+- Be able to view the products by category.
+- Be able to view a more detailed page about each product on the site.
+- Be able to search for a sertant product.
+- Be able to register for an account.
+- Be able to view my order history.
+- Get feedback while browsing the website, for example with pop ups.
+- Be able to get in contact with the person behind the brand.
+- F.A.Q
 
 ### Owner goals
 As the owner of the page I want:
