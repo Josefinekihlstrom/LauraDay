@@ -12,7 +12,7 @@ html {
 
 body {
     height: calc(100vh - 164px) !important;
-    padding-top: 64px;
+    padding-top: 124px;
 }
 
 /* ------------------------------------------- Header content */
