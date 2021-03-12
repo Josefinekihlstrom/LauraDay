@@ -119,6 +119,7 @@ Testing.md link here
 - 
 
 ### Code
+- Allauth setup code in lauraday/settings.py from (Django Allauth)[https://django-allauth.readthedocs.io/en/latest/installation.html]
 - 
 - 
 - 
