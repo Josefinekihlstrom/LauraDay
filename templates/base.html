@@ -19,6 +19,7 @@
             <!-- Bootstrap -->
             <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
                 integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+            <link rel="stylesheet" href="{% static 'css/base.css' %}"/>
         {% endblock %}
 
         {% block extra_css %}
@@ -41,8 +42,8 @@
 
     <body>
         <!-- Header -->
-        <header class ="container-fluid fixed-top">
-            <div class="row">
+        <header class ="container-fluid fixed-top the-navbar">
+            <div id="topnav" class="row pt-lg-2 d-none d-lg-flex">
                 <!-- Logo -->
                 <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 text-center text-lg-left">
                     <a href="{% url 'home' %}" class=" nav-link main-logo-link">
@@ -73,11 +74,12 @@
                                 <div class="text-center">
                                     <div>
                                         <i class="fas fa-user fa-lg"></i>
+                                        <p class="text-white">My Account</p>
                                     </div>
                                 </div>
                             </a>
                             <!-- Account list items -->
-                            <div class="dropdown-menu border-0" aria-labelledby="user-options">
+                            <div class="dropdown-menu border-0 text-black" aria-labelledby="user-options">
                                 {% if request.user.is_authenticated %}
                                     {% if request.user.is_superuser %}
                                         <a href="" class="dropdown-item">Product Management</a>
@@ -98,7 +100,7 @@
                                     <div>
                                         <i class="fas fa-shopping-bag fa-lg"></i>
                                     </div>
-                                    <p class="my-0">
+                                    <p class="my-0 text-white">
                                         {% if grand_total %}
                                             ${{ grand_total|floatformat:2 }}
                                         {% else %}
