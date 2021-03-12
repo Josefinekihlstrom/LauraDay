@@ -60,8 +60,8 @@
                         <div class="input-group w-100">
                             <input class="form-control" type="text" name="q" placeholder="Search">
                             <div class="input-group-append">
-                                <button class="form-control btn btn-black border border-black rounded-0" type="submit">
-                                    <span class="icon">
+                                <button class="form-control btn btn-white border border-black rounded-0" type="submit">
+                                    <span class="icon text-white">
                                         <i class="fas fa-search"></i>
                                     </span>
                                 </button>
@@ -99,7 +99,7 @@
                         </li>
                         <!-- Shopping bag icon with grand total -->
                         <li class="list-inline-item">
-                            <a class="{% if grand_total %}text-white font-weight-bold{% else %}text-black{% endif %} nav-link" href="">
+                            <a class="{% if grand_total %}text-white font-weight-bold{% else %}text-white{% endif %} nav-link" href="">
                                 <div class="text-center">
                                     <div>
                                         <i class="fas fa-shopping-bag fa-lg"></i>
@@ -133,20 +133,25 @@
         {% endblock %}
         
         <!-- Footer --> 
-        <footer class="container-fluid">
-            <div class="row">
-                <div class="col-lg-4 col-md-12 text-center">Payments</div>
-                <div class="col-lg-4 col-md-12 text-center">Links</div>
-                <div class="col-lg-4 col-md-12 text-center">Social</div>
-            </div>
-            <div class="row">
-                <div class="col-12">
-                    <h4 class="reenie-font text-center">Laura day</h4>
+        <footer class="container-fluid footer-container">
+            <div class="row footer-col-1">
+                <div class="col-md-4 col-sm-12 text-center">
+                    <h5>Payments</h5>
+                    <hr class="footer-hr">
+                </div>
+                <div class="col-md-4 col-sm-12 text-center">
+                    <h5>Links</h5>
+                    <hr class="footer-hr">
+                </div>
+                <div class="col-md-4 col-sm-12 text-center">
+                    <h5>Social</h5>
+                    <hr class="footer-hr">
                 </div>
             </div>
-            <div class="row">
+            <div class="row footer-col-2 text-center">
                 <div class="col-12">
-                    <h4 class="text-center">Copyright</h4>
+                    <h2 class="reenie-font">Laura day</h2>
+                    <p>© By Josefine Kihlström 2021</p>
                 </div>
             </div>
         </footer>

@@ -17,11 +17,32 @@ body {
     font-family: "Open Sans", sans-serif;
 }
 
-/* ------------------------------------------- Header content */
+/* ------------------------------------------- Header */
 .the-navbar {
     background-color: #82906C !important;
 }
 
+
+/* ------------------------------------------- Footer */
+.footer-col-1 {
+    background-color: #4A513D !important;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    color: #fff;
+}
+
+.footer-col-2 {
+    background-color: #82906C !important;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    color: #fff;
+}
+
+.footer-hr {
+    width: 40%;
+    text-align:center;
+    margin: 0 auto;
+}
 
 /* ------------------------------------------- Index.html */
 .index-hero {
