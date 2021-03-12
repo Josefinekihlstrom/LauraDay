@@ -1,19 +1,32 @@
+/* ------------------------------------------- Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Reenie+Beanie&display=swap');
+
+.reenie-font {
+    font-family: "Reenie Beanie", sans-serif;
+}
+
+/* ------------------------------------------- Html and body elements */
 html {
     height: 100vh !important;
 }
 
 body {
     height: calc(100vh - 164px) !important;
-    padding-top: 75px;
+    padding-top: 64px;
 }
 
+/* ------------------------------------------- Header content */
 .the-navbar {
     background-color: #82906C !important;
-    height: 75px;
 }
 
+
+/* ------------------------------------------- Index.html */
 .index-hero {
     background: url('/media/index-hero.jpeg') no-repeat center center;
     background-size: cover;
     height: 100vh !important;
 }
+
+
+/* ------------------------------------------- Media Queries */
