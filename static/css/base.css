@@ -81,14 +81,14 @@ body {
 
 .btn-outline-secondary {
     letter-spacing: 3px;
-    color: #82906C !important;
-    border-color: #82906C !important;
+    color: #9E532E !important;
+    border-color: #9E532E !important;
 }
 
 .btn-outline-secondary:hover {
     color: #fff !important;
-    border-color: #82906C !important;
-    background-color: #82906C;
+    border-color: #9E532E !important;
+    background-color: #9E532E;
 }
 
 /* ------------------------------------------- Index.html */
