@@ -70,6 +70,27 @@ body {
     font-size: 45px;
 }
 
+
+/* ------------------------------------------- buttons */
+
+.center-buttons {
+    width: 200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.btn-outline-secondary {
+    letter-spacing: 3px;
+    color: #82906C !important;
+    border-color: #82906C !important;
+}
+
+.btn-outline-secondary:hover {
+    color: #fff !important;
+    border-color: #82906C !important;
+    background-color: #82906C;
+}
+
 /* ------------------------------------------- Index.html */
 .index-hero {
     background: url('/media/index-hero.jpeg') no-repeat center center;
@@ -78,11 +99,15 @@ body {
 }
 
 .about-image img {
-    width: 400px;
+    width: 350px;
     display: block;
     margin-left: auto;
     margin-right: auto;
     padding: 40px 0px 40px 0px;
+}
+
+.about-col {
+    padding: 40px 70px 40px 40px;
 }
 
 
