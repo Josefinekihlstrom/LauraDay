@@ -77,5 +77,13 @@ body {
     height: 100vh !important;
 }
 
+.about-image img {
+    width: 400px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 40px 0px 40px 0px;
+}
+
 
 /* ------------------------------------------- Media Queries */
