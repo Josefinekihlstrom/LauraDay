@@ -22,8 +22,12 @@ body {
     background-color: #82906C !important;
 }
 
+.nav-left {
+    text-align: right !important;
+}
+
 .search-container {
-    width: 300px !important;
+    width: 280px !important;
 }
 
 /* ------------------------------------------- Footer */
