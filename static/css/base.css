@@ -172,6 +172,11 @@ body {
 /* ------------------------------------------- Media Queries */
 /* Max width 992px */
 @media screen and (max-width: 992px) {
+
+    body {
+        padding-top: 80px;
+    }
+
     .index-info-section {
         padding: 40px;
     }
