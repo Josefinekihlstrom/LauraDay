@@ -35,21 +35,26 @@ body {
     width: 280px !important;
 }
 
-.navbar-nav {
+.main-navbar {
     flex-direction: row;
 }
 
-.navbar-nav li {
+.main-navbar li {
     padding-left: 30px;
     padding-top: 10px;
 }
 
-.navbar-nav li a {
+.main-navbar li a {
     color: black;
 }
 
 .shop-menu {
     margin: 17px;
+}
+
+/* Collapsed navbar */
+.mobile-shop-dropdown {
+    background-color: #82906C;
 }
 
 /* ------------------------------------------- Footer */
