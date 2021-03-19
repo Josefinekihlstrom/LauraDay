@@ -116,7 +116,7 @@ body {
 }
 
 .about-col {
-    padding: 40px 70px 40px 40px;
+    padding: 40px 40px 40px 40px;
 }
 
 .index-info-section {
@@ -136,3 +136,38 @@ body {
 
 
 /* ------------------------------------------- Media Queries */
+/* Max width 992px */
+@media screen and (max-width: 992px) {
+    .index-info-section {
+        padding: 40px;
+    }
+
+    .index-info-col i {
+    font-size: 24px;
+    padding-bottom: 20px;
+    }
+
+    .index-info-col p {
+        font-size: 16px;
+    }
+
+    .about-image img {
+        padding: 40px 0px 0px 0px;
+    }
+}
+
+/* Max width 600px */
+@media screen and (max-width: 600px) {
+    .index-hero-content {
+        top: 50%;
+        left: 25%;
+    }
+
+    .about-image img {
+        width: 275px;
+    }
+
+    .about-col p {
+        font-size: 16px;
+    }
+}
