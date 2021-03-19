@@ -22,12 +22,34 @@ body {
     background-color: #82906C !important;
 }
 
-.nav-left {
+.logo-text {
+    text-decoration: none !important;
+    font-size: 38px;
+}
+
+.nav-right {
     text-align: right !important;
 }
 
 .search-container {
     width: 280px !important;
+}
+
+.navbar-nav {
+    flex-direction: row;
+}
+
+.navbar-nav li {
+    padding-left: 30px;
+    padding-top: 10px;
+}
+
+.navbar-nav li a {
+    color: black;
+}
+
+.shop-menu {
+    margin: 17px;
 }
 
 /* ------------------------------------------- Footer */

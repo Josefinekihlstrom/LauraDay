@@ -48,16 +48,33 @@
         <!-- Header -->
         <header class ="container-fluid fixed-top the-navbar">
             <div id="topnav" class="row pt-lg-2 d-none d-lg-flex">
-                <!-- Logo -->
-                <div class="col-12 col-lg-6 my-auto py-1 py-lg-0 text-lg-left">
-                    <a href="{% url 'home' %}" class=" nav-link main-logo-link">
-                        <h2 class="my-0 text-white reenie-font">Laura Day</h2>
+                <div class="col-12 col-lg-6 my-auto py-1 py-lg-0 text-lg-left nav-left d-flex">
+                    <a href="{% url 'home' %}" class="logo-text reenie-font text-white">
+                        Laura Day
                     </a>
+                    <!-- Shop, blog and contact links -->
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Shop
+                            </a>
+                            <div class="dropdown-menu shop-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Ceramics</a>
+                                <a class="dropdown-item" href="#">Artwork</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                    </ul>
                 </div>
-                <!-- Search, account and shopping bag -->
+                <!-- Search, account and shopping bag section -->
                 <div class="col-12 col-lg-6 my-auto py-1 py-lg-0">
-                    <ul class="list-inline list-unstyled my-0 nav-left">
-                        <!-- Search -->                        
+                    <ul class="list-inline list-unstyled my-0 nav-right">
+                        <!-- Search -->    
                         <li class="list-inline-item dropdown">
                             <a class="text-white nav-link" href="#" id="search" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <div class="text-center">
