@@ -1,5 +1,24 @@
 <div class="collapse navbar-collapse" id="main-nav">
     <ul class="navbar-nav w-auto mx-auto">
+
+        <li class="nav-item dropdown ">
+            <a class="logo-font font-weight-bold nav-link text-white mr-5" href="#" id="myAccount" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                My Account
+            </a>
+            <div class="dropdown-menu mobile-shop-dropdown border-0" aria-labelledby="myAccount">
+                {% if request.user.is_authenticated %}
+                    {% if request.user.is_superuser %}
+                        <a href="#" class="dropdown-item text-white">Product Management</a>
+                    {% endif %}
+                    <a href="#" class="dropdown-item text-white">My Profile</a>
+                    <a href="#" class="dropdown-item text-white">Logout</a>
+                {% else %}
+                    <a href="#" class="dropdown-item text-white">Register</a>
+                    <a href="#" class="dropdown-item text-white">Login</a>
+                {% endif %}
+            </div>
+        </li>
+
         <li class="nav-item dropdown ">
             <a class="logo-font font-weight-bold nav-link text-white mr-5" href="#" id="all-products-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Shop
