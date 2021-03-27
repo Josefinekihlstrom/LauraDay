@@ -174,7 +174,8 @@ body {
 .header-container {
     position: fixed;
     width: 100% !important;
-    background-color: black;
+    background-color: #9E532E;
+    padding-top: 15px;
     z-index: 10;
     margin-bottom: 0px;
 }
@@ -193,13 +194,18 @@ body {
     padding-bottom: 40px;
 }
 
-.product-container {
-    margin-top: 40px;
+.container-margin {
+    margin-top: 55px;
 }
 
 
 /* ------------------------------------------- Product_details.html */
 
+.image-container a img {
+    height: 400px;
+    object-fit: cover;
+    overflow: hidden;
+}
 
 
 /* ------------------------------------------- Media Queries */
