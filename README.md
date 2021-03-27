@@ -98,6 +98,8 @@ More pages here...
 - 
 ## Testing
 Testing.md link here
+### Bugs
+**Not solved** Categories not showing the specific categories within a category.
 
 ## Cloning this project
 1.
