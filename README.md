@@ -99,7 +99,8 @@ More pages here...
 ## Testing
 Testing.md link here
 ### Bugs
-**Not solved** Categories not showing the specific categories within a category.
+1. Categories not showing the specific products within a category.
+This bug was solved by just simply making the category names into lowercase in the admin panel.
 
 ## Cloning this project
 1.
