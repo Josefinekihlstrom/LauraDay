@@ -177,6 +177,9 @@ body {
     overflow: hidden;
 }
 
+.price-text {
+    font-weight: bold;
+}
 
 /* ------------------------------------------- Media Queries */
 /* Max width 992px */
