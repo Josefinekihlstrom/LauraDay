@@ -19,6 +19,11 @@
             <div class="col text-center mt-3">
                 <h1 class="text-uppercase">Products</h1>
                 <hr class="w-50 mb-1 mx-auto">
+                {% for current in current_categories %}
+                    <a class="category-badge text-decoration-none" href="{% url 'products' %}?category={{ current.name }}">
+                        <span class="p-2 mt-2 current-name">{{ current.name }}</span>
+                    </a>
+                {% endfor %}
                 <br>
                 <br>
             </div>

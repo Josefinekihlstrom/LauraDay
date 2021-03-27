@@ -181,6 +181,11 @@ body {
     margin-bottom: 0px;
 }
 
+.current-name {
+    color: black !important;
+    text-transform: uppercase;
+}
+
 .card a img {
     height: 300px;
     object-fit: cover;
