@@ -171,7 +171,11 @@ body {
 
 /* ------------------------------------------- Products.html */
 
-
+.card a img {
+    height: 300px;
+    object-fit: cover;
+    overflow: hidden;
+}
 
 
 /* ------------------------------------------- Media Queries */
