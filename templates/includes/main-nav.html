@@ -26,8 +26,8 @@
             </a>
             <div class="dropdown-menu mobile-shop-dropdown border-0" aria-labelledby="all-products-link">
                 <a href="{% url 'products' %}" class="dropdown-item text-white">All products</a>
-                <a href="" class="dropdown-item text-white">Ceramics</a>
-                <a href="" class="dropdown-item text-white">Artwork</a>
+                <a href="{% url 'products' %}?category=ceramics" class="dropdown-item text-white">Ceramis</a>
+                <a href="{% url 'products' %}?category=artwork" class="dropdown-item text-white">Artwork</a>
             </div>
         </li>
         <!-- Blog link -->

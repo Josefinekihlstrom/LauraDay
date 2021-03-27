@@ -60,8 +60,8 @@
                             </a>
                             <div class="dropdown-menu shop-menu" aria-labelledby="navbarDropdown">
                                 <a  class="dropdown-item" href="{% url 'products' %}">All products</a>
-                                <a class="dropdown-item" href="#">Ceramics</a>
-                                <a class="dropdown-item" href="#">Artwork</a>
+                                <a class="dropdown-item" href="{% url 'products' %}?category=ceramics">Ceramics</a>
+                                <a class="dropdown-item" href="{% url 'products' %}?category=artwork">Artwork</a>
                             </div>
                         </li>
                         <li class="nav-item">
