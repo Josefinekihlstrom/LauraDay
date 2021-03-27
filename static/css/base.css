@@ -181,6 +181,10 @@ body {
     font-weight: bold;
 }
 
+.card-footer {
+    padding-bottom: 40px;
+}
+
 /* ------------------------------------------- Media Queries */
 /* Max width 992px */
 @media screen and (max-width: 992px) {
