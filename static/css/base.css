@@ -220,6 +220,13 @@ body {
 }
 
 
+/* ------------------------------------------- bag.html */
+.bag-container {
+    min-height: 100vh !important;
+    margin-top: 55px;
+    padding-top: 15px;
+}
+
 /* ------------------------------------------- Media Queries */
 /* Max width 992px */
 @media screen and (max-width: 992px) {
