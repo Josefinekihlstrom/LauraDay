@@ -211,12 +211,16 @@ body {
 }
 
 
-/* ------------------------------------------- Product_details.html */
+/* ------------------------------------------- product_details.html */
 
 .image-container a img {
     height: 400px;
     object-fit: cover;
     overflow: hidden;
+}
+
+.qty-button {
+    font-size: small;
 }
 
 
