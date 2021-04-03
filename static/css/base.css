@@ -125,6 +125,12 @@ body {
     background-color: #9E532E;
 }
 
+.update-link,
+.remove-item {
+    cursor: pointer;
+    text-decoration: none;
+}
+
 /* ------------------------------------------- Index.html */
 .index-hero {
     background: url('/media/index-hero.jpeg') no-repeat center center;
