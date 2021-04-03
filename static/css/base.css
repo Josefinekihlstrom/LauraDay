@@ -231,6 +231,10 @@ body {
     padding-top: 15px;
 }
 
+.text-right {
+    text-align: right !important;    
+}
+
 /* ------------------------------------------- Media Queries */
 /* Max width 992px */
 @media screen and (max-width: 992px) {
