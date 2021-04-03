@@ -235,6 +235,10 @@ body {
     text-align: right !important;    
 }
 
+.remove-btn {
+    float: right;
+}
+
 /* ------------------------------------------- Media Queries */
 /* Max width 992px */
 @media screen and (max-width: 992px) {
