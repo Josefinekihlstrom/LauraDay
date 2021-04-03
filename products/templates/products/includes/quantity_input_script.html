@@ -8,6 +8,19 @@
         $(`#increment-qty_${itemId}`).prop('disabled', plusDisabled);
     }
 
+    // Make sure proper enabling/disabling on page load
+    var allQtyInputs = $('.qty_input');
+    for(var i = 0; i < allQtyInputs.length; i++){
+        var itemId = $(allQtyInputs[i]).data('item_id');
+        handleEnableDisable(itemId);
+    }
+
+    // Check enable/disable when input is changed
+    $('.qty_input').change(function() {
+        var itemId = $(this).data('item_id');
+        handleEnableDisable(itemId);
+    });
+
     // Increment quantity on products
     $('.increment-qty').click(function(e) {
        e.preventDefault();
