@@ -127,7 +127,7 @@
                         </li>
                         <!-- Shopping bag icon with grand total -->
                         <li class="list-inline-item">
-                            <a class="{% if grand_total %}text-white font-weight-bold{% else %}text-white{% endif %} nav-link" href="">
+                            <a class="{% if grand_total %}text-white font-weight-bold{% else %}text-white{% endif %} nav-link" href="{% url 'view_bag' %}">
                                 <div class="text-center">
                                     <div>
                                         <i class="fas fa-shopping-bag fa-lg"></i>
