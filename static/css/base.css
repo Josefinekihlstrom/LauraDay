@@ -105,6 +105,32 @@ body {
 }
 
 
+/* ------------------------------------------- toast messages */
+
+.message-container {
+    position: fixed;
+    top: 72px;
+    right: 15px;
+    z-index: 999999999;
+}
+
+.custom-toast {
+    overflow: visible;
+}
+
+.toast-capper {
+    height: 4px;
+}
+
+.toast-header {
+    justify-content: space-between;
+}
+
+.btn-light {
+    background-color: white !important;
+}
+
+
 /* ------------------------------------------- buttons */
 
 .center-buttons {
