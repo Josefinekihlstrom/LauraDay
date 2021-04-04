@@ -52,3 +52,9 @@ class OrderLineItem(models.Model):
     product = models.ForeignKey(Product, null=False, blank=False, on_delete=models.CASCADE)
     quantity = models.IntegerField(null=False, blank=False, default=0)
     lineitem_total = models.DecimalField(max_digits=6, decimal_places=2, null=False, blank=False, editable=False)
+
+    def save(self, *args, **kwargs):
+        """ Overrides the original save method to set lineitem total """
+
+        self.lineitem_total = self.product.price * self.quantity
+        super.save(*args, **kwargs)
