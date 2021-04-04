@@ -185,6 +185,19 @@ body {
     text-decoration: none;
 }
 
+.btn-outline-primary {
+    letter-spacing: 3px;
+    color: #fff !important;
+    border-color: #9E532E !important;
+    background-color: #9E532E;
+}
+
+.btn-outline-primary:hover {
+    color: #fff !important;
+    border-color: #9E532E !important;
+    background-color: #9E532E;
+}
+
 /* ------------------------------------------- Index.html */
 .index-hero {
     background: url('/media/index-hero.jpeg') no-repeat center center;
@@ -298,6 +311,11 @@ body {
 .remove-btn {
     float: right;
 }
+
+.text-secondary {
+    color: green !important;
+}
+
 
 /* ------------------------------------------- Media Queries */
 /* Max width 992px */
