@@ -118,10 +118,6 @@ body {
     overflow: visible;
 }
 
-.toast-capper {
-    height: 4px;
-}
-
 .toast-header {
     justify-content: space-between;
 }
