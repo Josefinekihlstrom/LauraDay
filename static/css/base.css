@@ -138,6 +138,26 @@ body {
     right: 28px;
 }
 
+.notification-wrapper {
+    height: 100px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.bg-secondary {
+    background-color: #82906C !important;
+    color: white !important;
+}
+
+.btn-black {
+    background-color: #9E532E !important;
+    color: white;
+}
+
+.btn-black:hover {
+    color: white !important;
+}
+
 
 /* ------------------------------------------- buttons */
 
