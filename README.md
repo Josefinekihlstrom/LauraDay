@@ -101,6 +101,8 @@ Testing.md link here
 ### Bugs
 1. Categories not showing the specific products within a category.
 This bug was solved by just simply making the category names into lowercase in the admin panel.
+2. Remove link not working on the shoppong bag page. According to the terminal, a slash was missing in the 
+javascript function url for the remove function. Solved it by adding a slash at the end of the url.
 
 ## Cloning this project
 1.
