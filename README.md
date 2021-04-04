@@ -103,6 +103,7 @@ Testing.md link here
 This bug was solved by just simply making the category names into lowercase in the admin panel.
 2. Remove link not working on the shoppong bag page. According to the terminal, a slash was missing in the 
 javascript function url for the remove function. Solved it by adding a slash at the end of the url.
+3. When adding > 1 qty of a product to the shopping bag, the subtotal would show the price of only 1 in qty.
 
 ## Cloning this project
 1.
