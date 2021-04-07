@@ -1,5 +1,42 @@
+/* ------------------------------------------- Details, delivery and payment sections */
 .fieldset-label {
     position: relative;
     right: .5rem;
     font-weight: bold !important;
+}
+
+
+/* ------------------------------------------- Stripe */
+.StripeElement,
+.stripe-style-input {
+  box-sizing: border-box;
+  height: 40px;
+  padding: 10px 12px;
+  background-color: white;
+}
+
+.StripeElement--focus,
+.stripe-style-input:focus,
+.stripe-style-input:active {
+  box-shadow: 0 1px 3px 0 #cfd7df;
+}
+
+.StripeElement--webkit-autofill {
+  background-color: #fefde5 !important;
+}
+
+.stripe-style-input::placeholder {
+    color: #aab7c4;
+}
+
+.fieldset-label {
+    position: relative;
+    right: .5rem;
+}
+
+#payment-form .form-control,
+#card-element {
+    color: #aab7c4;
+    border: 1px solid #aab7c4;
+    border-radius: 4px;
 }
