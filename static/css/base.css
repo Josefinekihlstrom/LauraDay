@@ -52,6 +52,10 @@ body {
     margin: 17px;
 }
 
+.shopping-bag a {
+    color: #fff !important;
+}
+
 /* Collapsed navbar */
 .mobile-shop-dropdown {
     background-color: #82906C;
