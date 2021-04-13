@@ -12,9 +12,11 @@ html {
 }
 
 body {
-    height: calc(100vh - 164px) !important;
+    min-height: 100vh;
     padding-top: 88px;
     font-family: "Open Sans", sans-serif;
+    display: flex;
+    flex-direction: column;
 }
 
 /* ------------------------------------------- Header */
@@ -62,6 +64,10 @@ body {
 }
 
 /* ------------------------------------------- Footer */
+
+footer {
+    margin-top: auto;
+}
 
 .payment-icons {
     font-size: 45px;
