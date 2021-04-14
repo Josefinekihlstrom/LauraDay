@@ -327,6 +327,12 @@ footer {
 }
 
 
+/* ------------------------------------------- Allauth templates */
+.container-view {
+    height: 100vh;
+}
+
+
 /* ------------------------------------------- Media Queries */
 /* Max width 992px */
 @media screen and (max-width: 992px) {
