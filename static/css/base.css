@@ -332,8 +332,24 @@ footer {
     height: 100vh;
 }
 
+.allauth-col {
+    padding: 20px;
+    border-style: solid;
+    border-width: thin;
+    border-color: #82906C;
+    border-radius: 10px;
+}
+
 
 /* ------------------------------------------- Media Queries */
+
+/* Max width 480px */
+@media screen and (max-width: 480px) {
+    .allauth-col {
+        border-style: none;
+    }
+}
+
 /* Max width 992px */
 @media screen and (max-width: 992px) {
 

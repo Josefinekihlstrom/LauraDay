@@ -7,12 +7,12 @@
 
 {% block content %}
     <div class="container container-margin container-view">
-        <div class="row">
-            <div class="col-12">
-                <h1>{% trans "Sign In" %}</h1>
-
+        <div class="row justify-content-center">
+            <div class="col-md-5 allauth-col">
+                <h2 class="text-uppercase text-center">{% trans "Sign In" %}</h2>
                 {% get_providers as socialaccount_providers %}
-
+                <hr class="w-50 mb-1 mx-auto">
+                <br>
                 {% if socialaccount_providers %}
                 <p>{% blocktrans with site.name as site_name %}Please sign in with one
                 of your existing third party accounts. Or, <a href="{{ signup_url }}">sign up</a>
@@ -32,17 +32,20 @@
 
                 {% else %}
                 <p>{% blocktrans %}If you have not created an account yet, then please
-                <a href="{{ signup_url }}">sign up</a> first.{% endblocktrans %}</p>
+                <a href="{{ signup_url }}" class="text-muted">sign up</a> first.{% endblocktrans %}</p>
                 {% endif %}
 
                 <form class="login" method="POST" action="{% url 'account_login' %}">
                     {% csrf_token %}
-                    {{ form.as_p }}
+                    {{ form|crispy }}
                     {% if redirect_field_value %}
                     <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
                     {% endif %}
-                    <a class="button secondaryAction" href="{% url 'account_reset_password' %}">{% trans "Forgot Password?" %}</a>
-                    <button class="primaryAction" type="submit">{% trans "Sign In" %}</button>
+                    <br>
+                    <br>
+                    <button class="primaryAction btn btn-outline-primary text-uppercase" type="submit">{% trans "Sign In" %}</button>
+                    <br>
+                    <a class="button secondaryAction text-muted" href="{% url 'account_reset_password' %}">{% trans "Forgot Password?" %}</a>
                 </form>
             </div>
         </div>
