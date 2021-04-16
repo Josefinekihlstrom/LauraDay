@@ -9,6 +9,7 @@ def profile(request):
     """ Display user profile """
     profile = get_object_or_404(UserProfile, user=request.user)
 
+    # if user updates the profile form
     if request.method == 'POST':
         form = UserProfileForm(request.POST, instance=profile)
         if form.is_valid():
@@ -22,6 +23,7 @@ def profile(request):
     context = {
         'form': form,
         'orders': orders,
+        'on_profile_page': True
     }
 
     return render(request, template, context)
