@@ -185,6 +185,23 @@
             </div>
         </div>
         <br>
+        <!-- Back to profile page button and product page button -->
+        {% if from_profile %}
+            <a href="{% url 'products' %}" class="btn btn-outline-primary text-uppercase">
+                <span class="icon">
+                    <i class="fas fa-chevron-left"></i>
+                </span>
+                <span class="text-uppercase">Back to profile</span>
+            </a>
+        {% else %}
+            <a href="{% url 'products' %}" class="btn btn-outline-primary text-uppercase">
+                <span class="icon">
+                    <i class="fas fa-chevron-left"></i>
+                </span>
+                <span class="text-uppercase">Back to products</span>
+            </a>
+        {% endif %}
+        <br>
         <br>
     </div>
 {% endblock %}
