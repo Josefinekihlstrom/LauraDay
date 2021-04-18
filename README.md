@@ -74,7 +74,7 @@ Scope plane.
 More pages here...
 
 ## Features left to implement
-- 
+- Defensive programming when deleting a product from shopping bag.
 - 
 - 
 
