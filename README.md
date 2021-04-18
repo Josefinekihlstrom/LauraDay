@@ -105,7 +105,10 @@ This bug was solved by just simply making the category names into lowercase in t
 javascript function url for the remove function. Solved it by adding a slash at the end of the url.
 3. When adding > 1 qty of a product to the shopping bag, the subtotal would show the price of only 1 in qty.
 4. When changing the form on the login page to crispy form all inner content covered the entire width of the page. 
-I decided to not use the crispy form on the allauth pages, not make bug any bigger.
+I decided to not use the crispy form on the allauth pages, not make bug any bigger. Solved by putting the form
+inside a column with the width of halv of the page.
+5. Webhook 404 error. Webhook key was not exported correctly to my github variables. Solved by setting the variable
+and restarting the workspace.
 
 ## Cloning this project
 1.
