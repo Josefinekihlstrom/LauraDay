@@ -12,7 +12,7 @@
             <div class="dropdown-menu mobile-shop-dropdown border-0" aria-labelledby="myAccount">
                 {% if request.user.is_authenticated %}
                     {% if request.user.is_superuser %}
-                        <a href="#" class="dropdown-item text-white">Product Management</a>
+                        <a href="{% url 'add_product' %}" class="dropdown-item text-white">Product Management</a>
                     {% endif %}
                     <a href="{% url 'profile' %}" class="dropdown-item text-white">My Profile</a>
                     <a href="{% url 'account_logout' %}" class="dropdown-item text-white">Logout</a>
