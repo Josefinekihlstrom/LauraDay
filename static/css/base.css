@@ -293,7 +293,18 @@ footer {
     text-transform: uppercase;
 }
 
+.edit-link {
+    color: green;
+    text-decoration: none;
+}
 
+.edit-link:hover {
+    color: green;
+}
+
+.delete-link {
+    text-decoration: none;
+}
 /* ------------------------------------------- product_details.html */
 
 .image-container a img {
