@@ -1,0 +1,1 @@
+web: gunicorn lauraday.wsgi:application
