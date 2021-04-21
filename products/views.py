@@ -91,3 +91,11 @@ def edit_product(request, product_id):
     }
 
     return render(request, template, context)
+
+
+def delete_product(request, product_id):
+    """ Delete product from the store """
+    product = get_objects_or_404(Product, pk=product_id)
+    product.delete()
+    messages.success(request, f'Following product was deleted: {product.name}')
+    return redirect(reverse('products'))
