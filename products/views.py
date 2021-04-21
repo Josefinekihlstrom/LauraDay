@@ -52,6 +52,11 @@ def product_details(request, product_id):
 @login_required
 def add_product(request):
     """ Add product to store """
+    # if not superuser
+    if not request.user.is_superuser:
+        messages.error(request, '404 - The page you where looking for does not exist.')
+        return redirect(reverse('home'))
+
     if request.method == 'POST':
         form = ProductForm(request.POST, request.FILES)
         if form.is_valid():
@@ -74,6 +79,11 @@ def add_product(request):
 @login_required
 def edit_product(request, product_id):
     """ Edit product in the store """
+    # if not superuser
+    if not request.user.is_superuser:
+        messages.error(request, '404 - The page you where looking for does not exist.')
+        return redirect(reverse('home'))
+
     product = get_object_or_404(Product, pk=product_id)
     if request.method == 'POST':
         form = ProductForm(request.POST, request.FILES, instance=product)
@@ -99,6 +109,11 @@ def edit_product(request, product_id):
 @login_required
 def delete_product(request, product_id):
     """ Delete product from the store """
+    # if not superuser
+    if not request.user.is_superuser:
+        messages.error(request, '404 - The page you where looking for does not exist.')
+        return redirect(reverse('home'))
+
     product = get_object_or_404(Product, pk=product_id)
     product.delete()
     messages.success(request, f'Following product was deleted: {product.name}')
