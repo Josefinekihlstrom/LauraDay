@@ -261,6 +261,7 @@ footer {
 
 .header-container {
     position: fixed;
+    min-height: 55px;
     width: 100% !important;
     background-color: #9E532E;
     padding-top: 15px;
