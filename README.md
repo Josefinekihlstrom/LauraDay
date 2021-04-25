@@ -76,7 +76,8 @@ More pages here...
 ## Features left to implement
 - Defensive programming when deleting a product from shopping bag.
 - Back to top button in bag.html and product.html when many products.
-- 
+- A timer to the toast messages that automatically closes the message after a certain time.
+So the user don't have to click on the 'X' to close it.
 
 ## Technologies used
 ### Languages
