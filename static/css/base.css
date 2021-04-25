@@ -368,13 +368,17 @@ footer {
         padding-top: 80px;
     }
 
+    .banner-text {
+        font-size: .9rem;
+    }
+
     .index-info-section {
         padding: 40px;
     }
 
     .index-info-col i {
-    font-size: 24px;
-    padding-bottom: 20px;
+        font-size: 24px;
+        padding-bottom: 20px;
     }
 
     .index-info-col p {
