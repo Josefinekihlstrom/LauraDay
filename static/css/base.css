@@ -356,6 +356,11 @@ footer {
 }
 
 
+/* ------------------------------------------- Error Pages */
+.error-container {
+    height: 100vh;
+}
+
 /* ------------------------------------------- Media Queries */
 
 /* Max width 480px */
