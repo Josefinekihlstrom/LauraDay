@@ -109,6 +109,7 @@ I decided to not use the crispy form on the allauth pages, not make bug any bigg
 inside a column with the width of halv of the page.
 5. Webhook 404 error. Webhook key was not exported correctly to my github variables. Solved by setting the variable
 and restarting the workspace.
+6. Circle image on index page not showing after adding it to S3. Not solved
 
 ## Cloning this project
 1.
