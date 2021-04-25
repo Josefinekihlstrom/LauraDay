@@ -58,6 +58,10 @@ body {
     color: #fff !important;
 }
 
+.banner-text {
+    font-size: 1.2rem;
+}
+
 /* Collapsed navbar */
 .mobile-shop-dropdown {
     background-color: #82906C;
@@ -370,6 +374,10 @@ footer {
 
     .banner-text {
         font-size: .9rem;
+    }
+
+    .mobile-btn {
+        font-size: .8rem;
     }
 
     .index-info-section {
