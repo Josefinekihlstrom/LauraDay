@@ -75,7 +75,7 @@ More pages here...
 
 ## Features left to implement
 - Defensive programming when deleting a product from shopping bag.
-- 
+- Back to top button in bag.html and product.html when many products.
 - 
 
 ## Technologies used
