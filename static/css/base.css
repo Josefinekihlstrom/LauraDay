@@ -310,6 +310,22 @@ footer {
 .delete-link {
     text-decoration: none;
 }
+
+.pagination-links i {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.link-black {
+    text-decoration: none;
+    color: black;
+}
+
+.link-black:hover {
+    color: black;
+}
+
+
 /* ------------------------------------------- product_details.html */
 
 .image-container a img {
