@@ -91,30 +91,16 @@
                     <div class="col-12 mb-5 text-center pagination-links">
                         <!-- Previous page link -->
                         {% if products.has_previous %}
-                            <a href="{% url 'products' %}?page={{products.previous_page_number}}" class="link-black">
+                            <a href="{% url 'products' %}{% if not current_categories %}?page={% else %}?category={{ current_categories.0 }}&page={% endif %}{{products.previous_page_number}}" class="link-black">
                                 <i class="fas fa-chevron-left"></i>
                             </a>
-                            Page {{ products.number }} of {{ products.paginator.num_pages }}
-                            <div class="text-muted d-inline">
-                                <i class="fas fa-chevron-right"></i>
-                            </div>
                         {% endif %}
+                        Page {{ products.number }} of {{ products.paginator.num_pages }}
                         <!-- Next page link -->
                         {% if products.has_next %}
-                            <div class="text-muted d-inline">
-                                <i class="fas fa-chevron-left"></i>
-                            </div>
-                            Page {{ products.number }} of {{ products.paginator.num_pages }}
-                            {% if product.category == ceramics %}
-                                <a href="{% url 'products' %}?category=ceramics&page={{products.next_page_number}}" class="link-black">
-                                    <i class="fas fa-chevron-right"></i>
-                                </a>
-                            {% elif product.category == artwork %}
-                                <a href="{% url 'products' %}?category=artwork&page={{products.next_page_number}}" class="link-black">
-                                    <i class="fas fa-chevron-right"></i>
-                                </a>
-                            {% else %}
-                            {% endif %}
+                            <a href="{% url 'products' %}{% if not current_categories %}?page={% else %}?category={{ current_categories.0 }}&page={% endif %}{{products.next_page_number}}" class="link-black">
+                                <i class="fas fa-chevron-right"></i>
+                            </a>
                         {% endif %}
                     </div>
                 </div>
