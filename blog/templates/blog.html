@@ -5,20 +5,20 @@
     <div class="container container-margin">
         <div class="row mb-5 left">
             <!-- Blog Entries Column -->
-            <div class="col-md-8 mt-3">
+            <div class="col-lg-8 mt-3">
                 {% for post in post_list %}
                 <div class="card mb-4">
+                    <h4 class="card-header blog-card-title">{{ post.title }}</h4>
                     <div class="card-body">
-                        <h2 class="card-title">{{ post.title }}</h2>
                         <p class="card-text text-muted h6">{{ post.author }} | {{ post.created_on}} </p>
                         <p class="card-text">{{post.content|slice:":200" }}</p>
-                        <a href="{% url 'post_detail' post.slug  %}" class="btn btn-outline-primary text-uppercase mobile-btn">Read More &rarr;</a>
+                        <a href="{% url 'post_detail' post.slug  %}" class="btn btn-sm btn-outline-secondary text-uppercase mobile-btn">Read More &rarr;</a>
                     </div>
                 </div>
                 {% endfor %}
             </div>
             <!-- Sidebar with image and text -->
-            <div class="col-md-4 float-right ">
+            <div class="col-lg-4 float-right ">
                 <div class="my-4">
                     <div class="blog-image text-center">
                         <img src="/media/about-img-small.png" alt="Hands working with clay"> 
@@ -33,7 +33,7 @@
                         <br>
                         For the latest information on collection releases, follow us on facebook and instagram.
                     </p>
-                    <div class="text-center blog-social-links d-none d-md-block">
+                    <div class="text-center blog-social-links d-none d-lg-block">
                         <a href="https://www.instagram.com/">
                             <i class="fab fa-instagram"></i>
                         </a>
