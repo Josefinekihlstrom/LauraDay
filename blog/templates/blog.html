@@ -8,11 +8,14 @@
             <div class="col-lg-8 mt-3">
                 {% for post in post_list %}
                 <div class="card mb-4">
-                    <h4 class="card-header blog-card-title">{{ post.title }}</h4>
+                    <h4 class="card-header">{{ post.title }}</h4>
                     <div class="card-body">
                         <p class="card-text text-muted h6">{{ post.author }} | {{ post.created_on}} </p>
-                        <p class="card-text">{{post.content|slice:":200" }}</p>
-                        <a href="{% url 'post_detail' post.slug  %}" class="btn btn-sm btn-outline-secondary text-uppercase mobile-btn">Read More &rarr;</a>
+                        <p class="card-text">{{post.content|linebreaks|slice:":200" }}</p>
+                        <a href="{% url 'post_detail' post.slug  %}" class="btn btn-sm btn-outline-secondary text-uppercase mobile-btn">
+                            Read More
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
                     </div>
                 </div>
                 {% endfor %}

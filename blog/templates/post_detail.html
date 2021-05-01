@@ -1,0 +1,49 @@
+{% extends 'base.html' %} {% block content %}
+
+<div class="container container-margin">
+    <div class="row mb-5">
+        <div class="col-md-8 card mb-4  mt-3 left  top">
+            <div class="card-body">
+                <h1>{% block title %} {{ object.title }} {% endblock title %}</h1>
+                <p class=" text-muted">{{ post.author }} | {{ post.created_on }}</p>
+                <p class="card-text ">{{ object.content|linebreaks | safe }}</p>
+            </div>
+        </div>
+        <!-- Sidebar with image and text -->
+        <div class="col-lg-4 float-right d-none d-lg-none">
+            <div class="my-4">
+                <div class="blog-image text-center">
+                    <img src="/media/about-img-small.png" alt="Hands working with clay">
+                </div>
+                <h2 class="reenie-font text-center mt-3">Laura Day Blog</h2>
+                <p class="text-center about-blog-text mt-3">
+                    Welcome to the Laura Day blog.
+                    <br>
+                    Here you get information about the latest events with Laura Day and future events and
+                    happenings. You also get an insight into how we work at the company.
+                    <br>
+                    <br>
+                    For the latest information on collection releases, follow us on facebook and instagram.
+                </p>
+                <div class="text-center blog-social-links d-none d-lg-block">
+                    <a href="https://www.instagram.com/">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://www.facebook.com/">
+                        <i class="fab fa-facebook-square"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row mb-5">
+        <div class="col">
+            <a href="{% url 'blog' %}" class="btn btn-sm btn-outline-secondary text-uppercase mobile-btn">
+                <i class="fas fa-arrow-left"></i>
+                Back to all Posts
+            </a>
+        </div>
+    </div>
+</div>
+
+{% endblock content %}
