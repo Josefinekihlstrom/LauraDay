@@ -3,11 +3,9 @@
 
 {% block content %}
     <div class="container-fluid container-margin">
-        <div class="row justify-content-center mb-5">
+        <div class="row mb-5 left">
             <!-- Blog Entries Column -->
             <div class="col-md-8 mt-3">
-                <h1 class="text-uppercase text-center">Blog</h1>
-                <hr class="w-50 mb-5 mx-auto">
                 {% for post in post_list %}
                 <div class="card mb-4">
                     <div class="card-body">
@@ -18,6 +16,24 @@
                     </div>
                 </div>
                 {% endfor %}
+            </div>
+            <!-- Sidebar with image -->
+            <div class="col-md-4 float-right ">
+                <div class="my-4">
+                    <div class="blog-image text-center">
+                        <img src="/media/about-img-small.png" alt="Hands working with clay"> 
+                    </div>
+                    <h2 class="reenie-font text-center mt-3">Laura Day Blog</h2>
+                    <p class="text-center about-blog-text mt-3">
+                        Welcome to the Laura Day blog.
+                        <br>
+                        Here you get information about the latest events with Laura Day and future events and 
+                        happenings. You also get an insight into how we work at the company. 
+                        <br>
+                        <br>
+                        For the latest information on collection releases, follow us on facebook and instagram.
+                    </p>
+                </div>
             </div>
         </div>
     </div>

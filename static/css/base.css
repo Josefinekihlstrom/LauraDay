@@ -339,6 +339,17 @@ footer {
 }
 
 
+/* ------------------------------------------- blog.html */
+.blog-image img {
+    width: 200px;
+}
+
+.about-blog-text {
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+
 /* ------------------------------------------- bag.html */
 .bag-container {
     min-height: 100vh !important;
