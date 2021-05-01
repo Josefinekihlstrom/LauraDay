@@ -136,7 +136,7 @@ href="".
 
 ### Code
 - Allauth setup code in lauraday/settings.py from (Django Allauth)[https://django-allauth.readthedocs.io/en/latest/installation.html]
-- 
+- Pagination with the help from (Youtube)[https://www.youtube.com/watch?v=5FKL_voZuFw] and (Django docs)[https://docs.djangoproject.com/en/3.2/topics/pagination/]
 - 
 - 
 
