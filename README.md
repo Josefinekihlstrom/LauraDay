@@ -135,9 +135,10 @@ href="".
 - 
 
 ### Code
+- This project was made with guidance from course videos of Boutique Ado Project - Code Institute
 - Allauth setup code in lauraday/settings.py from (Django Allauth)[https://django-allauth.readthedocs.io/en/latest/installation.html]
 - Pagination with the help from (Youtube)[https://www.youtube.com/watch?v=5FKL_voZuFw] and (Django docs)[https://docs.djangoproject.com/en/3.2/topics/pagination/]
-- 
+- Blog application with the help from (Django docs)[https://djangocentral.com/building-a-blog-application-with-django/]
 - 
 
 ### Thank you
