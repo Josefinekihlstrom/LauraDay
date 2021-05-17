@@ -12,13 +12,13 @@ Acknowledgements
 Disclaimer
 
 ## About
-------IAmResponsive Image here.------
--
+IAmResponsive Image here.
+
 Laura Day is an online webshop that offers artwork and ceramics by the fictional brand Laura Day. 
 The webshop also has a blog page where the team behind the brand adds blog posts for the visitor to 
 read more about the work behind the brand. 
--
-------Link to live website here.------
+
+Link to live website [here](https://lauraday-josefinekihlstrom.herokuapp.com).
 
 ## UX
 ### UX goals
@@ -47,7 +47,7 @@ displays the action behind it.
 - To be able to add, edit and/or delete a product.
 - To be able to add, edit and/or delete a blog post.
 
-### Design process
+## Design process
 The design of the website was based upon how I wanted the data to be displayed. You can read more about the
 database that was used [here](#information-architecture).
 <br>
@@ -57,7 +57,7 @@ The color scale would be in earthy tones to reflect the materials used in the pr
 The overall goal for the page was to make it clear to the user what the page is about, with easy navigation to
 lead the visitor in the right direction according to the visitor's needs.
 
-#### Color scheme.
+### Color scheme
 <div align="center">
     <img src="/readme_images/coolors.jpg" alt="color scheme" width="600px">
     <br>
@@ -69,20 +69,50 @@ lead the visitor in the right direction according to the visitor's needs.
 - Rusty Orange: **#9e532e**
 - Dark Brown: **#261c15**
 
-#### Fonts
+### Fonts
 - Font used for Laura Day brand name: [Reenie Beenie](https://fonts.google.com/specimen/Reenie+Beanie?query=reenie+)
 - Font used for overall text: [Open Sans](https://fonts.google.com/specimen/Open+Sans?query=open+sans)
 
-#### Wireframes
+### Wireframes
 Skeleton and surface plane.
 Figma images.
 
 ## Features
-Scope plane.
-
 ### All pages features:
-- Navigation with links
-- Footer and content of it.
+#### Navigation Bar
+The navigation bar is featured on the top of all pages of the website. It contains the following:
+- **Logo** - Links to the home/index page.
+- **Shop** - When clicked on a dropdown list appear with the following links: 
+    - All Products
+    - Ceramics
+    - Artwork.
+- **Blog** - Linked to the blog page.
+- **Search** - When clicked on a search box appears under the navigation bar.
+- **My Account** - When clicked on a dropdown list appear. The full list of the links in the dropdown list is the following:
+    - Sign Up - **(If the user is not logged in)* Links to a page where the user can sign up.
+    - Log In - **(If the user is not logged in)* Links to a page where the user can log in.
+    - My Profile - **(If the user is logged in)* Links to the Profile page of the logged in user.
+    - Log Out - **(If the user is logged in)* Links to a page where the user can log out.
+    - Product Management - **(If a superuser is logged in)* Links to the 'Add a Product' page.
+- **Shopping Bag** - Links to the 'Shopping Bag' page.
+
+#### Footer
+The footer is featured at the bottom of all pages. It's divided into two rows.
+The first row is divided into three sections that contains the following:
+- A section with a heading text of 'Payments' followed by a Visa icon and a Mastercard icon.
+- A section with a heading text of 'Links' Followed by the following links:
+    - Shop - Linked to the 'All Products' page.
+    - Blog - Linked to the blog page.
+-  A section with a heading text of 'Social' followed by the following icons:
+    - Instagram - Links to instagram.com
+    - Facebook - Links to facebook.com
+    - LinkedIn - Links to linkedin.com
+<br>
+<br>
+
+The second row contains the following:
+- Logo name
+- Copyright text
 
 ### Home page features:
 ### Shop page:
