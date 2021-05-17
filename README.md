@@ -48,13 +48,32 @@ displays the action behind it.
 - To be able to add, edit and/or delete a blog post.
 
 ### Design process
-Structure description.
-Database values here with image.
-Meaning of the website.
-Color scheme.
-Font used.
+The design of the website was based upon how I wanted the data to be displayed. You can read more about the
+database that was used [here](#information-architecture).
+<br>
+<br>
+My vision for the site was to create a place where the visitor should feel welcome and inspired.
+The color scale would be in earthy tones to reflect the materials used in the products sold on the website.
+The overall goal for the page was to make it clear to the user what the page is about, with easy navigation to
+lead the visitor in the right direction according to the visitor's needs.
 
-### Wireframes
+#### Color scheme.
+<div align="center">
+    <img src="/readme_images/coolors.jpg" alt="color scheme" width="600px">
+    <br>
+</div>
+
+- Beige: **#D6C5AB**
+- Light Green: **#82906c**
+- Dark Green: **#4a513d**
+- Rusty Orange: **#9e532e**
+- Dark Brown: **#261c15**
+
+#### Fonts
+- Font used for Laura Day brand name: [Reenie Beenie](https://fonts.google.com/specimen/Reenie+Beanie?query=reenie+)
+- Font used for overall text: [Open Sans](https://fonts.google.com/specimen/Open+Sans?query=open+sans)
+
+#### Wireframes
 Skeleton and surface plane.
 Figma images.
 
@@ -81,6 +100,12 @@ More pages here...
 - Back to top button in bag.html and product.html when many products.
 - A timer to the toast messages that automatically closes the message after a certain time.
 So the user don't have to click on the 'X' to close it.
+
+## Information Architecture
+### The Database
+Database values here with image.
+
+### Data Models
 
 ## Technologies used
 ### Languages
