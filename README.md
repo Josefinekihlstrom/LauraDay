@@ -12,37 +12,40 @@ Acknowledgements
 Disclaimer
 
 ## About
-Description here.
-IAmResponsive Image here.
-Link to live website here.
+------IAmResponsive Image here.------
+-
+Laura Day is an online webshop that offers artwork and ceramics by the fictional brand Laura Day. 
+The webshop also has a blog page where the team behind the brand adds blog posts for the visitor to 
+read more about the work behind the brand. 
+-
+------Link to live website here.------
 
 ## UX
 ### UX goals
 The UX goals for this website are the following:
 
 ### User Stories
-The user stories were defined during the Stragety Plane phase of this project.
+The user stories were defined during the **Stragety** Plane phase of this project.
 As a user I want to:
 - Buy handmade ceramics and artwork.
-- Get to know the person behind the brand.
+- Get to know the persons behind the brand.
 - Be able to read more about what's going on and what's new within the brand.
 - Be able to make safe purchases on the site.
 - Be able to navigate easy on the site.
 - Be able to view the products by category.
 - Be able to view a more detailed page about each product on the site.
-- Be able to search for a sertant product.
+- Be able to search for a certain product.
 - Be able to register for an account.
 - Be able to view my order history.
-- Get feedback while browsing the website, for example with pop ups.
-- Be able to get in contact with the person behind the brand.
-- F.A.Q
+- Get feedback while browsing the website, for example with pop ups when a product is added in the shopping bag.
 
 ### Owner goals
 As the owner of the page I want:
-- To make a website with an aesthetic appeal that reflects the person and the brand behind it.
+- To make a website with an aesthetic appeal that reflects the brand.
 - To make it easy for the visitor to navigate through the site with a clear navigation menu and buttons that clearly
 displays the action behind it.
-- 
+- To be able to add, edit and/or delete a product.
+- To be able to add, edit and/or delete a blog post.
 
 ### Design process
 Structure description.
