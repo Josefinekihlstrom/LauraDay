@@ -1,15 +1,16 @@
 # Laura Day
 ## Content
-About
-UX
-Features
-Technologies Used
-Testing
-Deployment
-Cloning This Project
-Credits
-Acknowledgements
-Disclaimer
+- About
+- UX
+- Features
+- Information Architecture
+- Technologies Used
+- Testing
+- Deployment
+- Cloning This Project
+- Credits
+- Acknowledgements
+- Disclaimer
 
 ## About
 IAmResponsive Image here.
@@ -23,6 +24,11 @@ Link to live website [here](https://lauraday-josefinekihlstrom.herokuapp.com).
 ## UX
 ### UX goals
 The UX goals for this website are the following:
+- Simple design with a fixed navigation bar at the top for easy navigation.
+- Clear sections of the different content of each page.
+- The site is responsive to all devices.
+- All text on the site is easy to read without any distracting backgrounds.
+
 
 ### User Stories
 The user stories were defined during the **Stragety** Plane phase of this project.
@@ -107,7 +113,6 @@ The first row is divided into three sections that contains the following:
     - Instagram - Links to instagram.com
     - Facebook - Links to facebook.com
     - LinkedIn - Links to linkedin.com
-<br>
 <br>
 
 The second row contains the following:
