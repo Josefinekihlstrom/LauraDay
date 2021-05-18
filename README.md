@@ -237,8 +237,28 @@ The profile page contains the following:
     - Product names.
     - Order total.
 
+### Sign up page
+The sign up page contains the following:
+- A heading text of 'Sign Up'.
+- A text that prompts the user to log in if they already have an account, followed by a link that links to the log in page.
+- A sign up form.
+- A button with the text of 'Sign Up' that redirects the user to a page that tells the user to confirm their account.
+
 ### Log in page
+The log in page contains the following:
+- A heading text of 'Log In'
+- A text that prompts the user to create an account if they do not already have one, followed by a link that links to the sign up page.
+- A log in form
+- A remember me checkbox.
+- A button with the text of 'Sign In' that redirects the user to the home page after being logged-in.
+- A link that says 'Forgot Password?' that links the user to a password reset page.
+
 ### Log out page
+The log out page contains the following:
+-  A heading text of 'Sign Out'
+- A text that asks the user if they are sure about logging out.
+- A button with the text of 'Sign Out' that redirects the user to the home page and removes the session data.
+
 ### Error pages
 ### Pop up messages
 
