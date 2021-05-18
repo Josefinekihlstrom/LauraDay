@@ -166,6 +166,7 @@ and facebook.
 - If the user is logged-in as a superuser, there is also a button under the social links that links to the 'Add Post' page.
 
 ### Blog post details page
+The blog post details page contains the following:
 - A section with the blog post details including:
     - A heading text of each blog post.
     - The name of the author that wrote the blog post.
@@ -178,8 +179,9 @@ and facebook.
 ### Add post page
 
 ### Shopping bag page
+The shopping bag page contains the following:
 - An orange banner just under the navigation bar with a text about a free shipping deal.
-- A heading text of 'Shopping Bag'
+- A heading text of 'Shopping Bag'.
 - If the shopping bag is empty:
     - A text that tells the user that the bag is empty.
     - A button with the text of 'Keep Shopping' that links to the all products page.
@@ -199,10 +201,44 @@ and facebook.
     - A button with the text of 'Checkout' that links to the checkout page.
 
 ### Checkout page
+The checkout page contains the following:
+- A heading text of 'Checkout'.
+- A section with a form for the user to fill in the shipping and card details.
+- A section with a order summary including:
+    - Qty of total items in the bag.
+    - Product images.
+    - Name of the products.
+    - Quantity of the products.
+    - Subtotal of the products.
+    - Order total.
+    - Delivery cost.
+    - Grand total.
+- A button with the text of 'Adjust Bag' that links to the shopping bag page.
+- A button with the text of 'Complete Order' that processes the order and redirects the user to the checkout success page.
 
-### Thank you page
+### Checkout Success page
+The checkout success page contains the following:
+- A heading text of 'Thank You!'
+- A summary of the order including the following:
+    - Order info with the order number and date.
+    - Order details with the name of the products, quantity and price of them each.
+    - Delivery address.
+    - Billing info including order total, delivery cost and grand total.
+- A button with the text of 'Back To Products' that links to the all products page.
 
 ### Profile page
+The profile page contains the following:
+- A heading text of 'My Profile'.
+- Delivery information section including a form the user can fill in with their delivery information.
+- Update button that updates the form.
+- Order history section that shows all orders made by the logged-in user including:
+    - Order number.
+    - Date that the order was made.
+    - Product names.
+    - Order total.
+
+### Log in page
+### Log out page
 ### Error pages
 ### Pop up messages
 
