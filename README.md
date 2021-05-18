@@ -84,7 +84,7 @@ Skeleton and surface plane.
 Figma images.
 
 ## Features
-### All pages features:
+### All pages
 #### Navigation Bar
 The navigation bar is featured on the top of all pages of the website. It contains the following:
 - **Logo** - Links to the home/index page.
@@ -95,11 +95,11 @@ The navigation bar is featured on the top of all pages of the website. It contai
 - **Blog** - Linked to the blog page.
 - **Search** - When clicked on a search box appears under the navigation bar.
 - **My Account** - When clicked on a dropdown list appear. The full list of the links in the dropdown list is the following:
-    - Sign Up - **(If the user is not logged in)* Links to a page where the user can sign up.
-    - Log In - **(If the user is not logged in)* Links to a page where the user can log in.
+    - Sign Up - *(If the user is not logged in)* Links to a page where the user can sign up.
+    - Log In - *(If the user is not logged in)* Links to a page where the user can log in.
     - My Profile - **(If the user is logged in)* Links to the Profile page of the logged in user.
-    - Log Out - **(If the user is logged in)* Links to a page where the user can log out.
-    - Product Management - **(If a superuser is logged in)* Links to the 'Add a Product' page.
+    - Log Out - *(If the user is logged in)* Links to a page where the user can log out.
+    - Product Management - *(If a superuser is logged in)* Links to the 'Add a Product' page.
 - **Shopping Bag** - Links to the 'Shopping Bag' page.
 
 #### Footer
@@ -119,14 +119,92 @@ The second row contains the following:
 - Logo name
 - Copyright text
 
-### Home page features:
-### Shop page:
-### Product details page:
-### Blog page:
-### Contact page:
-### Shopping bag page:
-### Profile page:
-### Error pages:
+### Home page
+The home page includes:
+- An orange banner just under the navigation bar with a text about a free shipping deal.
+- A hero image with the logo text and a 'Shop' button centered on top of it.
+- A row divided into two sections. The left section consists of a round image and the right section consists of text about the brand and a button that links to the blog page.
+- A row divided into three sections. Each section consists of an icon that reflects the text that follows.
+
+### Products page
+The product page contains the following:
+- An orange banner just under the navigation bar with a text about a free shipping deal.
+- A heading text of 'Products'
+- A small text of the chosen category *(If the user is visiting the 'Ceramics' or 'Artwork' pages)*.
+- 'All Products' link.
+- 'Number of products shown'.
+- A section with all products including:
+    - Image of each product.
+    - Heading text with the name of the product.
+    - Price of the product.
+    - Product category.
+    - Edit and Remove links *(If the user is a logged-in superuser)*.
+- A section with pagination.
+
+### Product details page
+The product detail page contains the following:
+- Product image.
+- Heading text with the name of the product.
+- Price of the product.
+- Product category.
+- Edit and Remove links *(If the user is a logged-in superuser)*.
+- A text describing the product.
+- Quantity selector.
+- A button with the text of 'Products' that links to the 'All products' page.
+- A button with the text of 'Add To Bag' that adds the product and the chosen quantity of it to the shopping bag.
+
+### Blog page
+The blog page contains the following:
+- A section with all blog posts including:
+    - A heading text of each blog post.
+    - The name of the author that wrote the blog post.
+    - The date that the blog post was published.
+    - The content of the blog post limited to 200 letters.
+    - A button with the text of 'Read More' that links to the blog post details page.
+- A section with a round image, text that describes the purpose of the page and icons that links to instagram
+and facebook.
+- If the user is logged-in as a superuser, there is also a button under the social links that links to the 'Add Post' page.
+
+### Blog post details page
+- A section with the blog post details including:
+    - A heading text of each blog post.
+    - The name of the author that wrote the blog post.
+    - The date that the blog post was published.
+    - The content of the blog post.
+    - A button with the text of 'Back to all posts' that links to blog page.
+- A section with a round image, text that describes the purpose of the page and icons that links to instagram
+and facebook.
+
+### Add post page
+
+### Shopping bag page
+- An orange banner just under the navigation bar with a text about a free shipping deal.
+- A heading text of 'Shopping Bag'
+- If the shopping bag is empty:
+    - A text that tells the user that the bag is empty.
+    - A button with the text of 'Keep Shopping' that links to the all products page.
+- If the shopping bag has products in it:
+    - A list with all products added to the shopping bag including:
+        - Product image.
+        - Name of the product.
+        - The SKU number.
+        - The product price.
+        - The product quantity.
+        - Subtotal.
+        - Update and Remove links *(Only if the logged-in user is a superuser)*.
+    - Bag total.
+    - Delivery cost.
+    - Grand total.
+    - A button with the text of 'Keep Shopping' that links to the all Products page.
+    - A button with the text of 'Checkout' that links to the checkout page.
+
+### Checkout page
+
+### Thank you page
+
+### Profile page
+### Error pages
+### Pop up messages
 
 More pages here...
 
@@ -177,6 +255,8 @@ and restarting the workspace.
 7. Pagination not working correctly. Added an if statement for next and previous button. But the buttons would only link to 
 the ceramics pages, no matter which category you where on. I solved it by adding the if statement within the 
 href="".
+8. When on the products page, the number of products shown only display the products that are shown on the current
+page instead of the total of the products if the product page has more pages. Not fixed.
 
 ## Cloning this project
 1.
