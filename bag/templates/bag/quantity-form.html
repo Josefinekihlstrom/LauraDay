@@ -28,10 +28,12 @@
     </div>
 </form>
 <!-- Update link -->
-<a class="update-link text-secondary">
-    <small>Update</small>
-</a>
-<!-- Remove link -->
-<a class="update-link text-danger remove-item remove-btn" id="remove_{{ item.item_id }}">
-    <small>Remove</small>
-</a>
+{% if request.user.is_superuser %}
+    <a class="update-link text-secondary">
+        <small>Update</small>
+    </a>
+    <!-- Remove link -->
+    <a class="update-link text-danger remove-item remove-btn" id="remove_{{ item.item_id }}">
+        <small>Remove</small>
+    </a>
+{% endif %}
