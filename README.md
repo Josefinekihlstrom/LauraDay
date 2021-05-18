@@ -59,8 +59,8 @@ database that was used [here](#information-architecture).
 <br>
 <br>
 My vision for the site was to create a place where the visitor should feel welcome and inspired.
-The color scale would be in earthy tones to reflect the materials used in the products sold on the website.
-The overall goal for the page was to make it clear to the user what the page is about, with easy navigation to
+The color scheme would be in earthy tones to reflect the materials used in the products sold on the website.
+The overall goal for the site was to make it clear to the user what the page is about, with easy navigation to
 lead the visitor in the right direction according to the visitor's needs.
 
 ### Color scheme
