@@ -260,9 +260,30 @@ The log out page contains the following:
 - A button with the text of 'Sign Out' that redirects the user to the home page and removes the session data.
 
 ### Error pages
-### Pop up messages
 
-More pages here...
+### Pop up messages
+To give the user feedback during their visit to the site, a modal will pop up in the upper right corner to indicate
+to the user what events are taking place and to confirm the actions taken by the user. The color of the message
+represents what kind of message is displayed. There are three types of messages:
+
+#### Info messages
+<div align="center">
+    <img src="/readme_images/info.jpg" alt="info pop up message" width="600px">
+    <br>
+</div>
+
+#### Error messages
+<div align="center">
+    <img src="/readme_images/error.jpg" alt="error pop up message" width="600px">
+    <br>
+</div>
+
+#### Success messages
+<div align="center">
+    <img src="/readme_images/success.jpg" alt="success pop up message" width="600px">
+    <br>
+</div>
+
 
 ## Features left to implement
 - Defensive programming when deleting a product from shopping bag.
