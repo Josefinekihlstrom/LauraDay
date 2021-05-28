@@ -34,10 +34,22 @@
             </div>
         </li>
         <!-- Blog link -->
-        <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-white mr-5" href="{% url 'blog' %}">
-                Blog
-            </a>
-        </li>
+        {% if request.user.is_superuser %}
+            <li class="nav-item dropdown ">
+                <a class="logo-font font-weight-bold nav-link text-white mr-5" href="#" id="all-products-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Blog
+                </a>
+                <div class="dropdown-menu mobile-shop-dropdown border-0" aria-labelledby="all-products-link">
+                    <a href="{% url 'blog' %}" class="dropdown-item text-white">Blog Posts</a>
+                    <a href="{% url 'add_post' %}" class="dropdown-item text-white">Add Post</a>
+                </div>
+            </li>
+        {% else %}
+            <li class="nav-item dropdown">
+                <a class="logo-font font-weight-bold nav-link text-white mr-5" href="{% url 'blog' %}">
+                    Blog
+                </a>
+            </li>
+        {% endif %}
     </ul>
 </div>
