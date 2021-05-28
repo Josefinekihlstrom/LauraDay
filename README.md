@@ -290,6 +290,12 @@ represents what kind of message is displayed. There are three types of messages:
 - Back to top button in bag.html and product.html when many products.
 - A timer to the toast messages that automatically closes the message after a certain time.
 So the user don't have to click on the 'X' to close it.
+- Messages for when adding, editing and deleting a blog post. Similar to the ones when adding, editing and deleting
+a product. For the blog app I focused on learning class based views, and the messages function is a bit different to
+implement. Due to lack of time this will be something I will have to add in the future.
+- F.A.Q template with a contact form. In my original idea I wanted to add a F.A.Q page with a contact form for the user
+to be able to read questions and answears and/or get in touch with the shop owners. However, due to lack of time, this
+is something I will have to add in the future.
 
 ## Information Architecture
 ### The Database
