@@ -296,6 +296,8 @@ implement. Due to lack of time this will be something I will have to add in the 
 - F.A.Q template with a contact form. In my original idea I wanted to add a F.A.Q page with a contact form for the user
 to be able to read questions and answears and/or get in touch with the shop owners. However, due to lack of time, this
 is something I will have to add in the future.
+- Pagination for the blog post page. Due to lack of time I will have to add pagination in the future for the blog page.
+The idea was to make it similar to the pagination on the product pages.
 
 ## Information Architecture
 ### The Database
