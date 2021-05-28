@@ -2,7 +2,7 @@
 
 <div class="container container-margin">
     <div class="row mb-5">
-        <div class="col-lg-8 card mb-4  mt-3 left  top">
+        <div class="col-lg-8 card mb-0  mt-3 left  top">
             <div class="card-body">
                 <h1>{% block title %} {{ object.title }} {% endblock title %}</h1>
                 <p class=" text-muted">{{ post.author }} | {{ post.created_on }}</p>
@@ -47,6 +47,7 @@
             </div>
         </div>
     </div>
+    <!-- Back to all posts button -->
     <div class="row mb-5">
         <div class="col">
             <a href="{% url 'blog' %}" class="btn btn-sm btn-outline-primary text-uppercase mobile-btn">
@@ -55,6 +56,23 @@
             </a>
         </div>
     </div>
+    <!-- Comments section -->
+    <div class="row">
+        <div class="col-12">
+            <h2 class="mb-5">Comments:</h2>
+        </div>
+    </div>
+    {% if not post.comments.all %}
+        <p class="mb-5">No comments yet..</p>
+    {% else %}
+        {% for comment in post.comments.all %}
+            <h5 class="comment-name">{{ comment.name }}</h5> 
+            <p class="text-muted small">{{ comment.date_added }}</p>
+            <p>"{{ comment.body }}"</p>
+            <hr class="comment-hr">
+            <br>
+        {% endfor %}
+    {% endif %}
 </div>
 
 {% endblock content %}

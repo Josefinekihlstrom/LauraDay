@@ -376,6 +376,17 @@ footer {
 }
 
 
+/* ------------------------------------------- post_detail.html */
+.comment-name {
+    font-weight: bold;
+}
+
+.comment-hr {
+    color: #82906C;
+    border: 1px;
+}
+
+
 /* ------------------------------------------- bag.html */
 .bag-container {
     min-height: 100vh !important;
