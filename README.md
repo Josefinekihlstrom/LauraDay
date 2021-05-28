@@ -371,6 +371,7 @@ page instead of the total of the products if the product page has more pages. No
 - Add Blog Post with the help from (Codemy.com)[https://www.youtube.com/watch?v=m3efqF9abyg&list=PLCC34OHNcOtr025c1kHSPrnP18YPB-NFi&index=4]
 - Edit Blog Post with the help from (Codemy.com)[https://www.youtube.com/watch?v=J7xaESAddDQ&list=PLCC34OHNcOtr025c1kHSPrnP18YPB-NFi&index=6]
 - Delete Blog Post with the help from (Codemy.com)[https://www.youtube.com/watch?v=8NPOwmtupiI&list=PLCC34OHNcOtr025c1kHSPrnP18YPB-NFi&index=7]
+- Blog comments with the help from (Codemy.com)[https://www.youtube.com/watch?v=hZrlh4qU4eQ&list=PLCC34OHNcOtr025c1kHSPrnP18YPB-NFi&index=34]
 
 ### Thank you
 - 
