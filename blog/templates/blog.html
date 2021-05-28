@@ -9,10 +9,10 @@
                 {% for post in post_list %}
                 <div class="card mb-4">
                     <!-- Title, author, date and body -->
-                    <h4 class="card-header">{{ post.title }}</h4>
+                    <h4 class="card-header blog-card-header">{{ post.title }}</h4>
                     <div class="card-body">
                         <p class="card-text text-muted h6">{{ post.author }} | {{ post.created_on}} </p>
-                        <p class="card-text">{{post.content|linebreaks|slice:":200" }}</p>
+                        <p class="card-text">{{post.content|linebreaks|slice:":600" }}</p>
                         <!-- Read more button -->
                         <a href="{% url 'post_detail' post.slug  %}" class="btn btn-sm btn-outline-secondary text-uppercase mobile-btn">
                             Read More

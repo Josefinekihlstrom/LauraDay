@@ -363,6 +363,12 @@ footer {
     font-weight: bold;
 }
 
+.blog-card-header {
+    background-color: rgb(214, 227, 191);
+    color: black;
+    border-bottom: none;
+}
+
 .card-footer {
     background-color: white;
     padding-top: 16px;
