@@ -4,28 +4,39 @@
 {% block content %}
     <div class="container container-margin">
         <div class="row mb-5 left">
-            <!-- Blog Entries Column -->
+            <!-- Blog entries column -->
             <div class="col-lg-8 mt-3">
                 {% for post in post_list %}
                 <div class="card mb-4">
+                    <!-- Title, author, date and body -->
                     <h4 class="card-header">{{ post.title }}</h4>
                     <div class="card-body">
                         <p class="card-text text-muted h6">{{ post.author }} | {{ post.created_on}} </p>
                         <p class="card-text">{{post.content|linebreaks|slice:":200" }}</p>
+                        <!-- Read more button -->
                         <a href="{% url 'post_detail' post.slug  %}" class="btn btn-sm btn-outline-secondary text-uppercase mobile-btn">
                             Read More
                             <i class="fas fa-arrow-right"></i>
+                        </a>
+                        <hr>
+                        <!-- Edit and delete links -->
+                        <a href="{% url 'edit_post' post.slug  %}" class="edit-link">
+                            Edit
+                        </a> | 
+                        <a href="" class="delete-link text-danger">
+                            Remove
                         </a>
                     </div>
                 </div>
                 {% endfor %}
             </div>
-            <!-- Sidebar with image and text -->
+            <!-- Sidebar -->
             <div class="col-lg-4 float-right ">
                 <div class="my-4">
+                    <!-- Add post button for superuser only -->
                     {% if request.user.is_superuser %}
                         <div class="text-center">
-                            <a href="{% url 'add_post' %}" class="btn btn-sm btn-outline-secondary text-uppercase mobile-btn">
+                            <a href="{% url 'add_post' %}" class="btn btn-sm btn-outline-primary text-uppercase mobile-btn">
                                 Add Post
                                 <i class="fas fa-plus"></i>
                             </a>
@@ -33,9 +44,11 @@
                         <br>
                         <br>
                     {% endif %}
+                    <!-- Image -->
                     <div class="blog-image text-center">
                         <img src="/media/about-img-small.png" alt="Hands working with clay"> 
                     </div>
+                    <!-- Header and text -->
                     <h2 class="reenie-font text-center mt-3">Laura Day Blog</h2>
                     <p class="text-center about-blog-text mt-3">
                         Welcome to the Laura Day blog.
@@ -46,6 +59,7 @@
                         <br>
                         For the latest information on collection releases, follow us on facebook and instagram.
                     </p>
+                    <!-- Social Links -->
                     <div class="text-center blog-social-links d-none d-lg-block">
                         <a href="https://www.instagram.com/">
                             <i class="fab fa-instagram"></i>

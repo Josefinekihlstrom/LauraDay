@@ -20,3 +20,11 @@ class AddPost(generic.CreateView):
     model = Post
     template_name = 'add_post.html'
     fields = '__all__'
+
+
+# Edit Blog Post code with help from Codemy.com
+# https://www.youtube.com/watch?v=J7xaESAddDQ&list=PLCC34OHNcOtr025c1kHSPrnP18YPB-NFi&index=6
+class EditPost(generic.UpdateView):
+    model = Post
+    template_name = 'edit_post.html'
+    fields = ['title', 'slug', 'content']
