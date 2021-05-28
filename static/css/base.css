@@ -390,6 +390,13 @@ footer {
 }
 
 
+/* ------------------------------------------- profile.html */
+.profile-icon {
+    font-size: 6rem;
+    margin-top: 30px;
+}
+
+
 /* ------------------------------------------- Allauth templates */
 .container-view {
     height: 100vh;
