@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+    <div class="overlay"></div>
+    <div class="container bag-container">
+        <!-- Heading text row -->
+        <div class="row">
+            <div class="col-12 col-md-6">
+                <h1 class="mb-4 text-uppercase">Blog Management</h1>
+                <h5 class="text-danger"><i class="fas fa-exclamation-circle"></i> Delete Post</h5>
+                <hr class="w-100 mb-1 mx-auto">
+                <br>
+                <br>
+            </div>
+        </div>
+        <!-- Add post form -->
+        <div class="row">
+            <div class="col-12 col-md-6">
+                <form method="POST">
+                    {% csrf_token %}
+                    <h4 class="">
+                        The following post will be deleted:
+                    </h4>
+                    <p class="text-muted">Note that deleting a post can not be undone.</p>
+                    <br>
+                    <h6 class="blog-title"><br>"{{ post.title }}"</h6>
+                    <br>
+                    <div class="text-right">
+                        <a class="btn btn-outline-secondary text-uppercase" href="{% url 'blog' %}">Cancel</a>
+                        <button class="btn btn-outline-primary text-uppercase" type="submit">Delete Post</button>
+                        <br>
+                        <br>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+{% endblock %}

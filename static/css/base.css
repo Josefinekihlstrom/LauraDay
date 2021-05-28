@@ -359,6 +359,10 @@ footer {
     color: #4A513D;
 }
 
+.blog-title {
+    font-weight: bold;
+}
+
 .card-footer {
     background-color: white;
     padding-top: 16px;

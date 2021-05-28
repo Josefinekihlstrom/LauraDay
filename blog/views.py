@@ -1,6 +1,7 @@
 from django.views import generic
 from .models import Post
 from .forms import BlogForm
+from django.urls import reverse_lazy
 
 
 class PostList(generic.ListView):
@@ -28,3 +29,11 @@ class EditPost(generic.UpdateView):
     model = Post
     template_name = 'edit_post.html'
     fields = ['title', 'slug', 'content']
+
+
+# Delete Blog Post with help from Codemy.com
+# https://www.youtube.com/watch?v=8NPOwmtupiI&list=PLCC34OHNcOtr025c1kHSPrnP18YPB-NFi&index=7
+class DeletePost(generic.DeleteView):
+    model = Post
+    template_name = 'delete_post.html'
+    success_url = reverse_lazy('blog')

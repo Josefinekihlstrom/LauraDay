@@ -18,14 +18,16 @@
                             Read More
                             <i class="fas fa-arrow-right"></i>
                         </a>
-                        <hr>
-                        <!-- Edit and delete links -->
-                        <a href="{% url 'edit_post' post.slug  %}" class="edit-link">
-                            Edit
-                        </a> | 
-                        <a href="" class="delete-link text-danger">
-                            Remove
-                        </a>
+                        {% if request.user.is_superuser %}
+                            <hr>
+                            <!-- Edit and delete links -->
+                            <a href="{% url 'edit_post' post.slug  %}" class="edit-link">
+                                Edit
+                            </a> | 
+                            <a href="{% url 'delete_post' post.slug %}" class="delete-link text-danger">
+                                Remove
+                            </a>
+                        {% endif %}
                     </div>
                 </div>
                 {% endfor %}

@@ -358,8 +358,11 @@ page instead of the total of the products if the product page has more pages. No
 - This project was made with guidance from course videos of Boutique Ado Project - Code Institute
 - Allauth setup code in lauraday/settings.py from (Django Allauth)[https://django-allauth.readthedocs.io/en/latest/installation.html]
 - Pagination with the help from (Youtube)[https://www.youtube.com/watch?v=5FKL_voZuFw] and (Django docs)[https://docs.djangoproject.com/en/3.2/topics/pagination/]
-- Blog application with the help from (Django docs)[https://djangocentral.com/building-a-blog-application-with-django/]
-- 
+- Blog application with the help from (Django docs)[https://djangocentral.com/building-a-blog-application-with-django/] and
+(Codemy.com)[https://www.youtube.com/watch?v=B40bteAMM_M&list=PLCC34OHNcOtr025c1kHSPrnP18YPB-NFi&index=1]
+- Add Blog Post with the help from (Codemy.com)[https://www.youtube.com/watch?v=m3efqF9abyg&list=PLCC34OHNcOtr025c1kHSPrnP18YPB-NFi&index=4]
+- Edit Blog Post with the help from (Codemy.com)[https://www.youtube.com/watch?v=J7xaESAddDQ&list=PLCC34OHNcOtr025c1kHSPrnP18YPB-NFi&index=6]
+- Delete Blog Post with the help from (Codemy.com)[https://www.youtube.com/watch?v=8NPOwmtupiI&list=PLCC34OHNcOtr025c1kHSPrnP18YPB-NFi&index=7]
 
 ### Thank you
 - 

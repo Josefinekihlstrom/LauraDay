@@ -8,15 +8,17 @@
                 <p class=" text-muted">{{ post.author }} | {{ post.created_on }}</p>
                 <p class="card-text ">{{ object.content|linebreaks | safe }}</p>
             </div>
-            <div class="card-footer">
-                <!-- Edit and delete links -->
-                <a href="{% url 'edit_post' post.slug  %}" class="edit-link">
-                    Edit
-                </a> | 
-                <a href="" class="delete-link text-danger">
-                    Remove
-                </a>
-            </div>
+            {% if request.user.is_superuser %}
+                <div class="card-footer">
+                    <!-- Edit and delete links -->
+                    <a href="{% url 'edit_post' post.slug  %}" class="edit-link">
+                        Edit
+                    </a> | 
+                    <a href="{% url 'delete_post' post.slug %}" class="delete-link text-danger">
+                        Remove
+                    </a>
+                </div>
+            {% endif %}
         </div>
         <!-- Sidebar with image and text -->
         <div class="col-lg-4 float-right d-none d-lg-block">
