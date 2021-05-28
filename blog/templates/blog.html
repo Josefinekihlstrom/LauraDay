@@ -23,6 +23,16 @@
             <!-- Sidebar with image and text -->
             <div class="col-lg-4 float-right ">
                 <div class="my-4">
+                    {% if request.user.is_superuser %}
+                        <div class="text-center">
+                            <a href="{% url 'add_post' %}" class="btn btn-sm btn-outline-secondary text-uppercase mobile-btn">
+                                Add Post
+                                <i class="fas fa-plus"></i>
+                            </a>
+                        </div>
+                        <br>
+                        <br>
+                    {% endif %}
                     <div class="blog-image text-center">
                         <img src="/media/about-img-small.png" alt="Hands working with clay"> 
                     </div>
@@ -44,10 +54,6 @@
                             <i class="fab fa-facebook-square"></i>
                         </a>
                     </div>
-                    <a href="{% url 'add_post' %}" class="btn btn-sm btn-outline-secondary text-uppercase mobile-btn">
-                            Add Post
-                            <i class="fas fa-arrow-right"></i>
-                        </a>
                 </div>
             </div>
         </div>
