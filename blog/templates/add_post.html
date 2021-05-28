@@ -2,33 +2,52 @@
 {% load static %}
 
 {% block content %}
-    <div class="overlay"></div>
-    <div class="container bag-container">
-        <!-- Heading text row -->
-        <div class="row">
-            <div class="col-12 col-md-6">
-                <h1 class="mb-4 text-uppercase">Blog Management</h1>
-                <h5 class="text-muted">Add a Post</h5>
-                <hr class="w-100 mb-1 mx-auto">
-                <br>
-                <br>
-            </div>
-        </div>
-        <!-- Add post form -->
-        <div class="row">
-            <div class="col-12 col-md-6">
-                <form method="POST">
-                    {% csrf_token %}
-                    {{ form|crispy }}
+    {% if request.user.is_superuser %}
+        <div class="overlay"></div>
+        <div class="container bag-container">
+            <!-- Heading text row -->
+            <div class="row">
+                <div class="col-12 col-md-6">
+                    <h1 class="mb-4 text-uppercase">Blog Management</h1>
+                    <h5 class="text-muted">Add a Post</h5>
+                    <hr class="w-100 mb-1 mx-auto">
                     <br>
-                    <div class="text-right">
-                        <a class="btn btn-outline-secondary text-uppercase" href="{% url 'blog' %}">Cancel</a>
-                        <button class="btn btn-outline-primary text-uppercase" type="submit">Add Post</button>
+                    <br>
+                </div>
+            </div>
+            <!-- Add post form -->
+            <div class="row">
+                <div class="col-12 col-md-6">
+                    <form method="POST">
+                        {% csrf_token %}
+                        {{ form|crispy }}
                         <br>
-                        <br>
-                    </div>
-                </form>
+                        <div class="text-right">
+                            <a class="btn btn-outline-secondary text-uppercase" href="{% url 'blog' %}">Cancel</a>
+                            <button class="btn btn-outline-primary text-uppercase" type="submit">Add Post</button>
+                            <br>
+                            <br>
+                        </div>
+                    </form>
+                </div>
             </div>
         </div>
-    </div>
+    {% else %}
+        <!-- Error message is user is not authenticated -->
+        <div class="container-fluid error-container">
+            <div class="row justify-content-center">
+                <div class="col-6 text-center">
+                    <h3 class="text-uppercase mt-5">Error (404)</h3>
+                    <p>The page you where looking for does not exist.</p>
+                    <br>
+                    <br>
+                    <div class="d-flex justify-content-center">
+                        <a href="{% url 'home' %}" class="btn btn-outline-primary text-uppercase">
+                            Home
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    {% endif %}
 {% endblock %}
