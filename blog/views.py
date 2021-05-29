@@ -1,6 +1,6 @@
 from django.views import generic
-from .models import Post
-from .forms import BlogForm
+from .models import Post, Comment
+from .forms import BlogForm, AddCommentForm
 from django.urls import reverse_lazy
 
 
@@ -21,6 +21,22 @@ class AddPost(generic.CreateView):
     model = Post
     template_name = 'add_post.html'
     fields = '__all__'
+
+
+# Add comment code with help from Codemy.com
+# https://www.youtube.com/watch?v=OuOB9ADT_bo&list=PLCC34OHNcOtr025c1kHSPrnP18YPB-NFi&index=35
+class AddComment(generic.CreateView):
+    model = Comment
+    form_class = AddCommentForm
+    template_name = 'add_comment.html'
+
+    def form_valid(self, form):
+        slug = self.kwargs['slug']
+        form.instance.post = Post.objects.get(slug=slug)
+        return super().form_valid(form)
+
+    success_url = reverse_lazy('blog')
+    # return reverse_lazy('post-detail', kwargs={'pk': self.kwargs['pk']})
 
 
 # Edit Blog Post code with help from Codemy.com
