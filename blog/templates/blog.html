@@ -19,7 +19,6 @@
                             <i class="fas fa-arrow-right"></i>
                         </a>
                         {% if request.user.is_superuser %}
-                            <hr>
                             <!-- Edit and delete links -->
                             <a href="{% url 'edit_post' post.slug  %}" class="edit-link">
                                 Edit
@@ -28,8 +27,9 @@
                                 Remove
                             </a>
                         {% endif %}
+                        <hr>
                         <div class="float-end">
-                            <p>
+                            <p class="comment-count">
                                 <i class="far fa-comment blog-comment"></i>{{ post.comments.count }}
                             </p>
                         </div>
@@ -68,10 +68,10 @@
                     </p>
                     <!-- Social Links -->
                     <div class="text-center blog-social-links d-none d-lg-block">
-                        <a href="https://www.instagram.com/">
+                        <a href="https://www.instagram.com/" target="_blank">
                             <i class="fab fa-instagram"></i>
                         </a>
-                        <a href="https://www.facebook.com/">
+                        <a href="https://www.facebook.com/" target="_blank">
                             <i class="fab fa-facebook-square"></i>
                         </a>
                     </div>
