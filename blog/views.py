@@ -35,8 +35,8 @@ class AddComment(generic.CreateView):
         form.instance.post = Post.objects.get(slug=slug)
         return super().form_valid(form)
 
-    success_url = reverse_lazy('blog')
-    # return reverse_lazy('post-detail', kwargs={'pk': self.kwargs['pk']})
+    def get_success_url(self):
+        return reverse_lazy('post_detail', kwargs={'slug': self.kwargs['slug']})
 
 
 # Edit Blog Post code with help from Codemy.com

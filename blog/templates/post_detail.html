@@ -47,25 +47,10 @@
             </div>
         </div>
     </div>
-    <!-- Back to all posts button -->
-    <div class="row mb-5">
-        <div class="col-lg-8">
-                <a href="{% url 'blog' %}" class="btn btn-sm btn-outline-primary text-uppercase mobile-btn">
-                    <i class="fas fa-arrow-left"></i>
-                    Blog Posts
-                </a>
-            <div class="float-end">
-                <a href="{% url 'add_comment' post.slug %}" class="btn btn-sm btn-outline-secondary text-uppercase mobile-btn mb-5">
-                    Comment
-                    <i class="fas fa-plus"></i>
-                </a>
-            </div>
-        </div>
-    </div>
     <!-- Comments section -->
     <div class="row">
         <div class="col-12">
-            <h2 class="mb-5"><i class="far fa-comment"></i> Comments:</h2>
+            <h2 class="mb-5"><i class="far fa-comment"></i> {{ post.comments.count }} Comments:</h2>
         </div>
     </div>
     {% if not post.comments.all %}
@@ -79,5 +64,20 @@
             <br>
         {% endfor %}
     {% endif %}
+    <!-- Back to all posts button -->
+    <div class="row mb-5">
+        <div class="col-12">
+                <a href="{% url 'blog' %}" class="btn btn-sm btn-outline-primary text-uppercase mobile-btn">
+                    <i class="fas fa-arrow-left"></i>
+                    Blog Posts
+                </a>
+            <div class="float-end">
+                <a href="{% url 'add_comment' post.slug %}" class="btn btn-sm btn-outline-secondary text-uppercase mobile-btn mb-5">
+                    Comment
+                    <i class="fas fa-plus"></i>
+                </a>
+            </div>
+        </div>
+    </div>
 </div>
 {% endblock content %}

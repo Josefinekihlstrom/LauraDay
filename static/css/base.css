@@ -375,6 +375,10 @@ footer {
     padding-bottom: 16px;
 }
 
+.blog-comment {
+    padding-right: 10px;
+}
+
 
 /* ------------------------------------------- post_detail.html */
 .comment-name {
