@@ -4,6 +4,9 @@ from .forms import BlogForm, AddCommentForm
 from django.urls import reverse_lazy
 
 
+# Blog application built with help from the following links:
+# https://djangocentral.com/building-a-blog-application-with-django/
+# https://www.youtube.com/watch?v=B40bteAMM_M&list=PLCC34OHNcOtr025c1kHSPrnP18YPB-NFi&index=1
 class PostList(generic.ListView):
     # Only posts with status published will show
     queryset = Post.objects.filter(status=1).order_by('-created_on')
