@@ -358,19 +358,22 @@ If you want to work further on my project, go ahead and clone it following these
 5. Type 'git clone' and then paste the copied URL.
 6. Press 'Enter'.
 7. To install all the required packages for this project use the following command:
-```
-pip install -r requirements.txt
-```
+    - ``` pip install -r requirements.txt ```
 8. The following environment variables needs to be set up:
 ```
 STRIPE_PUBLIC_KEY = <enter stripe public key here>
 STRIPE_SECRET_KEY = <enter stripe secret key here>
 STRIPE_WH_SECRET = <enter stripe wh secret key here>
 ```
-9. To create the database you need to migrate the models by typing in the following commands:
+9. To create the database you need to migrate the models by typing in the following commands in your terminal:
     - ``` python3 manage.py makemigrations ```
     - ``` python3 manage.py migrate ```
-create superuser
+10. To access the django admin panel and database you need to create a superuser account. By typing in the 
+following command in your terminal you will be asked to add an email address, username and password.
+    - ``` python3 manage.py createsuperuser ```
+11. To run the project type in the following command in your terminal:
+    - ``` python3 manage.py runserver ```
+12. When the site is running you can access the admin panel by adding ``` /admin ``` to the end of the url.
 
 ## Deployment
 1. 
