@@ -349,7 +349,7 @@ href="".
 page instead of the total of the products if the product page has more pages. Not fixed.
 
 ## Cloning this project
-If you want to work further on my project, go ahead and clone it following these steps:
+If you want to work further on my project, go ahead and clone it by following these steps:
 
 1. Go to the top of the [Josefinekihlstrom/LauraDay](https://github.com/Josefinekihlstrom/LauraDay) repository.
 2. Click the button named 'Code' next to the green 'Gitpod' button.
@@ -374,6 +374,10 @@ following command in your terminal you will be asked to add an email address, us
 11. To run the project type in the following command in your terminal:
     - ``` python3 manage.py runserver ```
 12. When the site is running you can access the admin panel by adding ``` /admin ``` to the end of the url.
+13. Make sure to sign up to the [Stripe](https://stripe.com/), [AWS S3 Bucket](https://aws.amazon.com/s3/) and 
+[Gmail](https://gmail.com/) services that where allso used for this project.
+
+The information on how to clone a repository came from [GitHub](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository-from-github/cloning-a-repository).
 
 ## Deployment
 1. 
