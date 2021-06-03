@@ -349,9 +349,28 @@ href="".
 page instead of the total of the products if the product page has more pages. Not fixed.
 
 ## Cloning this project
-1. 
-2. 
-3. 
+If you want to work further on my project, go ahead and clone it following these steps:
+
+1. Go to the top of the [Josefinekihlstrom/LauraDay](https://github.com/Josefinekihlstrom/LauraDay) repository.
+2. Click the button named 'Code' next to the green 'Gitpod' button.
+3. Choose HTTPS and copy the URL by clicking the icon next to the url.
+4. Open Git Bash/Terminal and change the current working directory to the location where you want the cloned directory.
+5. Type 'git clone' and then paste the copied URL.
+6. Press 'Enter'.
+7. To install all the required packages for this project use the following command:
+```
+pip install -r requirements.txt
+```
+8. The following environment variables needs to be set up:
+```
+STRIPE_PUBLIC_KEY = <enter stripe public key here>
+STRIPE_SECRET_KEY = <enter stripe secret key here>
+STRIPE_WH_SECRET = <enter stripe wh secret key here>
+```
+9. To create the database you need to migrate the models by typing in the following commands:
+    - ``` python3 manage.py makemigrations ```
+    - ``` python3 manage.py migrate ```
+create superuser
 
 ## Deployment
 1. 
