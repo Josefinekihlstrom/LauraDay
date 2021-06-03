@@ -229,12 +229,17 @@ footer {
     transform: translateY(-50%);
 }
 
+.about-image {
+    margin-top: 40px;
+}
+
 .about-image img {
     width: 350px;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    padding: 40px 0px 40px 0px;
+    border-radius: 50%;
+    padding-top: 0px !important;
 }
 
 .about-col {
@@ -342,6 +347,7 @@ footer {
 /* ------------------------------------------- blog.html */
 .blog-image img {
     width: 200px;
+    border-radius: 50%;
 }
 
 .about-blog-text {
