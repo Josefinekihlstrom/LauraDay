@@ -307,22 +307,27 @@ Database values here with image.
 
 ## Technologies used
 ### Languages
-- 
-- 
-- 
+- HTML
+- CSS
+- javascript
+- Python
 
 ### Libraries
-- 
-- 
-- 
+- [JQuery](https://jquery.com/) - Used to write the JavaScript code.
+- [Django](https://www.djangoproject.com/) - Python framework.
+- [Bootstrap](https://getbootstrap.com/) - Used as the front-end framework.
+- [Font Awesome](https://fontawesome.com/) - Icons used on the site.
+- [Stripe](https://stripe.com/) - Used as payment method for secure payments.
 
 ### Other
-- Figma
-- Coolors
-- Google Fonts
-- 
-- 
-- 
+- [Git/GitHub](https://github.com/) - Used as remote repository.
+- [Gitpod](https://gitpod.io/) - The developer environment used for this project.
+- [Heroku]() - Used as hosting platform for the live app.
+- [Figma](https://www.figma.com/) - Used to make wireframes.
+- [Coolors](https://coolors.co/) - Used to generate the color scheme.
+- [Google Fonts](https://fonts.google.com/) - Used for font styles.
+- [AWS S3 bucket](https://aws.amazon.com/) - Used as storage for images.
+
 ## Testing
 Testing.md link here
 ### Bugs
