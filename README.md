@@ -349,9 +349,9 @@ href="".
 page instead of the total of the products if the product page has more pages. Not fixed.
 
 ## Cloning this project
-1.
-2.
-3.
+1. 
+2. 
+3. 
 
 ## Deployment
 1. 
@@ -360,12 +360,29 @@ page instead of the total of the products if the product page has more pages. No
 
 ## Credits
 ### Media
+- Hero image on home page [Monstera](https://images.pexels.com/photos/5302826/pexels-photo-5302826.jpeg?cs=srgb&dl=pexels-monstera-5302826.jpg&fm=jpg)
+- Round image on home page by [Monstera](https://www.pexels.com/sv-se/foto/person-konst-hand-smutsig-5302906/)
+- Round image on blog page by [Monstera](https://www.pexels.com/sv-se/foto/kvinna-industri-bord-arbete-5302899/)
+- Vase 'Amigo' by [Girl with red hat](https://unsplash.com/photos/z0WVQWnSU2w)
+- Bowl 'Franciska' by [Tom Crew](https://unsplash.com/photos/bgIO-u4GEfI)
+- Mug 'Lorence' by [Tom Crew](https://unsplash.com/photos/vu0lyZYeseY)
+- Bowl 'Francis' by [Tom Crew](https://unsplash.com/photos/YA2E3d7a9Wo)
+- Bottle 'Loreen' by [Tom Crew](https://unsplash.com/photos/llGmK6HvOU0)
+- Artprint 'Floral' by [Europeana](https://unsplash.com/photos/MvR30qxn-MM)
+- Artprint 'Bird Nest' by [Boston Public Library](https://unsplash.com/photos/YoK5pBcSY8s)
+- Artprint 'Bird Song' by [Boston Public Library](https://unsplash.com/photos/_f9cP4_unmg)
+- Artprint 'Love Birds' by [McGill Library](https://unsplash.com/photos/COphCQKS660)
+- Vase 'Lava' by [Girl with red hat](https://unsplash.com/photos/zW8i8h20VDA)
+- Pot 'Alex' by [Tom Crew](https://unsplash.com/photos/3uwu5K0RtaE)
+- Bottle 'Neya' by [Tom Crew](https://unsplash.com/photos/E64Hv5Ab_nQ)
+- Mug 'Leah' by [Tom Crew](https://unsplash.com/photos/_9carLjK19I)
 
 ## Achknowledgements
 ### Pages used to find information
-- 
-- 
-- 
+- [Stack overflow](https://stackoverflow.com/)
+- [Youtube](https://www.youtube.com/)
+- [Django docs](https://docs.djangoproject.com/en/3.2/)
+- [Codemy](https://codemy.com/)
 
 ### Code
 - This project was made with guidance from course videos of Boutique Ado Project - Code Institute
