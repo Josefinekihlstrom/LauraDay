@@ -8,17 +8,21 @@
             <div class="col-lg-8 mt-3">
                 {% for post in post_list %}
                 <div class="card mb-4">
-                    <!-- Title, author, date and body -->
-                    <h4 class="card-header blog-card-header">{{ post.title }}</h4>
-                    <div class="card-body">
-                        <p class="card-text text-muted h6">{{ post.author }} | {{ post.created_on}} </p>
-                        <p class="card-text">{{post.content|linebreaks|slice:":600" }}</p>
-                        <!-- Read more button -->
-                        <a href="{% url 'post_detail' post.slug  %}" class="btn btn-sm btn-outline-secondary text-uppercase mobile-btn">
-                            Read More
-                            <i class="fas fa-arrow-right"></i>
+                    <!-- Title, author and date -->
+                    <div class="card-header">
+                        <a href="{% url 'post_detail' post.slug  %}" class="blog-card-header">
+                            {{ post.title }}
                         </a>
-                        {% if request.user.is_superuser %}
+                        <p class="card-text text-muted h6 small">{{ post.author }} | {{ post.created_on}} </p>
+                    </div>
+                    <div class="card-body">
+                        <!-- Blog post text -->
+                        <a href="{% url 'post_detail' post.slug  %}" class="card-text blog-body-text">
+                            {{post.content|linebreaks|slice:":600" }}
+                            <p>(Click to read more..)</p>
+                            <br>
+                        </a>
+                         {% if request.user.is_superuser %}
                             <!-- Edit and delete links -->
                             <a href="{% url 'edit_post' post.slug  %}" class="edit-link">
                                 Edit
@@ -27,7 +31,6 @@
                                 Remove
                             </a>
                         {% endif %}
-                        <hr>
                         <div class="float-end">
                             <p class="comment-count">
                                 <i class="far fa-comment blog-comment"></i>{{ post.comments.count }}
@@ -35,6 +38,7 @@
                         </div>
                     </div>
                 </div>
+                <br>
                 {% endfor %}
             </div>
             <!-- Sidebar -->

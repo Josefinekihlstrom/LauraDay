@@ -369,10 +369,35 @@ footer {
     font-weight: bold;
 }
 
+.blog-body-text {
+    text-decoration: none !important;
+    color: black;
+}
+
+.blog-body-text:link,
+.blog-body-text:visited,
+.blog-body-text:hover,
+.blog-body-text:active {
+    color: black !important;
+}
+
+.card-header {
+    background-color: white !important;
+}
+
 .blog-card-header {
-    background-color: rgb(214, 227, 191);
+    font-size: 1.5em;
+    font-weight: bolder;
     color: black;
     border-bottom: none;
+    text-decoration: none;
+}
+
+.blog-card-header:link,
+.blog-card-header:visited,
+.blog-card-header:hover,
+.blog-card-header:active {
+    color: black;
 }
 
 .card-footer {
