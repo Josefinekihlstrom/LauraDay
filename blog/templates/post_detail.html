@@ -2,6 +2,16 @@
 
 <div class="container container-margin">
     <div class="row mb-5">
+        <!-- Back to all posts button -->
+        <div class="col-12">
+            <a href="{% url 'blog' %}" class="btn btn-sm btn-outline-primary text-uppercase mobile-btn">
+                <i class="fas fa-arrow-left"></i>
+                Blog Posts
+            </a>
+            <br>
+            <br>
+        </div>
+        <!-- Blog Post -->
         <div class="col-lg-8 card mb-0  mt-3 left  top">
             <div class="card-body">
                 <h1>{% block title %} {{ object.title }} {% endblock title %}</h1>
