@@ -13,7 +13,10 @@
 - Disclaimer
 
 ## About
-IAmResponsive Image here.
+<div align="center">
+    <img src="/readme_images/responsive.jpg" alt="I am responsive image" width="600px">
+    <br>
+</div>
 
 Laura Day is an online webshop that offers artwork and ceramics by the fictional brand Laura Day. 
 The webshop also has a blog page where the team behind the brand adds blog posts for the visitor to 
@@ -375,7 +378,7 @@ following command in your terminal you will be asked to add an email address, us
     - ``` python3 manage.py runserver ```
 12. When the site is running you can access the admin panel by adding ``` /admin ``` to the end of the url.
 13. Make sure to sign up to the [Stripe](https://stripe.com/), [AWS S3 Bucket](https://aws.amazon.com/s3/) and 
-[Gmail](https://gmail.com/) services that where allso used for this project.
+[Gmail](https://gmail.com/) services that where also used for this project.
 
 The information on how to clone a repository came from [GitHub](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository-from-github/cloning-a-repository).
 
