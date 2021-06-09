@@ -59,7 +59,7 @@
         {% for comment in post.comments.all %}
             <h5 class="comment-name">{{ comment.name }}</h5> 
             <p class="text-muted small">{{ comment.date_added }}</p>
-            <p>"{{ comment.body }}"</p>
+            <p>{{ comment.body }}</p>
             <hr class="comment-hr">
             <br>
         {% endfor %}
