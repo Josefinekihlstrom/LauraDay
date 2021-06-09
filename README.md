@@ -84,11 +84,12 @@ lead the visitor in the right direction according to the visitor's needs.
 
 ### Wireframes
 The wireframes where made with Figma and can be viewed in full [here](https://www.figma.com/file/WWHwATRR91GoreNbV3c4rM/MS4).
-
+<br>
 
 <div align="center">
     <p><strong>Home and Product pages</strong></p>
     <img src="/readme_images/home-products.jpg" alt="color scheme" width="600px">
+    <br>
     <br>
 </div>
 
@@ -96,11 +97,13 @@ The wireframes where made with Figma and can be viewed in full [here](https://ww
     <p><strong>Product Details and Blog pages</strong></p>
     <img src="/readme_images/details-blog.jpg" alt="color scheme" width="600px">
     <br>
+    <br>
 </div>
 
 <div align="center">
     <p><strong>Mobile view for Home and All Products pages</strong></p>
     <img src="/readme_images/mobile1.jpg" alt="color scheme" width="400px">
+    <br>
     <br>
 </div>
 
@@ -108,8 +111,8 @@ The wireframes where made with Figma and can be viewed in full [here](https://ww
     <p><strong>Mobile view for Product Details and Blog pages</strong></p>
     <img src="/readme_images/mobile2.jpg" alt="color scheme" width="400px">
     <br>
+    <br>
 </div>
-
 
 ## Features
 ### All pages
@@ -329,9 +332,18 @@ The idea was to make it similar to the pagination on the product pages.
 
 ## Information Architecture
 ### The Database
-Database values here with image.
+- The database used for this project during development was the built in SQLite3 from Django. For the deployed site
+the database was switched to Herokus add-on application, PostgresSQL.
+- To manage users and permissions, Django's authentication system and django-allauth was used.
+    - [Django's authentication system](https://docs.djangoproject.com/en/3.1/topics/auth/)
+    - [Django-allauth](https://django-allauth.readthedocs.io/en/latest/)
 
 ### Data Models
+<div align="center">
+    <img src="/readme_images/dbdiagram.jpg" alt="dbdiagram image" width="600px">
+    <br>
+    <br>
+</div>
 
 ## Technologies used
 ### Languages
