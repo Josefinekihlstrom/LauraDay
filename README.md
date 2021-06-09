@@ -85,27 +85,28 @@ lead the visitor in the right direction according to the visitor's needs.
 ### Wireframes
 The wireframes where made with Figma and can be viewed in full [here](https://www.figma.com/file/WWHwATRR91GoreNbV3c4rM/MS4).
 
-#### Home and Product pages
+
 <div align="center">
+    <p><strong>Home and Product pages</strong></p>
     <img src="/readme_images/home-products.jpg" alt="color scheme" width="600px">
     <br>
 </div>
 
-#### Product Details and Blog pages
 <div align="center">
+    <p><strong>Product Details and Blog pages</strong></p>
     <img src="/readme_images/details-blog.jpg" alt="color scheme" width="600px">
     <br>
 </div>
 
-#### Mobile view for Home and All Products pages
 <div align="center">
-    <img src="/readme_images/mobile1.jpg" alt="color scheme" width="600px">
+    <p><strong>Mobile view for Home and All Products pages</strong></p>
+    <img src="/readme_images/mobile1.jpg" alt="color scheme" width="400px">
     <br>
 </div>
 
-#### Mobile view for Product Details and Blog pages
 <div align="center">
-    <img src="/readme_images/mobile2.jpg" alt="color scheme" width="600px">
+    <p><strong>Mobile view for Product Details and Blog pages</strong></p>
+    <img src="/readme_images/mobile2.jpg" alt="color scheme" width="400px">
     <br>
 </div>
 
