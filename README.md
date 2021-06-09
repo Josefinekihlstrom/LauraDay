@@ -83,8 +83,32 @@ lead the visitor in the right direction according to the visitor's needs.
 - Font used for overall text: [Open Sans](https://fonts.google.com/specimen/Open+Sans?query=open+sans)
 
 ### Wireframes
-Skeleton and surface plane.
-Figma images.
+The wireframes where made with Figma and can be viewed in full [here](https://www.figma.com/file/WWHwATRR91GoreNbV3c4rM/MS4).
+
+#### Home and Product pages
+<div align="center">
+    <img src="/readme_images/home-products.jpg" alt="color scheme" width="600px">
+    <br>
+</div>
+
+#### Product Details and Blog pages
+<div align="center">
+    <img src="/readme_images/details-blog.jpg" alt="color scheme" width="600px">
+    <br>
+</div>
+
+#### Mobile view for Home and All Products pages
+<div align="center">
+    <img src="/readme_images/mobile1.jpg" alt="color scheme" width="600px">
+    <br>
+</div>
+
+#### Mobile view for Product Details and Blog pages
+<div align="center">
+    <img src="/readme_images/mobile2.jpg" alt="color scheme" width="600px">
+    <br>
+</div>
+
 
 ## Features
 ### All pages
