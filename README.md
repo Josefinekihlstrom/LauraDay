@@ -14,7 +14,7 @@
 
 ## About
 <div align="center">
-    <img src="/readme_images/responsive.jpg" alt="I am responsive image" width="600px">
+    <img src="/readme_images/responsive.jpg" alt="I am responsive image">
     <br>
 </div>
 
