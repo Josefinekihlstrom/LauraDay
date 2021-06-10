@@ -34,9 +34,11 @@ class Migration(migrations.Migration):
                                               null=True)),
                 ('image', models.ImageField(blank=True, null=True,
                                             upload_to='')),
-                ('category', models.ForeignKey(blank=True, null=True,
-                                               on_delete=django.db.models.deletion.SET_NULL,
-                                               to='products.category')),
+                ('category',
+                 models.ForeignKey(
+                    blank=True, null=True,
+                    on_delete=django.db.models.deletion.SET_NULL,
+                    to='products.category')),
             ],
         ),
     ]
