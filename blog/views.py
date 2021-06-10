@@ -8,7 +8,7 @@ from django.urls import reverse_lazy
 # https://djangocentral.com/building-a-blog-application-with-django/
 # https://www.youtube.com/watch?v=B40bteAMM_M&list=PLCC34OHNcOtr025c1kHSPrnP18YPB-NFi&index=1
 class PostList(generic.ListView):
-    """ 
+    """
     View that renders blog posts
     """
     # Only posts with status published will show
@@ -17,7 +17,7 @@ class PostList(generic.ListView):
 
 
 class PostDetail(generic.DetailView):
-    """ 
+    """
     View that renders blog post details
     """
     model = Post
@@ -27,7 +27,7 @@ class PostDetail(generic.DetailView):
 # Add Blog Post code with help from Codemy.com
 # https://www.youtube.com/watch?v=m3efqF9abyg&list=PLCC34OHNcOtr025c1kHSPrnP18YPB-NFi&index=4
 class AddPost(generic.CreateView):
-    """ 
+    """
     Lets a superuser add a blog post
     """
     model = Post
@@ -38,7 +38,7 @@ class AddPost(generic.CreateView):
 # Add comment code with help from Codemy.com
 # https://www.youtube.com/watch?v=OuOB9ADT_bo&list=PLCC34OHNcOtr025c1kHSPrnP18YPB-NFi&index=35
 class AddComment(generic.CreateView):
-    """ 
+    """
     Lets users add a comment to blog posts
     """
     model = Comment
@@ -51,14 +51,16 @@ class AddComment(generic.CreateView):
         return super().form_valid(form)
 
     def get_success_url(self):
-        # returns the user back to the post details page after submitting the comment.
-        return reverse_lazy('post_detail', kwargs={'slug': self.kwargs['slug']})
+        # returns the user back to the post details page after
+        # submitting the comment.
+        return reverse_lazy(
+            'post_detail', kwargs={'slug': self.kwargs['slug']})
 
 
 # Edit Blog Post code with help from Codemy.com
 # https://www.youtube.com/watch?v=J7xaESAddDQ&list=PLCC34OHNcOtr025c1kHSPrnP18YPB-NFi&index=6
 class EditPost(generic.UpdateView):
-    """ 
+    """
     Lets a superuser edit blog posts
     """
     model = Post
@@ -69,7 +71,7 @@ class EditPost(generic.UpdateView):
 # Delete Blog Post with help from Codemy.com
 # https://www.youtube.com/watch?v=8NPOwmtupiI&list=PLCC34OHNcOtr025c1kHSPrnP18YPB-NFi&index=7
 class DeletePost(generic.DeleteView):
-    """ 
+    """
     Lets a superuser delete blog posts
     """
     model = Post

@@ -26,7 +26,8 @@ def all_products(request):
                 messages.error(request, "Please insert search criteria!")
                 return redirect(reverse('products'))
 
-            queries = Q(name__icontains=query) | Q(description__icontains=query)
+            queries = Q(name__icontains=query) | Q(
+                    description__icontains=query)
             products = products.filter(queries)
 
     p = Paginator(products, 8)
@@ -63,17 +64,22 @@ def add_product(request):
     """ Add product to store """
     # if not superuser
     if not request.user.is_superuser:
-        messages.error(request, '404 - The page you where looking for does not exist.')
+        messages.error(
+            request, '404 - The page you where looking for does not exist.')
         return redirect(reverse('home'))
 
     if request.method == 'POST':
         form = ProductForm(request.POST, request.FILES)
         if form.is_valid():
             product = form.save()
-            messages.success(request, f'Successfully added the following product: {product.name}')
+            messages.success(
+                request,
+                f'Successfully added the following product: {product.name}')
             return redirect(reverse('product_details', args=[product.id]))
         else:
-            messages.error(request, 'Failed to add product. Ensure that the form is valid.')
+            messages.error(
+                request,
+                'Failed to add product. Ensure that the form is valid.')
     else:
         form = ProductForm()
 
@@ -90,7 +96,8 @@ def edit_product(request, product_id):
     """ Edit product in the store """
     # if not superuser
     if not request.user.is_superuser:
-        messages.error(request, '404 - The page you where looking for does not exist.')
+        messages.error(
+            request, '404 - The page you where looking for does not exist.')
         return redirect(reverse('home'))
 
     product = get_object_or_404(Product, pk=product_id)
@@ -101,8 +108,9 @@ def edit_product(request, product_id):
             messages.success(request, 'Successfully updated product!')
             return redirect(reverse('product_details', args=[product.id]))
         else:
-            messages.error(request, 'Failed to update product. Make sure form is valid')
-    else:            
+            messages.error(
+                request, 'Failed to update product. Make sure form is valid')
+    else:
         form = ProductForm(instance=product)
         messages.info(request, f'You are editing {product.name}')
 
@@ -120,7 +128,8 @@ def delete_product(request, product_id):
     """ Delete product from the store """
     # if not superuser
     if not request.user.is_superuser:
-        messages.error(request, '404 - The page you where looking for does not exist.')
+        messages.error(
+            request, '404 - The page you where looking for does not exist.')
         return redirect(reverse('home'))
 
     product = get_object_or_404(Product, pk=product_id)
