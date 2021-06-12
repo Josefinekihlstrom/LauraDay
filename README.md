@@ -12,7 +12,7 @@
 - [Features](#features)
     - [All pages](#all-pages)
     - [Home page](#home-page)
-    - [Product page](#product-page)
+    - [Products page](#products-page)
     - [Product details page](#product-details-page)
     - [Add product page](#add-product-page)
     - [Blog page](#blog-page)
@@ -549,7 +549,7 @@ The information on how to clone a repository came from [GitHub](https://docs.git
 - Bottle 'Neya' by [Tom Crew](https://unsplash.com/photos/E64Hv5Ab_nQ)
 - Mug 'Leah' by [Tom Crew](https://unsplash.com/photos/_9carLjK19I)
 
-## Achknowledgements
+## Acknowledgements
 ### Pages used to find information
 - [Stack overflow](https://stackoverflow.com/)
 - [Youtube](https://www.youtube.com/)
