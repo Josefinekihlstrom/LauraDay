@@ -452,6 +452,11 @@ the ceramics pages, no matter which category you where on. I solved it by adding
 href="".
 8. When on the products page, the number of products shown only display the products that are shown on the current
 page instead of the total of the products if the product page has more pages. Not fixed.
+9. If the category field is left out empty when a superuser is adding a product to the site, the product 
+will only be visible on the 'All Product' page. This can cause confusion for those who visit the website 
+and are looking for a specific product that should be included in the belonging category. In this case, 
+the user may think that the product does not exist and do not think about checking the 'All products' page where
+the product is actually displayed. This bug remains unsolved for now.
 
 ## Cloning this project
 If you want to work further on my project, go ahead and clone it by following these steps:
