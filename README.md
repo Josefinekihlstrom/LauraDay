@@ -526,9 +526,38 @@ following command in your terminal you will be asked to add an email address, us
 The information on how to clone a repository came from [GitHub](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository-from-github/cloning-a-repository).
 
 ## Deployment
-1. 
-2. 
-3. 
+This project was deployed to [Heroku](https://heroku.com/). If you have cloned this project using the steps above
+and want to deploy it to Heroku, follow these steps:
+1. Log in or create an account to Heroku.
+2. When logged in, click on the 'New' button on the upper right corner of the page and then click on 
+'Create new app' in the drop down menu.
+3. Give the app a name and choose the region closest to you.
+4. Then click on the 'Create App' button.
+5. Click on the 'Resources' tab and search for ```postgres``` in the 'Add-ons' section.
+6. Click on the 'Heroku Postgres' add on that appear and choose the 'Hobby Dev - Free' alternative for the
+Plan name. After that click on the 'Provision' button.
+7. In your Heroku Settings tab for your app, set the following environment variables:
+    | Environment Key | Value |
+    |-----------------|-------|
+    | AWS_ACCESS_KEY_ID | ``<SECRET KEY HERE>`` |
+    | AWS_SECRET_ACCESS_KEY | ``<SECRET KEY HERE>`` |
+    | DATABASE_URL | ``<POSTGRES DB URL HERE>`` |
+    | EMAIL_HOST_PASS | ``<EMAIL HOST PASSWORD HERE>`` |
+    | EMAIL_HOST_USER | ``<EMAIL HOST USER HERE>`` |
+    | SECRET_KEY | ``<SECRET KEY HERE>`` |
+    | STRIPE_PUBLIC_KEY | ``<STRIPE PUBLIC KEY HERE>`` |
+    | STRIPE_SECRET_KEY | ``<STRIPE SECRET KEY HERE>`` |
+    | STRIPE_WH_SECRET | ``<STRIPE WH SECRET HERE>`` |
+8. To create the Postgres database you will type in the following in your terminal to migrate the models:
+    - ``python3 manage.py makemigrations``
+    - ``python3 manage.py migrate``
+9. Create a superuser for your Postgres database by typing in the following in the terminal:
+    - ``python3 manage.py createsuperuser``
+10. Log in to your Heroku account in the terminal with the following command:
+    - ``heroku login -i``
+11. Type in the following command to add the existing repository to Heroku:
+    - ``heroku git:remote -a <REPOSITORY HERE>``
+12. Push to heroku by typing ``git push heroku master``
 
 ## Credits
 ### Media
