@@ -470,7 +470,7 @@ the database was switched to Herokus add-on application, PostgresSQL.
 - [AWS S3 bucket](https://aws.amazon.com/) - Used as storage for images.
 
 ## Testing
-To view the full documentation of the testing of this project please go to the [TESTING.md](testing.md) file.
+To view the full documentation of the testing of this project please go to the [TESTING.md](TESTING.md) file.
 
 ## Cloning this project
 If you want to work further on my project, go ahead and clone it by following these steps:
