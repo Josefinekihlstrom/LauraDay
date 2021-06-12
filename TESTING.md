@@ -3,6 +3,24 @@
 1. User Testing
 2. Validator Testing
 3. Manual Testing
+    - All pages
+    - Home page
+    - Products page
+    - Product details page
+    - Add product page
+    - Blog page
+    - Blog post details page
+    - Add post page
+    - Delete post page
+    - Shopping bag page
+    - Checkout page
+    - Checkout success page
+    - Profile page
+    - Sign up page
+    - Log in page
+    - Log out page
+    - Error pages
+
 4. Bugs Found
     - Bugs found during development
     - Bugs found during testing
