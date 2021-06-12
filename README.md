@@ -184,30 +184,74 @@ The product detail page contains the following:
 - A button with the text of 'Products' that links to the 'All products' page.
 - A button with the text of 'Add To Bag' that adds the product and the chosen quantity of it to the shopping bag.
 
+### Add product page
+The add product page is only available for logged in superusers and contains the following:
+- A heading text with the text of 'Product Management'. Followed by a smaller text of 'Add a Product'.
+- A form with the following fields to fill in:
+    - Name
+    - Category
+    - Sku
+    - Description
+    - Price
+    - Image URL
+    - Image file
+- A button with the text of 'Cancel' that links back to the 'All Products' page.
+- A button with the text of 'Add Product' that submits the form and adds the product. 
+The button links to the product details page of the added product.
+
 ### Blog page
 The blog page contains the following:
 - A section with all blog posts including:
     - A heading text of each blog post.
+        - The heading text acts as a link to view the details of the post.
     - The name of the author that wrote the blog post.
     - The date that the blog post was published.
-    - The content of the blog post limited to 200 letters.
-    - A button with the text of 'Read More' that links to the blog post details page.
-- A section with a round image, text that describes the purpose of the page and icons that links to instagram
-and facebook.
-- If the user is logged-in as a superuser, there is also a button under the social links that links to the 'Add Post' page.
+    - The content of the blog post limited to 600 letters.
+        - The content of the blog post acts as a link to view the details of the post.
+    - Edit and Remove buttons *(Only visible for logged in superusers)*
+    - Comment icon followed by the number of comments for the blog post.
+- A section with a round image, text that describes the purpose of the page and icons that links to instagram and facebook.
+    - If a superuser is logged in, this section includes a button just above the round image that links to the 'Add Post' page.
 
 ### Blog post details page
 The blog post details page contains the following:
+- A button with the text of 'Blog Posts' that links back to the blog page.
 - A section with the blog post details including:
     - A heading text of each blog post.
     - The name of the author that wrote the blog post.
     - The date that the blog post was published.
     - The content of the blog post.
-    - A button with the text of 'Back to all posts' that links to blog page.
-- A section with a round image, text that describes the purpose of the page and icons that links to instagram
+    - Edit and Remove buttons *(Only visible for logged in superusers)*.
+- Comment section including:
+    - Comment icon followed by the number of comments for the blog post.
+    - The name of each commenter.
+    - The date that each comment was made.
+    - The content of each comment.
+- A button with the text of 'Blog Posts' that links back to blog page.
+- A button with the text of 'Comment' that links to the 'Add Comment' page.
+- A section aligned to the right containing a round image, text that describes the purpose of the page and icons that links to instagram
 and facebook.
 
 ### Add post page
+The add post page is only available for logged in superusers and contains the following:
+- A heading text with the text of 'Blog Management'. Followed by a smaller text of 'Add a Post'.
+- A form with the following fields to fill in:
+    - Title
+    - Slug
+    - Author
+    - Content
+    - Status
+- A button with the text of 'Cancel' that links back to the blog posts page.
+- A button with the text of 'Add Post' that submits the form and adds the blog post. The button links to the post
+detail page of the added blog post.
+
+### Delete post page
+The delete post page is only available for logged in superusers and contains the following:
+- A heading text with the text of 'Blog Management'. Followed by a red text of 'Delete Post'.
+- A section that describes which blog post that is about to be deleted and the consequences of proceeding with 
+the action.
+- A button with the text of 'Cancel' that links back to the blog posts page.
+- A button with the text of 'Delete Post' that links back to the blog posts page after deleting the selected blog post.
 
 ### Shopping bag page
 The shopping bag page contains the following:
@@ -291,6 +335,17 @@ The log out page contains the following:
 - A button with the text of 'Sign Out' that redirects the user to the home page and removes the session data.
 
 ### Error pages
+#### Error (404)
+The Error (404) page contains the following:
+- A heading text of 'Error 404' in capital letter.
+- A text of 'The page you where looking for does not exist.'
+- A button with the text of 'Home' that links back to the home page.
+
+#### Error (500)
+The Error (500) page contains the following:
+- A heading text of 'Internal Server Error 500' in capital letter.
+- A text of 'This page isn't working. Please try again later.'
+- A button with the text of 'Home' that links back to the home page.
 
 ### Pop up messages
 To give the user feedback during their visit to the site, a modal will pop up in the upper right corner to indicate
@@ -329,6 +384,12 @@ to be able to read questions and answears and/or get in touch with the shop owne
 is something I will have to add in the future.
 - Pagination for the blog post page. Due to lack of time I will have to add pagination in the future for the blog page.
 The idea was to make it similar to the pagination on the product pages.
+- When a superuser is logged in and wants to make a blog post, a nice feature to add on the 'Add post' page would
+be to make the Author field already filled in. This would make it easier for the logged in superuser 
+not to have to fill in that field manually everytime. A similar thing would be to also add this feature for when
+a regular is logged in and wants to add a comment on a post.
+- Make it possible for superusers to delete comments. Right now it's only available in the admin panel of the 
+page, but it would be nice to implement this with a similar layout and action as when deleting a blog post.
 
 ## Information Architecture
 ### The Database
@@ -352,12 +413,16 @@ the database was switched to Herokus add-on application, PostgresSQL.
 - javascript
 - Python
 
-### Libraries
+### Frameworks and Libraries
 - [JQuery](https://jquery.com/) - Used to write the JavaScript code.
 - [Django](https://www.djangoproject.com/) - Python framework.
 - [Bootstrap](https://getbootstrap.com/) - Used as the front-end framework.
 - [Font Awesome](https://fontawesome.com/) - Icons used on the site.
 - [Stripe](https://stripe.com/) - Used as payment method for secure payments.
+
+### Databases
+- [SQLite3](https://www.sqlite.org/index.html)
+- [PostgresSQL](https://www.postgresql.org)
 
 ### Other
 - [Git/GitHub](https://github.com/) - Used as remote repository.
