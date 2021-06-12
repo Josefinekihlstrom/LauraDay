@@ -1,16 +1,52 @@
 # Laura Day
 ## Content
-- About
-- UX
-- Features
-- Information Architecture
-- Technologies Used
-- Testing
-- Deployment
-- Cloning This Project
-- Credits
-- Acknowledgements
-- Disclaimer
+- [About](#about)
+- [UX](#ux)
+    - [UX goals](#ux-goals)
+    - [User stories](#user-stories)
+    - [Owner goals](#owner-goals)
+- [Design process](#design-process)
+    - [Color scheme](#color-scheme)
+    - [Fonts](#fonts)
+    - [Wireframes](#wireframes)
+- [Features](#features)
+    - [All pages](#all-pages)
+    - [Home page](#home-page)
+    - [Product page](#product-page)
+    - [Product details page](#product-details-page)
+    - [Add product page](#add-product-page)
+    - [Blog page](#blog-page)
+    - [Blog post details page](#blog-post-details-page)
+    - [Add post page](#add-post-page)
+    - [Delete post page](#delete-post-page)
+    - [Shopping bag page](#shopping-bag-page)
+    - [Checkout page](#checkout-page)
+    - [Checkout success page](#checkout-success-page)
+    - [Profile page](#profile-page)
+    - [Sign up page](#sign-up-page)
+    - [Log in page](#log-in-page)
+    - [Log out page](#log-out-page)
+    - [Error pages](#error-pages)
+    - [Pop up messages](#pop-up-messages)
+- [Features left to implement](#features-left-to-implement)
+- [Information Architecture](#information-architecture)
+    - [The database](#the-database)
+    - [Data models](#data-models)
+- [Technologies used](#technologies-used)
+    - [Languages](#languages)
+    - [Frameworks and Libraries](#frameworks-and-libraries)
+    - [Databases](#databases)
+    - [Other](#other)
+- [Testing](#testing)
+- [Cloning this project](#cloning-this-project)
+- [Deployment](#deployment)
+- [Credits](#credits)
+    - [Media](#media)
+- [Acknowledgements](#acknowledgements)
+    - [Pages used to find information](#pages-used-to-find-information)
+    - [Code](#code)
+    - [Thank you](#thank-you)
+- [Disclaimer](#disclaimer)
 
 ## About
 <div align="center">
