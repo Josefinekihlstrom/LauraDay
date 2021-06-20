@@ -426,6 +426,8 @@ not to have to fill in that field manually everytime. A similar thing would be t
 a regular is logged in and wants to add a comment on a post.
 - Make it possible for superusers to delete comments. Right now it's only available in the admin panel of the 
 page, but it would be nice to implement this with a similar layout and action as when deleting a blog post.
+- Make it possible to upload images to blog posts. Simply just to make the blog posts a bit
+more fun to read.
 
 ## Information Architecture
 ### The Database
