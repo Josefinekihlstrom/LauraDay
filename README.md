@@ -72,7 +72,7 @@ The UX goals for this website are the following:
 ### User Stories
 The user stories were defined during the **Stragety** Plane phase of this project.
 As a user I want to:
-- Buy handmade ceramics and artwork.
+- Buy handmade ceramics and artwork that are high quality.
 - Get to know the persons behind the brand.
 - Be able to read more about what's going on and what's new within the brand.
 - Be able to make safe purchases on the site.
