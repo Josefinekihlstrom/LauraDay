@@ -57,6 +57,12 @@ class AddComment(generic.CreateView):
             'post_detail', kwargs={'slug': self.kwargs['slug']})
 
 
+class DeleteComment(generic.DeleteView):
+    model = Comment
+    template_name = 'delete_comment.html'
+    success_url = reverse_lazy('blog')
+
+
 # Edit Blog Post code with help from Codemy.com
 # https://www.youtube.com/watch?v=J7xaESAddDQ&list=PLCC34OHNcOtr025c1kHSPrnP18YPB-NFi&index=6
 class EditPost(generic.UpdateView):
