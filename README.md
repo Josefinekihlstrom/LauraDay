@@ -19,6 +19,7 @@
     - [Blog post details page](#blog-post-details-page)
     - [Add post page](#add-post-page)
     - [Delete post page](#delete-post-page)
+    - [Delete comment page](#delete-comment-page)
     - [Shopping bag page](#shopping-bag-page)
     - [Checkout page](#checkout-page)
     - [Checkout success page](#checkout-success-page)
@@ -253,14 +254,15 @@ The blog page contains the following:
 The blog post details page contains the following:
 - A button with the text of 'Blog Posts' that links back to the blog page.
 - A section with the blog post details including:
-    - A heading text of each blog post.
+    - A heading text of the blog post.
     - The name of the author that wrote the blog post.
     - The date that the blog post was published.
     - The content of the blog post.
-    - Edit and Remove buttons *(Only visible for logged in superusers)*.
+    - Edit and Remove buttons.*(Only visible for logged in superusers)*
 - Comment section including:
     - Comment icon followed by the number of comments for the blog post.
     - The name of each commenter.
+    - A delete button in the form of a trash can icon. *(Only visible for logged in superusers)*
     - The date that each comment was made.
     - The content of each comment.
 - A button with the text of 'Blog Posts' that links back to blog page.
@@ -288,6 +290,14 @@ The delete post page is only available for logged in superusers and contains the
 the action.
 - A button with the text of 'Cancel' that links back to the blog posts page.
 - A button with the text of 'Delete Post' that links back to the blog posts page after deleting the selected blog post.
+
+### Delete comment page
+The delete comment page is only available for logged in superusers and contains the following:
+- A heading text with the text of 'Blog Management'. Followed by a red text of 'Delete Comment'.
+- A section that describes which comment that is about to be deleted and where the user will be redirected to next.
+- A button with the text of 'Cancel' that links back to the blog posts page.
+- A button with the text of 'Delete Comment' that links back to the blog posts page after deleting the selected comment.
+
 
 ### Shopping bag page
 The shopping bag page contains the following:
@@ -424,8 +434,6 @@ The idea was to make it similar to the pagination on the product pages.
 be to make the Author field already filled in. This would make it easier for the logged in superuser 
 not to have to fill in that field manually everytime. A similar thing would be to also add this feature for when
 a regular is logged in and wants to add a comment on a post.
-- Make it possible for superusers to delete comments. Right now it's only available in the admin panel of the 
-page, but it would be nice to implement this with a similar layout and action as when deleting a blog post.
 - Make it possible to upload images to blog posts. Simply just to make the blog posts a bit
 more fun to read.
 
