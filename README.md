@@ -436,6 +436,11 @@ not to have to fill in that field manually everytime. A similar thing would be t
 a regular is logged in and wants to add a comment on a post.
 - Make it possible to upload images to blog posts. Simply just to make the blog posts a bit
 more fun to read.
+- Make it possible for users to delete their own comments. Right now it's only managable for the
+superusers to do that. An alternative in the future is to make it possible for only 
+logged-in users to comment on blog posts, and in this way enable the logged-in user 
+to also delete their comments. At the moment, however, I prefer that everyone should 
+be able to add a comment to a blog post.
 
 ## Information Architecture
 ### The Database
