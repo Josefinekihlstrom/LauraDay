@@ -108,6 +108,13 @@
 
 ## Validator Testing
 
+W3C Markup Validation Service
+
+JS Hint   
+ 
+PEP8
+
+
 ## Manual Testing
 All pages
 Home page

@@ -36,10 +36,10 @@
         <!-- Blog link -->
         {% if request.user.is_superuser %}
             <li class="nav-item dropdown ">
-                <a class="logo-font font-weight-bold nav-link text-white mr-5" href="#" id="all-products-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <a class="logo-font font-weight-bold nav-link text-white mr-5" href="#" id="blog-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Blog
                 </a>
-                <div class="dropdown-menu mobile-shop-dropdown border-0" aria-labelledby="all-products-link">
+                <div class="dropdown-menu mobile-shop-dropdown border-0" aria-labelledby="blog-link">
                     <a href="{% url 'blog' %}" class="dropdown-item text-white">Blog Posts</a>
                     <a href="{% url 'add_post' %}" class="dropdown-item text-white">Add Post</a>
                 </div>

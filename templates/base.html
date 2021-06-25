@@ -1,9 +1,7 @@
 {% load static %}
-
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
     <head>
-
         {% block meta %}
             <!-- Meta tags -->
             <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -69,10 +67,10 @@
                         </li>
                         {% if request.user.is_superuser %}
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdownBlog" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     Blog
                                 </a>
-                                <div class="dropdown-menu shop-menu" aria-labelledby="navbarDropdown">
+                                <div class="dropdown-menu shop-menu" aria-labelledby="navbarDropdownBlog">
                                     <a  class="dropdown-item" href="{% url 'blog' %}">Blog Posts</a>
                                     <a  class="dropdown-item" href="{% url 'add_post' %}">Add Post</a>
                                 </div>
