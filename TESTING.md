@@ -117,6 +117,8 @@ Errors caused by the Jinja templating where ignored because they were expected t
 would simply break the site entirely.
 
 ### CSS
+The CSS was tested by using [Jigsaw CSS Validation Service](https://jigsaw.w3.org/css-validator/) by direct input of the code.
+The CSS passed the test without any errors.
 
 ### JS Hint   
  
