@@ -127,7 +127,9 @@ The JavaScript was tested using [JSHint](https://jshint.com/). The warnings that
 - One undefined variable (Stripe)
     - This could not lead to any change of the code, since it would break the Stripe functions.
 - Missing semicolons.
+    - Added semicolons.
 - Unnecessary semicolons.
+    - Removed semicolons.
 - 'template literal syntax' is only available in ES6 (use 'esversion: 6').
 	- Solved by adding the the following line at the top of the affected JavaScript files: ``//jshint esversion: 6``.
 - 'let' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz).
