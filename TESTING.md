@@ -137,8 +137,10 @@ The JavaScript was tested using [JSHint](https://jshint.com/). The warnings that
  
 ### PEP8
 The Python code was tested using [PEP8](http://pep8online.com/). The following errors occured:
-- line too long (90 > 79 characters) in urls.py file for the blog application.
+- Line too long (90 > 79 characters) in urls.py file for the blog application.
     - Solved by simply rearrange the url path.
+- Expected 2 blank lines, found 1.
+    - Solved by simply adding blank line.
 
 
 ## Manual Testing
