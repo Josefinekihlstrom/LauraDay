@@ -149,7 +149,7 @@
         $('.update-link').click(function(e) {
             var form = $(this).prev('.update-form');
             form.submit();
-        })
+        });
 
         // Remove product and update page when remove button is clicked
         $('.remove-item').click(function(e) {
@@ -161,7 +161,7 @@
             $.post(url, data)
              .done(function() {
                  location.reload();
-             })
-        })
+             });
+        });
     </script>
 {% endblock %}
