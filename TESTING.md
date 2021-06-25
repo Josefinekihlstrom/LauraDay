@@ -108,11 +108,19 @@
 
 ## Validator Testing
 
-W3C Markup Validation Service
+### HTML
+All HTML templates where tested using [W3C Markup Validation Service](https://validator.w3.org/) by direct input of the code.
+The validation did not reveal any bigger issues with the code except for some forbidden placements of ``<p>`` tags as child elements and 
+missing ``<ul>`` tags.
 
-JS Hint   
+Errors caused by the Jinja templating where ignored because they were expected to occur. Changing the Jinja in the code
+would simply break the site entirely.
+
+### CSS
+
+### JS Hint   
  
-PEP8
+### PEP8
 
 
 ## Manual Testing
