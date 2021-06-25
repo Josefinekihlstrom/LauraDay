@@ -120,7 +120,18 @@ would simply break the site entirely.
 The CSS was tested by using [Jigsaw CSS Validation Service](https://jigsaw.w3.org/css-validator/) by direct input of the code.
 The CSS passed the test without any errors.
 
-### JS Hint   
+### JS Hint
+The JavaScript was tested using [JSHint](https://jshint.com/). The warnings that occurred were the following:
+- One undefined variable ($)
+    - This could not lead to any change of the code, since it would break the jQuery.
+- One undefined variable (Stripe)
+    - This could not lead to any change of the code, since it would break the Stripe functions.
+- Missing semicolons.
+- Unnecessary semicolons.
+- 'template literal syntax' is only available in ES6 (use 'esversion: 6').
+	- Solved by adding the the following line at the top of the affected JavaScript files: ``//jshint esversion: 6``.
+- 'let' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz).
+    - Solved by adding the the following line at the top of the affected JavaScript files: ``//jshint esversion: 6``.
  
 ### PEP8
 

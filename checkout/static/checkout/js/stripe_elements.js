@@ -1,3 +1,5 @@
+//jshint esversion: 6
+
 /* 
     Stripe payment logic:
     https://stripe.com/docs/payments/accept-a-payment

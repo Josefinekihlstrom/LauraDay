@@ -1,3 +1,5 @@
+//jshint esversion: 6
+
 // For the country field text colors
 let countrySelected = $('#id_default_country').val();
 if(!countrySelected) {
