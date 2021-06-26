@@ -577,6 +577,7 @@ Plan name. After that click on the 'Provision' button.
 - [Youtube](https://www.youtube.com/)
 - [Django docs](https://docs.djangoproject.com/en/3.2/)
 - [Codemy](https://codemy.com/)
+- [Cloud Stack Ninja](https://cloudstack.ninja/)
 
 ### Code
 - This project was made with guidance from course videos of Boutique Ado Project - Code Institute
@@ -588,6 +589,7 @@ Plan name. After that click on the 'Provision' button.
 - Edit Blog Post with the help from [Codemy.com](https://www.youtube.com/watch?v=J7xaESAddDQ&list=PLCC34OHNcOtr025c1kHSPrnP18YPB-NFi&index=6)
 - Delete Blog Post with the help from [Codemy.com](https://www.youtube.com/watch?v=8NPOwmtupiI&list=PLCC34OHNcOtr025c1kHSPrnP18YPB-NFi&index=7)
 - Blog comments with the help from [Codemy.com](https://www.youtube.com/watch?v=hZrlh4qU4eQ&list=PLCC34OHNcOtr025c1kHSPrnP18YPB-NFi&index=34)
+- Deleting a comment with the help from [Codemy.com](https://www.youtube.com/watch?v=8NPOwmtupiI&list=PLCC34OHNcOtr025c1kHSPrnP18YPB-NFi&index=7) and [Cloud Stack Ninja](https://cloudstack.ninja/a_k/how-to-update-and-delete-comments-in-django/).
 
 ### Thank you
 - 
