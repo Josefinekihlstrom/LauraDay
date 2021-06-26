@@ -171,8 +171,8 @@ All manual tests were done in the following browsers:
     - Artwork - Click on it to see that it links to the 'Artwork' page.
 - Click on the Blog button..:
     - *(If logged in as superuser)* .. to see that the dropdown works and displays the following content:
-        - Blog Posts - Click on the Blog Posts to see that it links to the Blog page displaying all blog posts.
-        - Add Post - Click on the Add Post to see that it links to the 'Add Post' page.
+        - Blog Posts - Click on it to see that it links to the Blog page displaying all blog posts.
+        - Add Post - Click on it to see that it links to the 'Add Post' page.
     - *(If not logged in)* .. to see that it links to the Blog page displaying all blog posts.
     - *(If logged in as regular user)* .. to see that it links to the Blog page displaying all blog posts.
 - Click on the Search icon to see that the dropdown works displaying the search input and search button.
@@ -181,15 +181,15 @@ All manual tests were done in the following browsers:
     - Type in search word 'beautiful' and click on the search icon to see that it links to the product page displaying products that contains the word 'beautiful' in the product description.    
 - Click on the My Account icon to see that the dropdown works displaying the following content:
     - *(If logged in as superuser)*
-        - Product Management - Click on the Product Management to see that it links to the 'Add Product' page.
-        - My Profile - Click on the My Profile to see that it links to the 'Profile' page.
-        - Logout - Click on the Logout to see that it links to the 'Log Out' page.
+        - Product Management - Click on it to see that it links to the 'Add Product' page.
+        - My Profile - Click on it to see that it links to the 'Profile' page.
+        - Logout - Click on it to see that it links to the 'Log Out' page.
     - *(If not logged in)*
-        - Sign Up - Click on the Sign Up to see that it links to the sign up page.
-        - Log In - Click on the Log In to see that it links to the 'Log In' page.
+        - Sign Up - Click on it to see that it links to the sign up page.
+        - Log In - Click on it to see that it links to the 'Log In' page.
     - *(If logged in as regular user)*
-        - My Profile - Click on the My Profile to see that it links to the 'Profile' page.
-        - Logout - Click on the Logout to see that it links to the 'Log Out' page.
+        - My Profile - Click on it to see that it links to the 'Profile' page.
+        - Logout - Click on it to see that it links to the 'Log Out' page.
 - Click on the Shopping bag icon to see that it links to the 'Bag' page.
     
 
@@ -235,8 +235,6 @@ All manual tests were done in the following browsers:
 (de sidor som har inbugda error också)
 
 ### Other devices
-Testing on phone and tablet devices
-
 All of the tests mentioned above were also made on the following devices using the developer tool on Google Chrome:
 
 - iPad
@@ -245,7 +243,34 @@ All of the tests mentioned above were also made on the following devices using t
 - iPhone 6/7/8
 - Galaxy S5
 
-#### Navbar Collapsed
+The following things where further tested:
+
+#### Navbar Collapsed (Not on iPad Pro)
+- Click on navbar toggler icon to see that the dropdown works displaying:
+    - Home - Click on it to see that it links to the 'Home' page.
+    - My Account - Click on it to see that the dropdown works displaying..:
+        - *(When logged in as superuser)*
+            - Product Management - Click on it to see that it links to the 'Add Product' page.
+            - My Profile - Click on it to see that it links to the 'Profile' page.
+            - Logout - Click on it to see that it links to the 'Log Out' page.
+        - *(When not logged in)*
+            - Sign Up - Click on it to see that it links to the 'Sign Up' page.
+            - Login - Click on it to see that it links to the 'Login' page.
+        - *(When logged in as regular user)*
+            - My Profile - Click on it to see that it links to the 'Profile' page.
+            - Logout - Click on it to see that it links to the 'Log Out' page.
+    - Shop - Click on it to see that the dropdown works displaying:
+        - All Products - Click on it to see that it links to the 'All Products' page.
+        - Ceramics - Click on it to see that it links to the 'Ceramics' page.
+        - Artwork - Click on it to see that it links to the 'Artwork' page.
+    - Blog - Click on it..:
+        - *(If logged in as superuser)* ..to see that the dropdown works displaying:
+            - Blog Posts - Click on it to see that it links to the Blog page displaying all blog posts.
+            - Add Post - Click on it to see that it links to the 'Add Post' page.
+        - *(If not logged in)* to see that it links to the 'Blog' page displaying all blog posts.
+        - *(If logged in as regular user)* to see that it links to the 'Blog' page displaying all blog posts.
+- Click on the navbar toggler when navbar menu is already showing to see that the navbar menu collapses.
+- When navbar menu is showing and not collapsed, click on the Search icon to see that the search input displays right below the navbar menu.
 
 #### Footer Collapsed
 
