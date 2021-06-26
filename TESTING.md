@@ -21,7 +21,11 @@
     - Sign up page
     - Log in page
     - Log out page
+    - Messages
     - Error pages
+    - Other devices
+        - Navbar Collapsed
+        - Footer Collapsed
 
 4. Bugs Found
     - Bugs found during development
@@ -151,25 +155,102 @@ The Python code was tested using [PEP8](http://pep8online.com/). The following e
 
 
 ## Manual Testing
-All pages
-Home page
-Products page
-Product details page
-Add product page
-Blog page
-Blog post details page
-Add post page
-Delete post page
-Add Comment page
-Delete Comment page
-Shopping bag page
-Checkout page
-Checkout success page
-Profile page
-Sign up page
-Log in page
-Log out page
-Error pages
+All manual tests were done in the following browsers:
+
+- Firefox
+- Google Chrome
+- Microsoft Edge
+
+
+### All pages
+#### Navbar
+- Click on the Laura Day icon to see that it links to the home page.
+- Click on the Shop button to see that the drowdown works and displays the following content:
+    - All Products - Click on it to see that it links to the 'All Products' page.
+    - Ceramics - Click on it to see that it links to the 'Ceramics' page.
+    - Artwork - Click on it to see that it links to the 'Artwork' page.
+- Click on the Blog button..:
+    - *(If logged in as superuser)* .. to see that the dropdown works and displays the following content:
+        - Blog Posts - Click on the Blog Posts to see that it links to the Blog page displaying all blog posts.
+        - Add Post - Click on the Add Post to see that it links to the 'Add Post' page.
+    - *(If not logged in)* .. to see that it links to the Blog page displaying all blog posts.
+    - *(If logged in as regular user)* .. to see that it links to the Blog page displaying all blog posts.
+- Click on the Search icon to see that the dropdown works displaying the search input and search button.
+    - Type in search word 'mug' and click on search icon to see that it links to the product page displaying all products containing the word 'mug' in the product name.
+    - Type in search word 'hej' and click on search icon to see that it links to the product page displaying 0 products as no product contains the word 'hej' in the product name or description. **bug noted of pagination not being pushed down to bottom of page. Please see the 'bugs found' section.*
+    - Type in search word 'beautiful' and click on the search icon to see that it links to the product page displaying products that contains the word 'beautiful' in the product description.    
+- Click on the My Account icon to see that the dropdown works displaying the following content:
+    - *(If logged in as superuser)*
+        - Product Management - Click on the Product Management to see that it links to the 'Add Product' page.
+        - My Profile - Click on the My Profile to see that it links to the 'Profile' page.
+        - Logout - Click on the Logout to see that it links to the 'Log Out' page.
+    - *(If not logged in)*
+        - Sign Up - Click on the Sign Up to see that it links to the sign up page.
+        - Log In - Click on the Log In to see that it links to the 'Log In' page.
+    - *(If logged in as regular user)*
+        - My Profile - Click on the My Profile to see that it links to the 'Profile' page.
+        - Logout - Click on the Logout to see that it links to the 'Log Out' page.
+- Click on the Shopping bag icon to see that it links to the 'Bag' page.
+    
+
+#### Footer
+
+### Home page
+
+### Products page
+
+### Product details page
+
+### Add product page
+
+### Blog page
+
+### Blog post details page
+
+### Add post page
+
+### Delete post page
+
+### Add Comment page
+
+### Delete Comment page
+
+### Shopping bag page
+
+### Checkout page
+
+### Checkout success page
+
+### Profile page
+
+### Sign up page
+
+### Log in page
+
+### Log out page
+
+### Messages
+
+### Error pages
+(de sidor som har inbugda error också)
+
+### Other devices
+Testing on phone and tablet devices
+
+All of the tests mentioned above were also made on the following devices using the developer tool on Google Chrome:
+
+- iPad
+- iPad Pro
+- iPhone 5/SE
+- iPhone 6/7/8
+- Galaxy S5
+
+#### Navbar Collapsed
+
+#### Footer Collapsed
+
+
+
 
 ## Bugs
 ### Bugs found during development of the site
@@ -200,4 +281,6 @@ the product is actually displayed. This bug remains unsolved for now.
 you can go back to the same product and add even more items so that it exceeds the 99 limit. This is noted as a bug
 as the most ideal thing would be to add a limit so that it is not possible to add more items of a product when you have already
 added 99 of them. A more realistic feature would be to make it impossible to add more than a certain number of an item than 
-what is in stock. This probably requires some coding and may be something to think about adding in the future.
+what is in stock. This probably requires some coding and may be something to think about adding in the future. The bug remains unsolved.
+2. When searching for a word that results in 0 products being shown on the products page that follows, the pagination is not pushed down to the 
+page as there is no content filling the page to push it down with. This bug remains unsolved due to lack of time fixing it.
