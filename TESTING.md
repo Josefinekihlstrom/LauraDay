@@ -219,11 +219,28 @@ All manual tests were done in the following browsers:
 The following tests where made on the 'All Products' page, 'Ceramics' page and 'Artwork' page.
 - Make sure the orange banner is displayed and covering the width of the page.
 - When on the 'Ceramics' products page, make sure that the text of 'Ceramics' appears right under the heading text of 'Products'.
+- When on the 'Artwork' products page, make sure that the text of 'Artwork' appears right under the heading text of 'Products'.
 - Make sure that the product counter just above the products is displaying the number of products. *(Bug noted of product counter only showing the products shown on the current page, and not the total amount of products within the current category. Please see 'bugs found' section for more details.)* 
 - Make sure that products are shown with a maximum of three on each row and a total of eight on each page. *(Bug noted of products not filling out on last row. Please see 'bugs found' section for more information)*
-- Make sure that if a product has no image or broken image url, a default image replaces it instead.
+- Make sure that if a product has no image or has a broken image url, a default image replaces it instead.
 - Click on a product image to see that it links to the 'Product Details' page.
-- Click on a products category name to see that it links to the product page of that category.
+- Click on a products category name to see that it links to the products page of that category.
+- *(When logged in as a superuser)*
+    - Click on the 'Edit' link to see that it links to the 'Edit Product' page of the chosen product.
+    - Click on the 'Remove' link to see that it links back to the 'All Products' page after deleting the chosen product.
+        - Make sure toast message is displayed.
+- *(When not logged in)*
+    - Make sure the user cannot see the edit and delete links.
+    - Make sure that the user cannot access the edit page of a product by typing in ``/products/edit/<product sku number>`` at the end of the url.
+    Instead, the user gets redirected to the login page.
+- *(When logged in as a regular user)*
+    - Make sure the user cannot see the edit and delete links.
+    - Make sure that the user cannot access the edit page of a product by typing in ``/products/edit/<product sku number>`` at the end of the url.
+    Instead, the user gets redirected to the 'Home' page with a toast message displaying a 404 error.
+- Make sure the pagination displays ``Page X of X``.
+- Make sure the pagination is displaying correct depending on total amount of products:
+    - When a category has more than 8 products the user is provided with a next button, a previous button or both next and previous buttons (Depending on the total amount of products there is in the category and/or which page the user is visiting).
+    - When a category has less than 8 products no additional buttons are displayed.
 
 ### Product details page
 
@@ -260,7 +277,7 @@ The following tests where made on the 'All Products' page, 'Ceramics' page and '
 ### Error pages
 (de sidor som har inbugda error också)
 
-### Other devices
+### Different devices
 All of the tests mentioned above were also made on the following devices using the developer tool on Google Chrome:
 
 - iPad
@@ -305,6 +322,10 @@ The following things where further tested on smaller devices:
 #### Home page
 - Make sure that the circle image and 'About' text are displayed on their own row starting with the circle image *(Not on iPad or iPad Pro)*.
 - Make sure that the three information boxes in the information section are displayed separately on their own row *(Not on iPad or iPad Pro)*.
+
+#### Products page
+- When on an iPad, make sure that products are shown with a maximum of two on each row and a total of eight on each page. *(This does not apply to iPad Pro)*
+- When on a phone device, make sure that products are shown with a maximum of one on each row and a total of eight on each page.
 
 ## Bugs
 ### Bugs found during development of the site
