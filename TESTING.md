@@ -227,10 +227,11 @@ The following tests where made on the 'All Products' page, 'Ceramics' page and '
 - Click on a products category name to see that it links to the products page of that category.
 - *(When logged in as a superuser)*
     - Click on the 'Edit' link to see that it links to the 'Edit Product' page of the chosen product.
+        - Make sure toast message is displayed.
     - Click on the 'Remove' link to see that it links back to the 'All Products' page after deleting the chosen product.
         - Make sure toast message is displayed.
 - *(When not logged in)*
-    - Make sure the user cannot see the edit and delete links.
+    - Make sure the user cannot see the edit and remove links.
     - Make sure that the user cannot access the edit page of a product by typing in ``/products/edit/<product sku number>`` at the end of the url.
     Instead, the user gets redirected to the login page.
 - *(When logged in as a regular user)*
@@ -243,6 +244,34 @@ The following tests where made on the 'All Products' page, 'Ceramics' page and '
     - When a category has less than 8 products no additional buttons are displayed.
 
 ### Product details page
+- Make sure the orange banner is displayed and covering the width of the page.
+- Click on the product image to see that it links to a new tab displaying the image in larger size.
+- Click on the category name to see that it links to the products page displaying all products within that category.
+- *(When logged in as a superuser)*
+    - Click on the 'Edit' link to see that it links to the 'Edit Product' page of the chosen product.
+        - Make sure toast message is displayed
+    - Click on the 'Remove' link to see that it links back to the 'All Products' page after deleting the chosen product.
+        - Make sure toast message is displayed.
+- *(When not logged in)*
+    - Make sure the user cannot see the edit and remove links.
+    - Make sure that the user cannot access the edit page of a product by typing in ``edit/`` between ``products/`` and ``<product id>/`` in the url.
+    Instead, the user gets redirected to the login page.
+- *(When logged in as a regular user)*
+    - Make sure the user cannot see the edit and delete links.
+    - Make sure that the user cannot access the edit page of a product by typing in ``edit/`` between ``products/`` and ``<product id>/`` in the url.
+    Instead, the user gets redirected to the 'Home' page with a toast message displaying a 404 error.
+- When the product quantity is displayed as ```1``, make sure that the minus button is disabled but the plus button work as intended.
+- When the product quantity is displaying a number larger than ``1`` but less than ``99``, make sure that both minus and plus buttons work as intended. 
+- When the product quantity is displayed as ``99``, make sure that the plus button is disabled but the minus button work as intended.
+- Click on the 'Products' button to see that it links to the 'All Products' page.
+- Click on the 'Add To Bag' button after choosing a quantity between ``1`` and ``99`` and the product/products gets added to the shopping bag.
+A toast message appears displaying the current content of the shopping bag.
+- Manually type in a number larger than ``99`` and click on the 'Add To Bag' button.
+    - The quantity of the product will not be added to the shopping bag and the user the user is prompted to select a number between ``1`` and ``99`` instead.
+- Manually type in a number less than ``1`` and click on the 'Add To Bag' button.
+    - The quantity of the product will not be added to the shopping bag and the user is prompted to select a number larger than ``1``.
+- If the quantity 
+- 
 
 ### Add product page
 
@@ -273,6 +302,7 @@ The following tests where made on the 'All Products' page, 'Ceramics' page and '
 ### Log out page
 
 ### Messages
+shopping bag messages when full or empty
 
 ### Error pages
 (de sidor som har inbugda error också)
