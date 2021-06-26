@@ -270,8 +270,8 @@ A toast message appears displaying the current content of the shopping bag.
     - The quantity of the product will not be added to the shopping bag and the user the user is prompted to select a number between ``1`` and ``99`` instead.
 - Manually type in a number less than ``1`` and click on the 'Add To Bag' button.
     - The quantity of the product will not be added to the shopping bag and the user is prompted to select a number larger than ``1``.
-- If the quantity 
-- 
+- If the quantity field is left out blank the user is prompted to add a number to the field.
+- If a user tr
 
 ### Add product page
 
@@ -390,6 +390,12 @@ will only be visible on the 'All Product' page. This can cause confusion for tho
 and are looking for a specific product that should be included in the belonging category. In this case, 
 the user may think that the product does not exist and do not think about checking the 'All products' page where
 the product is actually displayed. This bug remains unsolved for now.
+
+10. When developing and testing the quantity input on the Product Details page of a product, I stumbled across a bug that was
+caused when I left out the couantity field empty and then tried to click on the 'Add To Bag' button. 
+The error message that I got was ``invalid literal for int() with base 10: ''``. At the time I had no idea what was causing the error,
+but I later discovered that it was because I had forgotten to add the text of 'required' at the end of the quantity input in my product_details.html template.
+A simple fix, but it caused me to loose a few braincells before realising it.
 
 ### Bugs found during testing of the site
 1. The limit of a product you can add is set to 99 on the product details page, however if you have added 99 pieces of a product to the shopping bag
