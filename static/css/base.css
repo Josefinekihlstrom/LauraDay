@@ -477,7 +477,6 @@ footer {
 }
 
 /* ------------------------------------------- Media Queries */
-
 /* Max width 480px */
 @media screen and (max-width: 480px) {
     .allauth-col {
@@ -493,7 +492,7 @@ footer {
     }
 
     .banner-text {
-        font-size: .9rem;
+        font-size: .8rem;
     }
     
     .mobile-btn {
