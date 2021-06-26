@@ -245,6 +245,7 @@ The following tests where made on the 'All Products' page, 'Ceramics' page and '
 
 ### Product details page
 - Make sure the orange banner is displayed and covering the width of the page.
+- Make sure product image column and product information column are displayed on the same row.
 - Click on the product image to see that it links to a new tab displaying the image in larger size.
 - Click on the category name to see that it links to the products page displaying all products within that category.
 - *(When logged in as a superuser)*
@@ -270,10 +271,41 @@ A toast message appears displaying the current content of the shopping bag.
     - The quantity of the product will not be added to the shopping bag and the user the user is prompted to select a number between ``1`` and ``99`` instead.
 - Manually type in a number less than ``1`` and click on the 'Add To Bag' button.
     - The quantity of the product will not be added to the shopping bag and the user is prompted to select a number larger than ``1``.
-- If the quantity field is left out blank the user is prompted to add a number to the field.
-- If a user tr
+- Manually remove the number inside the quantity input and leave it blank, when clicking on the 'Add To Bag' button the user is prompted to 
+add a number to the input field before clicking the button.
+- Manually add letters to the quantity input field without success until trying to add the letter ``e``. When clicking the 'Add To Bag' button
+the user is prompted to add a number to the field instead.
 
 ### Add product page
+- Make sure the form contains of the following fields to fill in:
+    - Name 
+    - Category 
+    - Sku 
+    - Description 
+    - Price 
+    - Price 
+    - Image url 
+    - Image Upload
+- Click on the 'Cancel' button and the user gets redirected to the 'All Products' page.
+- Click on the 'Add Product' button without filling out any fields and the user is prompted to fill in the fields.
+- Fill out all fields and click on the 'Add Product' button to see that it adds the product and links to the 
+'Product Details' page of the added product with a toast message displaying.
+- Fill out all fields except the name field and click on the 'Add Product' button and the user is prompted to fill in the name field.
+- Fill out all fields except the category field and click on the 'Add Product' button to see that it adds the product and links to the 
+'Product Details' page of the added product with a toast message displaying. *(This is noted as a bug in the 'bugs found' section as the product will only be visible on the 'All Products' page)*
+- Fill out all fields except the sku field and click on the 'Add Product' button to see that it adds the product and links to the 
+'Product Details' page of the added product with a toast message displaying. *(This is noted as a bug in the 'bugs found' section as the sku is important key information to add to the products to keep better track of them.)*
+- Fill out all fields except the description field and click on the 'Add Product' button to see that it adds the product and links to the 
+'Product Details' page of the added product with a toast message displaying.
+- Fill out all fields except the price field and the user is prompted to fill the field out before proceeding.
+- Make sure that if no image is uploaded or linked in the image url field when adding a product, a default image will be displayed on the 'Product Details' page.
+- Make sure that when a broken image url is added to the image url field when adding a product, a default image will be displayed on the 'Product Details' page.
+- *(When not logged in)*
+    - Make sure that the user cannot access the 'Add Product' page by typing in ``products/add/`` at the end of the url.
+    Instead, the user gets redirected to the login page.
+- *(When logged in as a regular user)*
+    - Make sure that the user cannot access the 'Add Product' page by typing in ``products/add/`` at the end of the url.
+    Instead, a toast message appears displaying a 404 error.
 
 ### Blog page
 
@@ -350,12 +382,15 @@ The following things where further tested on smaller devices:
 - Make sure the Payments section is not displayed.
 
 #### Home page
-- Make sure that the circle image and 'About' text are displayed on their own row starting with the circle image *(Not on iPad or iPad Pro)*.
-- Make sure that the three information boxes in the information section are displayed separately on their own row *(Not on iPad or iPad Pro)*.
+- Make sure that the circle image and 'About' text are displayed on their own row starting with the circle image *(This does not apply on iPad or iPad Pro)*.
+- Make sure that the three information boxes in the information section are displayed separately on their own row *(This does not apply on iPad or iPad Pro)*.
 
 #### Products page
 - When on an iPad, make sure that products are shown with a maximum of two on each row and a total of eight on each page. *(This does not apply to iPad Pro)*
 - When on a phone device, make sure that products are shown with a maximum of one on each row and a total of eight on each page.
+
+#### Add product page
+- Make sure the product image column and product information column are displayed on separate rows starting with the the product image *(This does not apply to iPad Pro)*.
 
 ## Bugs
 ### Bugs found during development of the site
@@ -396,6 +431,12 @@ caused when I left out the couantity field empty and then tried to click on the 
 The error message that I got was ``invalid literal for int() with base 10: ''``. At the time I had no idea what was causing the error,
 but I later discovered that it was because I had forgotten to add the text of 'required' at the end of the quantity input in my product_details.html template.
 A simple fix, but it caused me to loose a few braincells before realising it.
+
+11. If the sku input field is left out empty when a superuser is adding a product to the site, it will still add the product to the product list.
+This may not make much difference when you have a small webshop with a smaller number of products, 
+but this is an important key figure to have when developing a larger website with more products. 
+Sku numbers are important and useful in such a way that you can better keep the products separated from each other. 
+One solution to this would have been to make the sku field required however, this bug remains unsolved due to lack of time fixing it.
 
 ### Bugs found during testing of the site
 1. The limit of a product you can add is set to 99 on the product details page, however if you have added 99 pieces of a product to the shopping bag
