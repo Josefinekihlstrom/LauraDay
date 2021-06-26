@@ -216,6 +216,8 @@ All manual tests were done in the following browsers:
 - Make sure that the three information boxes in the information section are displayed on the same row.
 
 ### Products page
+- Make sure the orange banner is displayed and covering the width of the page.
+
 
 ### Product details page
 
