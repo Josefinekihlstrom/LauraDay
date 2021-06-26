@@ -21,9 +21,7 @@
                 <hr class="w-50 mb-1 mx-auto">
                 {% for current in current_categories %}
                     <br>
-                    <a class="category-badge text-decoration-none" href="{% url 'products' %}?category={{ current.name }}">
-                        <span class="p-2 mt-2 current-name">{{ current.name }}</span>
-                    </a>
+                    <h6 class="p-2 mt-1 current-name">{{ current.name }}</h6>
                     <br>
                     <br>
                 {% endfor %}
