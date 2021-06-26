@@ -192,8 +192,20 @@ All manual tests were done in the following browsers:
         - Logout - Click on it to see that it links to the 'Log Out' page.
 - Click on the Shopping bag icon to see that it links to the 'Bag' page.
     
-
 #### Footer
+- Make sure the footer is displaying the following content in the dark green area:
+    - Payments section with Visa and Mastercard icons.
+    - Links section.
+        - Click on the Shop link to see that it links to the 'All Products' page.
+        - Click on the Blog link to see that it links to the 'Blog' page displaying all blog posts.
+    - Social section.
+        - Click on the instagram icon to see that it links to the Instagram page in a new tab.
+        - Click on the facebook icon to see that it links to the Facebook page in a new tab.
+        - Click on the LinkedIn icon to see that it links to the LinkedIn page in a new tab.
+    - Contact section with email and phone number.
+- Make sure footer is displaying the following content in the light green area:
+    - Laura Day logo.
+    - Copyright text.
 
 ### Home page
 
@@ -243,7 +255,7 @@ All of the tests mentioned above were also made on the following devices using t
 - iPhone 6/7/8
 - Galaxy S5
 
-The following things where further tested:
+The following things where further tested on smaller devices:
 
 #### Navbar Collapsed (Not on iPad Pro)
 - Click on navbar toggler icon to see that the dropdown works displaying:
@@ -272,10 +284,9 @@ The following things where further tested:
 - Click on the navbar toggler when navbar menu is already showing to see that the navbar menu collapses.
 - When navbar menu is showing and not collapsed, click on the Search icon to see that the search input displays right below the navbar menu.
 
-#### Footer Collapsed
-
-
-
+#### Footer (Not on iPad Pro)
+- Make sure the dark green area is displaying the different sections below each other and not on the same row.
+- Make sure the Payments section is not displayed.
 
 ## Bugs
 ### Bugs found during development of the site
