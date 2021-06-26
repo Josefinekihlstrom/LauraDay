@@ -389,8 +389,12 @@ The following things where further tested on smaller devices:
 - When on an iPad, make sure that products are shown with a maximum of two on each row and a total of eight on each page. *(This does not apply to iPad Pro)*
 - When on a phone device, make sure that products are shown with a maximum of one on each row and a total of eight on each page.
 
-#### Add product page
+#### Product Details page
 - Make sure the product image column and product information column are displayed on separate rows starting with the the product image *(This does not apply to iPad Pro)*.
+
+#### Add Product page 
+- Make sure the form covers the width of the device. *(This does not apply to iPad and iPad Pro)*
+
 
 ## Bugs
 ### Bugs found during development of the site
