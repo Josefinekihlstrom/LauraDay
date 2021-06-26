@@ -208,6 +208,12 @@ All manual tests were done in the following browsers:
     - Copyright text.
 
 ### Home page
+- Make sure the orange banner is displayed and covering the width of the page.
+- Make sure the hero image is covering both the width and height of viewport when first arriving to the page.
+- Click on 'Shop Collection' button to see that it links to the 'All Products' page. **(Bug noted of Laura Day text and 'Shop Collection' button not being centered correctly. Please see 'bugs found' section)*
+- Make sure that the circle image and 'About' text are displayed on the same row.
+- Click on the 'Visit Blog' button to see that it links to the 'Blog' page displaying all blog posts.
+- Make sure that the three information boxes in the information section are displayed on the same row.
 
 ### Products page
 
@@ -288,6 +294,10 @@ The following things where further tested on smaller devices:
 - Make sure the dark green area is displaying the different sections below each other and not on the same row.
 - Make sure the Payments section is not displayed.
 
+#### Home page
+- Make sure that the circle image and 'About' text are displayed on their own row starting with the circle image *(Not on iPad or iPad Pro)*.
+- Make sure that the three information boxes in the information section are displayed separately on their own row *(Not on iPad or iPad Pro)*.
+
 ## Bugs
 ### Bugs found during development of the site
 1. Categories not showing the specific products within a category.
@@ -320,3 +330,5 @@ added 99 of them. A more realistic feature would be to make it impossible to add
 what is in stock. This probably requires some coding and may be something to think about adding in the future. The bug remains unsolved.
 2. When searching for a word that results in 0 products being shown on the products page that follows, the pagination is not pushed down to the 
 page as there is no content filling the page to push it down with. This bug remains unsolved due to lack of time fixing it.
+3. When visiting the 'Home' page on an iPhone 5 device, the Laura Day text and 'Shop Collection' button is not centered correctly.
+Both the text and the button are displayed slightly to the right which they should not be. Unfortunately due to lack of time, this bug remains unsolved at the moment.
