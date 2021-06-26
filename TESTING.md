@@ -217,7 +217,8 @@ All manual tests were done in the following browsers:
 
 ### Products page
 - Make sure the orange banner is displayed and covering the width of the page.
-
+- Make sure that the product counter just above the products is displaying the number of products. *(Bug noted of product counter only showing the products shown on the current page, and not the total amount of products within the current category. Please see 'bugs found' section for more details.)* 
+- Make sure that products are shown with a maximum of three on each row and a total of eight on each page. *(Bug noted of products not filling out on last row. Please see 'bugs found' section for more information)*
 
 ### Product details page
 
@@ -304,20 +305,30 @@ The following things where further tested on smaller devices:
 ### Bugs found during development of the site
 1. Categories not showing the specific products within a category.
 This bug was solved by just simply making the category names into lowercase in the admin panel.
+
 2. Remove link not working on the shoppong bag page. According to the terminal, a slash was missing in the 
 javascript function url for the remove function. Solved it by adding a slash at the end of the url.
+
 3. When adding > 1 qty of a product to the shopping bag, the subtotal would show the price of only 1 in qty.
+
 4. When changing the form on the login page to crispy form all inner content covered the entire width of the page. 
 I decided to not use the crispy form on the allauth pages, not make bug any bigger. Solved by putting the form
 inside a column with the width of halv of the page.
+
 5. Webhook 404 error. Webhook key was not exported correctly to my github variables. Solved by setting the variable
 and restarting the workspace.
-6. Circle image on index page not showing after adding it to S3. Not solved
+
+6. Circle images on index and blog pages not showing at all after adding it to S3. The images was already circle shaped when I added them to the project and therefor in png format. 
+However, it seemed like png format was not supported by S3 so therefor I Solved it by simply adding the images in square shape to the project folder and S3 folder and 
+added css styling to make them circle.
+
 7. Pagination not working correctly. Added an if statement for next and previous button. But the buttons would only link to 
 the ceramics pages, no matter which category you where on. I solved it by adding the if statement within the 
 href="".
+
 8. When on the products page, the number of products shown only display the products that are shown on the current
-page instead of the total of the products if the product page has more pages. Not fixed.
+page instead of the total amount of the products within the category. This bug remains unsolved due to lack of time fixing it.
+
 9. If the category field is left out empty when a superuser is adding a product to the site, the product 
 will only be visible on the 'All Product' page. This can cause confusion for those who visit the website 
 and are looking for a specific product that should be included in the belonging category. In this case, 
@@ -330,7 +341,17 @@ you can go back to the same product and add even more items so that it exceeds t
 as the most ideal thing would be to add a limit so that it is not possible to add more items of a product when you have already
 added 99 of them. A more realistic feature would be to make it impossible to add more than a certain number of an item than 
 what is in stock. This probably requires some coding and may be something to think about adding in the future. The bug remains unsolved.
+
 2. When searching for a word that results in 0 products being shown on the products page that follows, the pagination is not pushed down to the 
 page as there is no content filling the page to push it down with. This bug remains unsolved due to lack of time fixing it.
+
 3. When visiting the 'Home' page on an iPhone 5 device, the Laura Day text and 'Shop Collection' button is not centered correctly.
 Both the text and the button are displayed slightly to the right which they should not be. Unfortunately due to lack of time, this bug remains unsolved at the moment.
+
+4. Bug noted of products not filling out on the last row when on desktop view or iPad Pro device. This bug could be solved by adding an if statement in the template that makes the products 
+fill in all the places on both desktop view and iPad Pro however, the bug remains unsolved due to lack of time fixing it.
+<div align="center">
+    <img src="/readme_images/bug1.jpg" alt="bug image" width="600px">
+    <br>
+    <br>
+</div>
