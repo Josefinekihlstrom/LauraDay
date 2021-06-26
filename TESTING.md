@@ -216,9 +216,14 @@ All manual tests were done in the following browsers:
 - Make sure that the three information boxes in the information section are displayed on the same row.
 
 ### Products page
+The following tests where made on the 'All Products' page, 'Ceramics' page and 'Artwork' page.
 - Make sure the orange banner is displayed and covering the width of the page.
+- When on the 'Ceramics' products page, make sure that the text of 'Ceramics' appears right under the heading text of 'Products'.
 - Make sure that the product counter just above the products is displaying the number of products. *(Bug noted of product counter only showing the products shown on the current page, and not the total amount of products within the current category. Please see 'bugs found' section for more details.)* 
 - Make sure that products are shown with a maximum of three on each row and a total of eight on each page. *(Bug noted of products not filling out on last row. Please see 'bugs found' section for more information)*
+- Make sure that if a product has no image or broken image url, a default image replaces it instead.
+- Click on a product image to see that it links to the 'Product Details' page.
+- Click on a products category name to see that it links to the product page of that category.
 
 ### Product details page
 
