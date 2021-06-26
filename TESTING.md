@@ -139,8 +139,13 @@ The JavaScript was tested using [JSHint](https://jshint.com/). The warnings that
 The Python code was tested using [PEP8](http://pep8online.com/). The following errors occured:
 - Line too long (90 > 79 characters) in urls.py file for the blog application.
     - Solved by simply rearrange the url path.
-- Expected 2 blank lines, found 1.
+- Expected 2 blank lines, found 1 in the views.py file for the checkout application.
     - Solved by simply adding blank line.
+- Lines too long in the settings.py file for the lauraday application.
+    - Line 143, Column 80, line too long (91 > 79 characters). No changes were made to this line of code as this would have caused the code not to work properly.
+    - Line 146, Column 80, line too long (81 > 79 characters). No changes were made to this line of code as this would have caused the code not to work properly.
+    - Line 149, Column 80, line too long (82 > 79 characters). No changes were made to this line of code as this would have caused the code not to work properly.
+    - Line 152, Column 80, line too long (83 > 79 characters). No changes were made to this line of code as this would have caused the code not to work properly.
 
 
 ## Manual Testing
