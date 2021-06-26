@@ -12,6 +12,8 @@
     - Blog post details page
     - Add post page
     - Delete post page
+    - Add Comment page
+    - Delete Comment page
     - Shopping bag page
     - Checkout page
     - Checkout success page
@@ -158,6 +160,8 @@ Blog page
 Blog post details page
 Add post page
 Delete post page
+Add Comment page
+Delete Comment page
 Shopping bag page
 Checkout page
 Checkout success page
@@ -192,3 +196,8 @@ the user may think that the product does not exist and do not think about checki
 the product is actually displayed. This bug remains unsolved for now.
 
 ### Bugs found during testing of the site
+1. The limit of a product you can add is set to 99 on the product details page, however if you have added 99 pieces of a product to the shopping bag
+you can go back to the same product and add even more items so that it exceeds the 99 limit. This is noted as a bug
+as the most ideal thing would be to add a limit so that it is not possible to add more items of a product when you have already
+added 99 of them. A more realistic feature would be to make it impossible to add more than a certain number of an item than 
+what is in stock. This probably requires some coding and may be something to think about adding in the future.
