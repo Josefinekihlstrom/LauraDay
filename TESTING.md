@@ -277,6 +277,7 @@ add a number to the input field before clicking the button.
 the user is prompted to add a number to the field instead.
 
 ### Add product page
+This page is only available for superusers.
 - Make sure the form contains of the following fields to fill in:
     - Name 
     - Category 
@@ -322,8 +323,44 @@ the user is prompted to add a number to the field instead.
     - Click on the Facebook icon to see that it links to the Facebook page in a new tab.
 
 ### Blog post details page
+- Click on the 'Blog Posts' button to see that it links to the 'Blog Posts' page.
+- In the post details column:
+    - *(When logged in as superuser)* Click on the 'Edit' link to see that it links to the 'Edit Post' page of the chosen blog post.
+    - *(When logged in as superuser)* Click on the 'Remove' link too see that it links to the 'Delete Post' page displaying the chosen blog post to delete.
+    - *(When not logged in or logged in as a regular user)* Make sure the Edit and Remove links are not displayed.
+- In the sidebar column:
+    - Click on the Instagram icon to see that it links to the Instagram page in a new tab.
+    - Click on the Facebook icon to see that it links to the Facebook page in a new tab.
+- In the comments section:
+    - Make sure the number of comments are displayed.
+    - If a blog post has no comments, make sure the text of "No comments yet.. Be the first and add a comment!" is displayed.
+        - Click on the 'add a comment' link to see that it links to the 'Add Comment' page of the chosen blog post.
+    - *(When logged in as superuser)* Click on the red dust-bin icon next to the commenters name to see that it links to the 'Delete Comment' page displaying the chosen comment to delete.
+    - *(When not logged in or logged in as a regular user)* Make sure the red dust-bin icon is not displayed.
+    - Click on the 'Blog Posts' button to see that it links to the 'Blog Posts' page.
+    - Click on the 'Comment' button to see that it links to the 'Add Comment' page of the chosen blog post.
 
 ### Add post page
+This page is only available for superusers.
+- Make sure the form contains of the following fields to fill in:
+    - Title
+    - Slug
+    - Author 
+    - Content 
+    - Status
+- Click on the 'Cancel' button to see that it links to the 'Blog Posts' page.
+- Fill in all the fields and click on the 'Add Post' button to see that it adds the blog post and links to the 
+'Post Details' page of the added blog post.
+- Fill in all the fields except the Title field and click on the 'Add Post' button and the user is prompted to fill in the missing field.
+- Fill in all the fields except the slug field and click on the 'Add Post' button and the user is prompted to fill in the missing field.
+- Fill in all the fields except the author field and click on the 'Add Post' button and the user is prompted to fill in the missing field.
+- Fill in all fields except the content field and click on the 'Add Post' button and the user is prompted to fill in the missing field.
+- Fill in all fields but put the status on 'Draft' and click the 'Add Post' button to see that it adds the blog post and links to the 'Post Details' 
+page of the added blog post. However when the user goes back to the 'Blog Posts' page, the added post will not be shown. *(This is noted as a bug. Please see the 'bugs found' section for more details.)*
+- *(When not logged in)* Make sure the user can't get access to the 'Add Post' page
+by typing in ``/blog/add_post`` at the end of the url. Instead the page will show a 404 page.
+- ( When logged in as a regular user) Make sure the user can't get access to the 'Add Post' page
+by typing in ``/blog/add_post`` at the end of the url. Instead the page will show a 404 page.
 
 ### Delete post page
 
@@ -411,7 +448,11 @@ The following things where further tested on smaller devices:
 - Make sure that the blog posts are displayed on their own row on smaller screens. *(This does not apply on iPad Pro)*
 - Make sure that the sidebar is displayed on its own row right under all the blog posts. *(This does not apply on iPad Pro)* *(Bug noted of flaws in the layout of the sidebar. Please see bugs found section for more details.)*
 
+#### Blog post details page
+- Make sure the sidebar is not displayed on smaller devices. *(This does not apply to iPad Pro)*
 
+#### Add post page
+- Make sure the 'Add Post' form covers the whole width of the screen on phone devices.
 
 
 ## Bugs
@@ -497,3 +538,9 @@ lack of time fixing it.
     <br>
     <br>
 </div>
+
+6. When a superuser adds a blog post but adds it with the status of 'Draft', the blog post will not be shown on the blog page. To get
+access to the blog post the superuser has to manually type in ``/blog/<blog post name here>`` at the end of the url to be able to read it and edit/remove it. The superuser 
+can however, go in to the admin panel to get an overview of all posts. An ideal solution for this would be to add a list in the blog sidebar with an overview of which posts have the status
+of 'Draft' and a link to get access to the 'Post Details' page to each post. A non logged in user or a regular user can also manually type in ``/blog/<blog post name here>`` to get access to the 
+blog post. At the moment this bug remains unsolved due to lack of time fixing it.
