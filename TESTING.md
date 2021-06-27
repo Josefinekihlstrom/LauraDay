@@ -472,8 +472,8 @@ what is in stock. This probably requires some coding and may be something to thi
     <br>
 </div>
 
-2. When searching for a word that results in 0 products being shown on the products page that follows, the pagination is not pushed down to the 
-page as there is no content filling the page to push it down with. This bug remains unsolved due to lack of time fixing it.
+2. When searching for a word that results in 0 products being shown on the products page that follows, the pagination was not pushed down to the 
+page as there is no content filling the page to push it down with. This was solved by putting a min-height of 50vh to the products row.
 
 3. When visiting the 'Home' page on an iPhone 5 device, the Laura Day text and 'Shop Collection' button is not centered correctly.
 Both the text and the button are displayed slightly to the right which they should not be. Unfortunately due to lack of time, this bug remains unsolved at the moment.
