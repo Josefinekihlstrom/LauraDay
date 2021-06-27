@@ -261,7 +261,7 @@ The following tests where made on the 'All Products' page, 'Ceramics' page and '
     - Make sure the user cannot see the edit and delete links.
     - Make sure that the user cannot access the edit page of a product by typing in ``edit/`` between ``products/`` and ``<product id>/`` in the url.
     Instead, the user gets redirected to the 'Home' page with a toast message displaying a 404 error.
-- When the product quantity is displayed as ```1``, make sure that the minus button is disabled but the plus button work as intended.
+- When the product quantity is displayed as ``1``, make sure that the minus button is disabled but the plus button work as intended.
 - When the product quantity is displaying a number larger than ``1`` but less than ``99``, make sure that both minus and plus buttons work as intended. 
 - When the product quantity is displayed as ``99``, make sure that the plus button is disabled but the minus button work as intended.
 - Click on the 'Products' button to see that it links to the 'All Products' page.
@@ -308,14 +308,14 @@ the user is prompted to add a number to the field instead.
     Instead, a toast message appears displaying a 404 error.
 
 ### Blog page
-- In the blog posts sections:
+- In the blog posts column:
     - Click on the blog post heading text to see that it links to the 'Post Details' page of the chosen blog post.
     - Click on the blog post body text to see that it links to the 'Post Details' page of the chosen blog post.
     - *(When logged in as superuser)* Click on the 'Edit' link to see that it links to the 'Edit Post' page of the chosen blog post.
     - *(When logged in as superuser)* Click on the 'Remove' link too see that it links to the 'Delete Post' page displaying the chosen blog post to delete.
     - *(When not logged in or logged in as a regular user)* Make sure the Edit and Remove links are not displayed.
     - Make sure the number of comments are displayed in the down right of each blog post.
-- In the sidebar section:
+- In the sidebar column:
     - *(When logged in as superuser)* Click on the 'Add Post' button to see that it links to the 'Add Post' page.
     - *(When not logged in or logged in as a regular user)* Make sure the 'Add Post' button is not displayed.
     - Click on the Instagram icon to see that it links to the Instagram page in a new tab.
@@ -466,6 +466,11 @@ you can go back to the same product and add even more items so that it exceeds t
 as the most ideal thing would be to add a limit so that it is not possible to add more items of a product when you have already
 added 99 of them. A more realistic feature would be to make it impossible to add more than a certain number of an item than 
 what is in stock. This probably requires some coding and may be something to think about adding in the future. The bug remains unsolved.
+<div align="center">
+    <img src="/readme_images/bug3.jpg" alt="bug image" width="600px">
+    <br>
+    <br>
+</div>
 
 2. When searching for a word that results in 0 products being shown on the products page that follows, the pagination is not pushed down to the 
 page as there is no content filling the page to push it down with. This bug remains unsolved due to lack of time fixing it.
