@@ -422,6 +422,18 @@ A toast message appears.
 with a toast message displaying information that it is a past confirmation.
 
 ### Sign up page
+- Click on the 'Sign In' link to see that it links to the 'Log In' page.
+- Make sure the sign up form displays the following fields:
+    - E-mail 
+    - E-mail (again)
+    - Username 
+    - Password 
+    - Password (again)
+- If any field is left out when clicking the 'Sign Up' button, the user is prompted to fill the empty field out.
+- If all fields are filled in click on the 'Sign Up' button to see that the user gets redirected to the 'Confirm E-mail' page with a toast message displaying, prompting the user to check the email address for a confirmation link.
+    - Make sure email was sent with a confirmation link.
+    - Click on the confirmation link in the e-mail and the user gets redirected to the 'Confirm E-mail' displaying a button with the text of 'Confirm'.
+    - Click on the 'Confirm' button and the user is redirected to the 'Log In' page with a toast message displaying that the email is now confirmed.
 
 ### Log in page
 
@@ -510,6 +522,9 @@ The following things where further tested on smaller devices:
 
 #### Profile page
 - Make sure the Delivery Information column and the ORder History column displays on their own row, starting with the Delivery Information column.
+
+#### Sign up page
+- Make sure the sign up form covers the width of the screen on phone devices.
 
 ## Bugs
 ### Bugs found during development of the site
