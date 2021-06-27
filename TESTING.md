@@ -308,6 +308,18 @@ the user is prompted to add a number to the field instead.
     Instead, a toast message appears displaying a 404 error.
 
 ### Blog page
+- In the blog posts sections:
+    - Click on the blog post heading text to see that it links to the 'Post Details' page of the chosen blog post.
+    - Click on the blog post body text to see that it links to the 'Post Details' page of the chosen blog post.
+    - *(When logged in as superuser)* Click on the 'Edit' link to see that it links to the 'Edit Post' page of the chosen blog post.
+    - *(When logged in as superuser)* Click on the 'Remove' link too see that it links to the 'Delete Post' page displaying the chosen blog post to delete.
+    - *(When not logged in or logged in as a regular user)* Make sure the Edit and Remove links are not displayed.
+    - Make sure the number of comments are displayed in the down right of each blog post.
+- In the sidebar section:
+    - *(When logged in as superuser)* Click on the 'Add Post' button to see that it links to the 'Add Post' page.
+    - *(When not logged in or logged in as a regular user)* Make sure the 'Add Post' button is not displayed.
+    - Click on the Instagram icon to see that it links to the Instagram page in a new tab.
+    - Click on the Facebook icon to see that it links to the Facebook page in a new tab.
 
 ### Blog post details page
 
@@ -395,6 +407,12 @@ The following things where further tested on smaller devices:
 #### Add Product page 
 - Make sure the form covers the width of the device. *(This does not apply to iPad and iPad Pro)*
 
+#### Blog page
+- Make sure that the blog posts are displayed on their own row on smaller screens. *(This does not apply on iPad Pro)*
+- Make sure that the sidebar is displayed on its own row right under all the blog posts. *(This does not apply on iPad Pro)* *(Bug noted of flaws in the layout of the sidebar. Please see bugs found section for more details.)*
+
+
+
 
 ## Bugs
 ### Bugs found during development of the site
@@ -459,6 +477,18 @@ Both the text and the button are displayed slightly to the right which they shou
 fill in all the places on both desktop view and iPad Pro however, the bug remains unsolved due to lack of time fixing it.
 <div align="center">
     <img src="/readme_images/bug1.jpg" alt="bug image" width="600px">
+    <br>
+    <br>
+</div>
+
+5. Bug noted of flaws in the layout of the sidebar when you visit the blog page on iPad device.
+The text becomes more difficult to read and a lot of voids arise around the content which is not the most ideal 
+for this layout.
+A solution to this would have been to place the round image in a separate column placed to the left of the row, 
+with the corresponding text in a separate column to the right of it. At the moment this bug remains unsolved due to 
+lack of time fixing it.
+<div align="center">
+    <img src="/readme_images/bug2.jpg" alt="bug image" width="300px">
     <br>
     <br>
 </div>
