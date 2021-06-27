@@ -278,6 +278,10 @@ footer {
     margin-bottom: 0px;
 }
 
+.row-height {
+    min-height: 50vh;
+}
+
 .current-name {
     color: black !important;
     text-transform: uppercase;
