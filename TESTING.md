@@ -396,6 +396,30 @@ is redirected to a 404 error page.
 ### Checkout success page
 
 ### Profile page
+- Make sure the name of the user is shown at the top of the profile page.
+- Make sure the Delivery Information column and Order History column are displayed on the same row.
+- Make sure the Delivery Information column show the following fields:
+    - Phone number
+    - Street Address 1
+    - Street Address 2
+    - Town or City 
+    - County, State or Locality 
+    - Postal Code 
+    - Country
+- Type in information in any field and click on 'Update' button to reload the page, with the recently added information saved to the field.
+A toast message appears.
+- Make sure the Order History column displays the following sections (even if no order has been made):
+    - Order Number 
+    - Date 
+    - Items 
+    - Order Total 
+- If a user has a order history, make sure the information of each order history displays:
+    - The Order Number of the order that was made.
+    - The date that the order was made.
+    - The items that was ordered.
+    - The order total.
+- If a user has a order history, click on the order number to see that it links to the Checkout Success' page of the order,
+with a toast message displaying information that it is a past confirmation.
 
 ### Sign up page
 
@@ -483,6 +507,9 @@ The following things where further tested on smaller devices:
 
 #### Delete Comment page
 - Make sure the content of the page covers the whole width of the screen on phone devices.
+
+#### Profile page
+- Make sure the Delivery Information column and the ORder History column displays on their own row, starting with the Delivery Information column.
 
 ## Bugs
 ### Bugs found during development of the site
