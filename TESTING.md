@@ -367,7 +367,7 @@ by typing in ``/blog/add_post`` at the end of the url. Instead the page will sho
 - Click on the 'Cancel' button to see that it links to the 'Blog Posts' page.
 - Click on the 'Delete Post' button to delete the post and see that it links to the 'Blog Posts' page. The deleted post is
 no longer on the 'Blog Posts' page.
-- *(When nog logged in or logged in as a regular user)* Type in ``/blog/delete_post/<blog post name here>`` and the user
+- *(When not logged in or logged in as a regular user)* Type in ``/blog/delete_post/<blog post name here>`` and the user
 is redirected to a 404 error page.
 
 ### Add Comment page
@@ -382,6 +382,12 @@ of the post that was just commented on with the comment now displayed.
 - Fill in the name field and not the body field and click on the 'Add Comment' button, the user is prompted to fill in the empty field.
 
 ### Delete Comment page
+- Make sure the page displays the body of the comment that is about to be deleted.
+- Click on the 'Cancel' button to see that it links to the 'Blog Posts' page.
+- Click on the 'Delete Comment' button to delete the comment and see that it links to the 'Blog Posts' page. The deleted comment is
+no longer on the 'Post Details' page.
+- *(When not logged in or logged in as a regular user)* Type in ``/blog/delete_comment/<comment id here>`` and the user
+is redirected to a 404 error page.
 
 ### Shopping bag page
 
@@ -474,6 +480,9 @@ The following things where further tested on smaller devices:
 
 #### Add Comment page
 - Make sure the form covers the whole width of the screen when on phone devices.
+
+#### Delete Comment page
+- Make sure the content of the page covers the whole width of the screen on phone devices.
 
 ## Bugs
 ### Bugs found during development of the site
