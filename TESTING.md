@@ -371,6 +371,15 @@ no longer on the 'Blog Posts' page.
 is redirected to a 404 error page.
 
 ### Add Comment page
+- Make sure the form contains of the following fields to fill in:
+    - Name
+    - Body
+- Click on the 'Cancel' button to see that it links to the 'Blog Posts' page.
+- Fill in all fields in the form and click on the 'Add Comment' button to see that it links to the 'Post Details' page
+of the post that was just commented on with the comment now displayed.
+- Click on the 'Add Comment' button without filling any field in and the user is prompted to fill in the fields.
+- Fill in the body field and not the name field and click on the 'Add Comment' button, the user is prompted to fill in the empty field.
+- Fill in the name field and not the body field and click on the 'Add Comment' button, the user is prompted to fill in the empty field.
 
 ### Delete Comment page
 
@@ -462,6 +471,9 @@ The following things where further tested on smaller devices:
 
 #### Delete post page
 - Make sure the content of the page covers the whole width of the screen on phone devices.
+
+#### Add Comment page
+- Make sure the form covers the whole width of the screen when on phone devices.
 
 ## Bugs
 ### Bugs found during development of the site
