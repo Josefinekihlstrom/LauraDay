@@ -358,11 +358,17 @@ This page is only available for superusers.
 - Fill in all fields but put the status on 'Draft' and click the 'Add Post' button to see that it adds the blog post and links to the 'Post Details' 
 page of the added blog post. However when the user goes back to the 'Blog Posts' page, the added post will not be shown. *(This is noted as a bug. Please see the 'bugs found' section for more details.)*
 - *(When not logged in)* Make sure the user can't get access to the 'Add Post' page
-by typing in ``/blog/add_post`` at the end of the url. Instead the page will show a 404 page.
-- ( When logged in as a regular user) Make sure the user can't get access to the 'Add Post' page
-by typing in ``/blog/add_post`` at the end of the url. Instead the page will show a 404 page.
+by typing in ``/blog/add_post`` at the end of the url. Instead the page will show a 404 error.
+- *(When logged in as a regular user)* Make sure the user can't get access to the 'Add Post' page
+by typing in ``/blog/add_post`` at the end of the url. Instead the page will show a 404 error.
 
 ### Delete post page
+- Make sure the page displays the name of the blog post that is about to be deleted.
+- Click on the 'Cancel' button to see that it links to the 'Blog Posts' page.
+- Click on the 'Delete Post' button to delete the post and see that it links to the 'Blog Posts' page. The deleted post is
+no longer on the 'Blog Posts' page.
+- *(When nog logged in or logged in as a regular user)* Type in ``/blog/delete_post/<blog post name here>`` and the user
+is redirected to a 404 error page.
 
 ### Add Comment page
 
@@ -454,6 +460,8 @@ The following things where further tested on smaller devices:
 #### Add post page
 - Make sure the 'Add Post' form covers the whole width of the screen on phone devices.
 
+#### Delete post page
+- Make sure the content of the page covers the whole width of the screen on phone devices.
 
 ## Bugs
 ### Bugs found during development of the site
