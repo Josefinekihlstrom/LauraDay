@@ -548,6 +548,18 @@ The following things where further tested on smaller devices:
 #### Sign up page
 - Make sure the sign up form covers the width of the screen on phone devices.
 
+#### Log in page
+- Make sure the content and log in form covers the width of the screen on phone devices.
+
+#### Log out page
+- Make sure the content and log out form covers the width of the screen on phone devices.
+
+#### 404 Page not found
+- Make sure the content covers the width of the screen on phone devices.
+
+#### 500 Internal Server Error
+- Make sure the content covers the width of the screen on phone devices.
+
 ## Bugs
 ### Bugs found during development of the site
 1. Categories not showing the specific products within a category.
