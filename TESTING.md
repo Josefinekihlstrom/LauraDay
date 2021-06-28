@@ -1,35 +1,36 @@
 # Testing
 ## Content
-1. User Testing
-2. Validator Testing
-3. Manual Testing
-    - All pages
-    - Home page
-    - Products page
-    - Product details page
-    - Add product page
-    - Blog page
-    - Blog post details page
-    - Add post page
-    - Delete post page
-    - Add Comment page
-    - Delete Comment page
-    - Shopping bag page
-    - Checkout page
-    - Checkout success page
-    - Profile page
-    - Sign up page
-    - Log in page
-    - Log out page
-    - Messages
-    - Error pages
-    - Other devices
-        - Navbar Collapsed
-        - Footer Collapsed
-
-4. Bugs Found
-    - Bugs found during development
-    - Bugs found during testing
+1. [User Testing](#user-testing)
+2. [Validator Testing](#validator-testing)
+    - [HTML](#html)
+    - [CSS](#css)
+    - [JS Hint](#js-hint)
+    - [PEP8](#pep8)
+3. [Manual Testing](#manual-testing)
+    - [All pages](#all-pages)
+    - [Home page](#home-page)
+    - [Products page](#products-page)
+    - [Product details page](#product-details-page)
+    - [Add product page](#add-product-page)
+    - [Blog page](#blog-page)
+    - [Blog post details page](#blog-post-details-page)
+    - [Add post page](#add-post-page)
+    - [Delete post page](#delete-post-page)
+    - [Add Comment page](#add-comment-page)
+    - [Delete Comment page](#delete-comment-page)
+    - [Shopping bag page](#shopping-bag-page)
+    - [Checkout page](#checkout-page)
+    - [Checkout success page](#checkout-success-page)
+    - [Profile page](#profile-page)
+    - [Sign up page](#sign-up-page)
+    - [Log in page](#log-in-page)
+    - [Log out page](#log-out-page)
+    - [Messages](#messages)
+    - [Error pages](#error-pages)
+    - [Different devices](#different-devices)
+4. [Bugs](#bugs)
+    - [Bugs found during development](#bugs-found-during-development-of-the-site)
+    - [Bugs found during testing](#bugs-found-during-testing-of-the-site)
 
 ## User Testing
 
