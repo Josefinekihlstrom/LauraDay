@@ -436,14 +436,36 @@ with a toast message displaying information that it is a past confirmation.
     - Click on the 'Confirm' button and the user is redirected to the 'Log In' page with a toast message displaying that the email is now confirmed.
 
 ### Log in page
+-  Click on the 'Sign Up' link to see that it links to the 'Sign Up' page.
+- Make sure the form is displaying the following:
+    - Login 
+    - Password
+    - Remember me checkbox
+- Click on the 'Sign Up' button without filling out the form and the user is prompted to fill out the empty fields.
+- Click on the 'Sign Up' button after filling out the form and the user is redirected to the 'Home' page with a toast message 
+displaying.
+- Click on the 'Forgot Password?' link to see that it links to the 'Password Reset' page.
+- Type in ``/accounts/login/`` at the end of the url when a user is already logged in, and the user gets redirected 
+to the home page.
 
 ### Log out page
+- When a user is logged in click on the 'Sign Out' button to see that it logs the user out and redirects back to the 
+home page with a toast message displaying.
+- Type in ``/accounts/logout/`` at the end of the url when a user has already logged out, and the user gets redirected 
+to the home page.
 
 ### Messages
 shopping bag messages when full or empty
 
 ### Error pages
-(de sidor som har inbugda error också)
+#### 404 Page not found
+- Type in ``/hej`` at the end of the url (a path that does not excist) and the user gets an '404 Page Not Found' page.
+- Click on the 'Home' button to see that it links to the 'Home' page.
+
+#### 500 Internal Server Error
+- In the views.py file inside the products app, remove the last letter from the ``products`` variable in the all_products function. Go to the 
+'All Products' page of the site and the user gets an '500 Internal Server Error' page.
+- Click on the 'Home' button to see that it links to the 'Home' page.
 
 ### Different devices
 All of the tests mentioned above were also made on the following devices using the developer tool on Google Chrome:
