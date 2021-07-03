@@ -452,6 +452,28 @@ is redirected to a 404 error page.
 - Click on an image in the order summary section to see that it links to the product details page of the chosen product.
 
 ### Checkout success page
+- Make sure the email used when placing the order is displayed above the order information.
+- Make sure the order information section contains the following:
+    - Order number
+    - Order date
+    - Order details
+        - Name of the product
+        - Quantity
+        - Price each
+    - Delivery information:
+        - Full name
+        - Address 1
+        - Address 2 *(if it was added to the order)*
+        - County
+        - Town or City
+        - Postal code
+        - Country
+        - Phone number
+    - Billing info:
+        - Order total
+        - Delivery cost
+        - Grand total
+- Click on the 'Back to Products' button to see that it links to the 'All Products' page.
 
 ### Profile page
 - Make sure the name of the user is shown at the top of the profile page.
@@ -622,8 +644,11 @@ The following things where further tested on smaller devices:
 - Make sure that the mobile view displays the bag total first, checkout buttons second and bag items last.
 
 #### Checkout page
-- Make sure the content covers the whole width of the screen when on mobile view and iPad view. *(This does not apply to iPad Pro)*
-- Make sure the order summary is displayed first and the checkout details section second. 
+- Make sure the content covers the width of the screen when on mobile view and iPad view. *(This does not apply to iPad Pro)*
+- Make sure the order summary is displayed first and the checkout details section second.
+
+#### Checkout success page
+- Make sure the content covers the width of the screen when on mobile view and iPad view. *(This does not apply to iPad Pro)*
 
 ## Bugs
 ### Bugs found during development of the site
