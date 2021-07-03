@@ -209,7 +209,7 @@ All manual tests were done in the following browsers:
     - Copyright text.
 
 ### Home page
-- Make sure the orange banner is displayed and covering the width of the page.
+- Make sure the orange banner is displayed and covers the width of the page.
 - Make sure the hero image is covering both the width and height of viewport when first arriving to the page.
 - Click on 'Shop Collection' button to see that it links to the 'All Products' page. **(Bug noted of Laura Day text and 'Shop Collection' button not being centered correctly. Please see 'bugs found' section)*
 - Make sure that the circle image and 'About' text are displayed on the same row.
@@ -245,7 +245,7 @@ The following tests where made on the 'All Products' page, 'Ceramics' page and '
     - When a category has less than 8 products no additional buttons are displayed.
 
 ### Product details page
-- Make sure the orange banner is displayed and covering the width of the page.
+- Make sure the orange banner is displayed and covers the width of the page.
 - Make sure product image column and product information column are displayed on the same row.
 - Click on the product image to see that it links to a new tab displaying the image in larger size.
 - Click on the category name to see that it links to the products page displaying all products within that category.
@@ -276,6 +276,7 @@ A toast message appears displaying the current content of the shopping bag.
 add a number to the input field before clicking the button.
 - Manually add letters to the quantity input field without success until trying to add the letter ``e``. When clicking the 'Add To Bag' button
 the user is prompted to add a number to the field instead.
+- Click on the 'Add To Bag' button after selecting a quantity and the page reloads with a toast message displaying.
 
 ### Add product page
 This page is only available for superusers.
@@ -391,8 +392,31 @@ no longer on the 'Post Details' page.
 is redirected to a 404 error page.
 
 ### Shopping bag page
+- Make sure the orange banner is displayed and covers the width of the page.
+- Make sure the shopping bag page displays the following sections for every product that was added:
+    - Product image
+    - Product name 
+    - Sku number 
+    - Price 
+    - Quantity
+    - Subtotal 
+- Make sure the quantity section contains a quantity form with an update link and remove link.
+- Make sure if the product has no image or a broken image url, a default image replaces it instead.
+- Change the quantity of a product and click on 'Update' link to see that the page reloads, now with the added quantity of the product, with a toast message displaying. *(Bug noted of minus and plus buttons not working correct when on desktop view. Please see bugs found section for more details.)*
+- Click on the 'Remove' link to see that the page reloads, now with the removed product gone from the shopping bag page with a toast message displaying.
+- Remove all product from the shopping bag and the page reloads and displays a text telling the user that the shopping bag is empty. Click on the 'Keep Shopping' button to see that it links to the 'All Products' page.
+- Make sure the bag total displays the total amount of all products added to the shopping bag.
+- Make sure the delivery cost is displayed.
+    - When the user has enough goods in excess of the sum of $ 50, the cost of shipping becomes $ 0.
+    - When the user does not have enough goods in excess of the sum of $ 50, the cost of shipping becomes 10% of the bag total sum.
+        - A red text is displayed under the grand total, encouraging the user to get free delivery by adding more products to the shopping bag.
+- Make sure the grand total is displaying the total amount of the bag total and delivery cost combined.
+- Click on the 'Keep Shopping' button to see that it links to the 'All Products' page.
+- Click on the 'Checkout' button to see that it links to the 'Checkout' page.
 
 ### Checkout page
+- When logged in 
+- When not logged in
 
 ### Checkout success page
 
@@ -650,3 +674,5 @@ access to the blog post the superuser has to manually type in ``/blog/<blog post
 can however, go in to the admin panel to get an overview of all posts. An ideal solution for this would be to add a list in the blog sidebar with an overview of which posts have the status
 of 'Draft' and a link to get access to the 'Post Details' page to each post. A non logged in user or a regular user can also manually type in ``/blog/<blog post name here>`` to get access to the 
 blog post. At the moment this bug remains unsolved due to lack of time fixing it.
+
+7. When on desktop view, the minus and plus buttons does not work correctly when a user wants to update the quantity of a product. The range limit is suppose to be between 1-99 but when on desktop view the user can exceed and fall below those limits. The problem does not seem to persist when the user uses mobile view. At the moment this bug remains unsolved due to lack of time fixing it. 
