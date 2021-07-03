@@ -415,8 +415,41 @@ is redirected to a 404 error page.
 - Click on the 'Checkout' button to see that it links to the 'Checkout' page.
 
 ### Checkout page
-- When logged in 
-- When not logged in
+- Make sure the following sections are displayed correct:
+    - Details form with the following fields to fill in:
+        - Full Name
+        - Email Address
+    - Delivery form with the following fields to fill in:
+        - Phone Number
+        - Street Address 1
+        - Street Address 2
+        - Town or City
+        - County
+        - Postal Code
+        - Country
+    - Payment form.
+- *(When the user is not logged in)* Click on 'Create an account' link below the delivery section to see that it links to the 'Sign Up' page.
+- *(When the user is not logged in)* Click on the 'login' link below the delivery section to see that it links to the 'Login' page.
+- *(When the user is logged in)* Make sure the presaved information is displayed in the details form and delivery form.
+- Click on the 'Adjust Bag' button to see that it links to the 'Shopping Bag' page.
+- Click on the 'Complete Order' button when required fields are left out to see that the user is prompted to fill in the fields.
+- Make sure the red text under the 'Adjust Bag' button and 'Complete Order' button displays the total amount that the user will be charged if proceeding.
+- Type in the card details for Stripe test card and click on the 'Complete Order' button to see that the loading overlay displays and then redirects the user to the 'Checkout Success' page with a toast message displaying.
+    - Stripe test card number: ``4242 4242 4242 4242``
+    - Stripe test card MM/YY: ``04/24``
+    - Stripe test card CVC: ``242``
+    - Stripe test card postal code: ``42424``
+- Type in ``/checkout`` at the end of the url when the user has no products in the shopping bag and the page displays a toast message telling the user that the shopping bag is empty.
+- Make sure the order summary section displayes the following:
+    - Product image
+        - If the product has no product image or a broken image link a default image will replace it.
+    - Product name
+    - Product quantity
+    - Subtotal
+    - Order total
+    - Delivery cost
+    - Grand total
+- Click on an image in the order summary section to see that it links to the product details page of the chosen product.
 
 ### Checkout success page
 
@@ -584,6 +617,13 @@ The following things where further tested on smaller devices:
 
 #### 500 Internal Server Error
 - Make sure the content covers the width of the screen on phone devices.
+
+#### Shopping bag page
+- Make sure that the mobile view displays the bag total first, checkout buttons second and bag items last.
+
+#### Checkout page
+- Make sure the content covers the whole width of the screen when on mobile view and iPad view. *(This does not apply to iPad Pro)*
+- Make sure the order summary is displayed first and the checkout details section second. 
 
 ## Bugs
 ### Bugs found during development of the site
