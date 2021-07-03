@@ -652,28 +652,26 @@ The following things where further tested on smaller devices:
 
 ## Bugs
 ### Bugs found during development of the site
-1. Categories not showing the specific products within a category.
-This bug was solved by just simply making the category names into lowercase in the admin panel.
+1. Categories not showing the specific products within that category. The products within a category would not display on the page which would leave the page blank. I figured that the problem could be caused by a typo somewhere..
+I finally figured the bug out by simply making the category names into lowercase in the admin panel.
 
-2. Remove link not working on the shoppong bag page. According to the terminal, a slash was missing in the 
+2. Remove link not working on the shopping bag page. According to the terminal, a slash was missing in the 
 javascript function url for the remove function. Solved it by adding a slash at the end of the url.
 
-3. When adding > 1 qty of a product to the shopping bag, the subtotal would show the price of only 1 in qty.
+3. When adding > 1 qty of a product to the shopping bag, the subtotal would show the price of only 1 in qty. This bug was solved by adding ``total += quantity * product.price`` to the bag_contents function in the contexts.py file within the bag app.
 
-4. When changing the form on the login page to crispy form all inner content covered the entire width of the page. 
-I decided to not use the crispy form on the allauth pages, not make bug any bigger. Solved by putting the form
+4. When changing the form on the login page to crispy form all inner content covered the entire width of the page. This bug was solved by putting the form
 inside a column with the width of halv of the page.
 
-5. Webhook 404 error. Webhook key was not exported correctly to my github variables. Solved by setting the variable
+5. Webhook 404 error. Webhook key was not exported correctly to my github variables. This bug was solved by setting the variable
 and restarting the workspace.
 
 6. Circle images on index and blog pages not showing at all after adding it to S3. The images was already circle shaped when I added them to the project and therefor in png format. 
 However, it seemed like png format was not supported by S3 so therefor I Solved it by simply adding the images in square shape to the project folder and S3 folder and 
 added css styling to make them circle.
 
-7. Pagination not working correctly. Added an if statement for next and previous button. But the buttons would only link to 
-the ceramics pages, no matter which category you where on. I solved it by adding the if statement within the 
-href="".
+7. The pagination on the products page would only link to the pages of the ceramics category, no matter what category you where on. I solved the bug by adding the if statement of ``{% url 'products' %}{% if not current_categories %}?page={% else %}?category={{ current_categories.0 }}&page={% endif %}{{products.previous_page_number}}`` within the 
+``href=""``.
 
 8. When on the products page, the number of products shown only display the products that are shown on the current
 page instead of the total amount of the products within the category. This bug remains unsolved due to lack of time fixing it.
@@ -685,7 +683,7 @@ the user may think that the product does not exist and do not think about checki
 the product is actually displayed. This bug remains unsolved for now.
 
 10. When developing and testing the quantity input on the Product Details page of a product, I stumbled across a bug that was
-caused when I left out the couantity field empty and then tried to click on the 'Add To Bag' button. 
+caused when I left out the quantity field empty and then tried to click on the 'Add To Bag' button. 
 The error message that I got was ``invalid literal for int() with base 10: ''``. At the time I had no idea what was causing the error,
 but I later discovered that it was because I had forgotten to add the text of 'required' at the end of the quantity input in my product_details.html template.
 A simple fix, but it caused me to loose a few braincells before realising it.
