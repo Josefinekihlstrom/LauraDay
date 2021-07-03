@@ -88,13 +88,13 @@ As a user I want to:
 ### Owner goals
 As the owner of the page I want:
 - To make a website with an aesthetic appeal that reflects the brand.
-- To make it easy for the visitor to navigate through the site with a clear navigation menu and buttons that clearly
+- To make it easy for the visitor to navigate through the site with a clear navigation menu and buttons that
 displays the action behind it.
 - To be able to add, edit and/or delete a product.
 - To be able to add, edit and/or delete a blog post.
 
 ## Design process
-The design of the website was based upon how I wanted the data to be displayed. You can read more about the
+The design of the website was based on how I wanted the data to be displayed. You can read more about the
 database that was used [here](#information-architecture).
 <br>
 <br>
@@ -120,7 +120,7 @@ lead the visitor in the right direction according to the visitor's needs.
 - Font used for overall text: [Open Sans](https://fonts.google.com/specimen/Open+Sans?query=open+sans)
 
 ### Wireframes
-The wireframes where made with Figma and can be viewed in full [here](https://www.figma.com/file/WWHwATRR91GoreNbV3c4rM/MS4).
+The wireframes were made with Figma and can be viewed in full [here](https://www.figma.com/file/WWHwATRR91GoreNbV3c4rM/MS4).
 <br>
 
 <div align="center">
@@ -165,14 +165,14 @@ The navigation bar is featured on the top of all pages of the website. It contai
 - **My Account** - When clicked on a dropdown list appear. The full list of the links in the dropdown list is the following:
     - Sign Up - *(If the user is not logged in)* Links to a page where the user can sign up.
     - Log In - *(If the user is not logged in)* Links to a page where the user can log in.
-    - My Profile - **(If the user is logged in)* Links to the Profile page of the logged in user.
+    - My Profile - **(If the user is logged in)* Links to the Profile page of the logged-in user.
     - Log Out - *(If the user is logged in)* Links to a page where the user can log out.
     - Product Management - *(If a superuser is logged in)* Links to the 'Add a Product' page.
 - **Shopping Bag** - Links to the 'Shopping Bag' page.
 
 #### Footer
 The footer is featured at the bottom of all pages. It's divided into two rows.
-The first row is divided into three sections that contains the following:
+The first row is divided into three sections that contain the following:
 - A section with a heading text of 'Payments' followed by a Visa icon and a Mastercard icon.
 - A section with a heading text of 'Links' Followed by the following links:
     - Shop - Linked to the 'All Products' page.
@@ -191,7 +191,7 @@ The second row contains the following:
 The home page includes:
 - An orange banner just under the navigation bar with a text about a free shipping deal.
 - A hero image with the logo text and a 'Shop' button centered on top of it.
-- A row divided into two sections. The left section consists of a round image and the right section consists of text about the brand and a button that links to the blog page.
+- A row divided into two sections. The left section consists of a circled image and the right section consists of text about the brand and a button that links to the blog page.
 - A row divided into three sections. Each section consists of an icon that reflects the text that follows.
 
 ### Products page
@@ -227,7 +227,7 @@ The add product page is only available for logged in superusers and contains the
 - A form with the following fields to fill in:
     - Name
     - Category
-    - Sku
+    - SKU
     - Description
     - Price
     - Image URL
@@ -243,11 +243,11 @@ The blog page contains the following:
         - The heading text acts as a link to view the details of the post.
     - The name of the author that wrote the blog post.
     - The date that the blog post was published.
-    - The content of the blog post limited to 600 letters.
+    - The content of the blog post is limited to 600 letters.
         - The content of the blog post acts as a link to view the details of the post.
     - Edit and Remove buttons *(Only visible for logged in superusers)*
     - Comment icon followed by the number of comments for the blog post.
-- A section with a round image, text that describes the purpose of the page and icons that links to instagram and facebook.
+- A section with a round image, text that describes the purpose of the page, and icons that link to Instagram and Facebook.
     - If a superuser is logged in, this section includes a button just above the round image that links to the 'Add Post' page.
 
 ### Blog post details page
@@ -265,10 +265,10 @@ The blog post details page contains the following:
     - A delete button in the form of a trash can icon. *(Only visible for logged in superusers)*
     - The date that each comment was made.
     - The content of each comment.
-- A button with the text of 'Blog Posts' that links back to blog page.
+- A button with the text of 'Blog Posts' that links back to the blog page.
 - A button with the text of 'Comment' that links to the 'Add Comment' page.
-- A section aligned to the right containing a round image, text that describes the purpose of the page and icons that links to instagram
-and facebook.
+- A section aligned to the right containing a circled image, text that describes the purpose of the page, and icons that link to Instagram
+and Facebook.
 
 ### Add post page
 The add post page is only available for logged in superusers and contains the following:
@@ -318,14 +318,14 @@ The shopping bag page contains the following:
     - Bag total.
     - Delivery cost.
     - Grand total.
-    - A button with the text of 'Keep Shopping' that links to the all Products page.
+    - A button with the text of 'Keep Shopping' that links to the 'All Products' page.
     - A button with the text of 'Checkout' that links to the checkout page.
 
 ### Checkout page
 The checkout page contains the following:
 - A heading text of 'Checkout'.
 - A section with a form for the user to fill in the shipping and card details.
-- A section with a order summary including:
+- A section with an order summary including:
     - Qty of total items in the bag.
     - Product images.
     - Name of the products.
@@ -342,9 +342,9 @@ The checkout success page contains the following:
 - A heading text of 'Thank You!'
 - A summary of the order including the following:
     - Order info with the order number and date.
-    - Order details with the name of the products, quantity and price of them each.
+    - Order details with the name of the products, quantity, and price of them each.
     - Delivery address.
-    - Billing info including order total, delivery cost and grand total.
+    - Billing info including order total, delivery cost, and grand total.
 - A button with the text of 'Back To Products' that links to the all products page.
 
 ### Profile page
@@ -359,32 +359,32 @@ The profile page contains the following:
     - Order total.
 
 ### Sign up page
-The sign up page contains the following:
+The sign-up page contains the following:
 - A heading text of 'Sign Up'.
-- A text that prompts the user to log in if they already have an account, followed by a link that links to the log in page.
-- A sign up form.
-- A button with the text of 'Sign Up' that redirects the user to a page that tells the user to confirm their account.
+- A text that prompts the user to log in if they already have an account, followed by a link that links to the log-in page.
+- A sign-up form.
+- A button with the text of 'Sign Up' redirects the user to a page that tells the user to confirm their account.
 
 ### Log in page
-The log in page contains the following:
+The log-in page contains the following:
 - A heading text of 'Log In'
-- A text that prompts the user to create an account if they do not already have one, followed by a link that links to the sign up page.
-- A log in form
+- A text that prompts the user to create an account if they do not already have one, followed by a link that links to the sign-up page.
+- A log-in form
 - A remember me checkbox.
-- A button with the text of 'Sign In' that redirects the user to the home page after being logged-in.
-- A link that says 'Forgot Password?' that links the user to a password reset page.
+- A button with the text of 'Sign In' that redirects the user to the home page after being logged in.
+- A link that says 'Forgot Password?' links the user to a password reset page.
 
 ### Log out page
 The log out page contains the following:
 -  A heading text of 'Sign Out'
 - A text that asks the user if they are sure about logging out.
-- A button with the text of 'Sign Out' that redirects the user to the home page and removes the session data.
+- A button with the text 'Sign Out' redirects the user to the home page and removes the session data.
 
 ### Error pages
 #### Error (404)
 The Error (404) page contains the following:
 - A heading text of 'Error 404' in capital letter.
-- A text of 'The page you where looking for does not exist.'
+- A text of 'The page you were looking for does not exist.'
 - A button with the text of 'Home' that links back to the home page.
 
 #### Error (500)
@@ -418,25 +418,25 @@ represents what kind of message is displayed. There are three types of messages:
 
 
 ## Features left to implement
-- Defensive programming when deleting a product from shopping bag.
+- Defensive programming when deleting a product from the shopping bag.
 - Back to top button in bag.html and product.html when many products.
 - A timer to the toast messages that automatically closes the message after a certain time.
-So the user don't have to click on the 'X' to close it.
-- Messages for when adding, editing and deleting a blog post. Similar to the ones when adding, editing and deleting
-a product. For the blog app I focused on learning class based views, and the messages function is a bit different to
-implement. Due to lack of time this will be something I will have to add in the future.
-- F.A.Q template with a contact form. In my original idea I wanted to add a F.A.Q page with a contact form for the user
-to be able to read questions and answears and/or get in touch with the shop owners. However, due to lack of time, this
+So the user doesn't have to click on the 'X' to close it.
+- Messages for when adding, editing, and deleting a blog post. Similar to the ones when adding, editing, and deleting
+a product. For the blog app, I focused on learning class-based views, and the messages function is a bit different to
+implement. Due to lack of tim, this will be something I will have to add in the future.
+- F.A.Q template with a contact form. In my original idea, I wanted to add a F.A.Q page with a contact form for the user
+to be able to read questions and answers and/or get in touch with the shop owners. However, due to lack of time, this
 is something I will have to add in the future.
-- Pagination for the blog post page. Due to lack of time I will have to add pagination in the future for the blog page.
+- Pagination for the blog post page. Due to lack of time, I will have to add pagination in the future for the blog page.
 The idea was to make it similar to the pagination on the product pages.
 - When a superuser is logged in and wants to make a blog post, a nice feature to add on the 'Add post' page would
-be to make the Author field already filled in. This would make it easier for the logged in superuser 
-not to have to fill in that field manually everytime. A similar thing would be to also add this feature for when
+be to make the Author field already filled in. This would make it easier for the logged-in superuser 
+not to have to fill in that field manually every time. A similar thing would be to also add this feature for when
 a regular is logged in and wants to add a comment on a post.
 - Make it possible to upload images to blog posts. Simply just to make the blog posts a bit
 more fun to read.
-- Make it possible for users to delete their own comments. Right now it's only managable for the
+- Make it possible for users to delete their own comments. Right now it's only manageable for the
 superusers to do that. An alternative in the future is to make it possible for only 
 logged-in users to comment on blog posts, and in this way enable the logged-in user 
 to also delete their comments. At the moment, however, I prefer that everyone should 
@@ -444,9 +444,9 @@ be able to add a comment to a blog post.
 
 ## Information Architecture
 ### The Database
-- The database used for this project during development was the built in SQLite3 from Django. For the deployed site
-the database was switched to Herokus add-on application, PostgresSQL.
-- To manage users and permissions, Django's authentication system and django-allauth was used.
+- The database used for this project during development was the built-in SQLite3 from Django. For the deployed site
+the database was switched to Heroku's add-on application, PostgresSQL.
+- To manage users and permissions, Django's authentication system and Django-allauth were used.
     - [Django's authentication system](https://docs.djangoproject.com/en/3.1/topics/auth/)
     - [Django-allauth](https://django-allauth.readthedocs.io/en/latest/)
 
@@ -492,11 +492,11 @@ If you want to work further on my project, go ahead and clone it by following th
 
 1. Go to the top of the [Josefinekihlstrom/LauraDay](https://github.com/Josefinekihlstrom/LauraDay) repository.
 2. Click the button named 'Code' next to the green 'Gitpod' button.
-3. Choose HTTPS and copy the URL by clicking the icon next to the url.
+3. Choose HTTPS and copy the URL by clicking the icon next to the URL.
 4. Open Git Bash/Terminal and change the current working directory to the location where you want the cloned directory.
 5. Type 'git clone' and then paste the copied URL.
 6. Press 'Enter'.
-7. To install all the required packages for this project use the following command:
+7. To install all the required packages for this project, use the following command:
     - ``` pip install -r requirements.txt ```
 8. The following environment variables needs to be set up:
 ```
@@ -507,26 +507,26 @@ STRIPE_WH_SECRET = <enter stripe wh secret key here>
 9. To create the database you need to migrate the models by typing in the following commands in your terminal:
     - ``` python3 manage.py makemigrations ```
     - ``` python3 manage.py migrate ```
-10. To access the django admin panel and database you need to create a superuser account. By typing in the 
-following command in your terminal you will be asked to add an email address, username and password.
+10. To access the Django admin panel and database you need to create a superuser account. By typing in the 
+following command in your terminal you will be asked to add an email address, username, and password.
     - ``` python3 manage.py createsuperuser ```
 11. To run the project type in the following command in your terminal:
     - ``` python3 manage.py runserver ```
-12. When the site is running you can access the admin panel by adding ``` /admin ``` to the end of the url.
+12. When the site is running you can access the admin panel by adding ``` /admin ``` to the end of the URL.
 13. Make sure to sign up to the [Stripe](https://stripe.com/), [AWS S3 Bucket](https://aws.amazon.com/s3/) and 
-[Gmail](https://gmail.com/) services that where also used for this project.
+[Gmail](https://gmail.com/) services where also used for this project.
 
 The information on how to clone a repository came from [GitHub](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository-from-github/cloning-a-repository).
 
 ## Deployment
 This project was deployed to [Heroku](https://heroku.com/). If you have cloned this project using the steps above
 and want to deploy it to Heroku, follow these steps:
-1. Log in or create an account to Heroku.
+1. Log-in or create an account with Heroku.
 2. When logged in, click on the 'New' button on the upper right corner of the page and then click on 
-'Create new app' in the drop down menu.
+'Create new app' in the drop-down menu.
 3. Give the app a name and choose the region closest to you.
 4. Then click on the 'Create App' button.
-5. Click on the 'Resources' tab and search for ```postgres``` in the 'Add-ons' section.
+5. Click on the 'Resources' tab and search for ```Postgres``` in the 'Add-ons' section.
 6. Click on the 'Heroku Postgres' add on that appear and choose the 'Hobby Dev - Free' alternative for the
 Plan name. After that click on the 'Provision' button.
 7. In your Heroku Settings tab for your app, set the following environment variables:
@@ -592,12 +592,12 @@ Plan name. After that click on the 'Provision' button.
 - Deleting a comment with the help from [Codemy.com](https://www.youtube.com/watch?v=8NPOwmtupiI&list=PLCC34OHNcOtr025c1kHSPrnP18YPB-NFi&index=7) and [Cloud Stack Ninja](https://cloudstack.ninja/a_k/how-to-update-and-delete-comments-in-django/).
 
 ### Thank you
-- 
-- 
-- 
-- To my pet bunny Bo for all your supporting cuddles throughout my Code Institute journey. I miss you, rest in peace.
+- To Code Institute for this interesting and fun journey.
+- To my mentor Aaron Sinnott for all feedback on this project.
+- My friends and family for all support.
+- To my pet bunny Bo for all his supporting cuddles throughout my Code Institute journey. Rest in peace.
 
 ## Disclaimer
-This project was made as the fourth and last Milestone Project in the Full Stack Web Development Program at Code Institute. 
+This project was made as to the fourth and last Milestone Project in the Full Stack Web Development Program at Code Institute. 
 This website was created for educational use only. 
 
