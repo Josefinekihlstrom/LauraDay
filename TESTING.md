@@ -25,7 +25,6 @@
     - [Sign up page](#sign-up-page)
     - [Log in page](#log-in-page)
     - [Log out page](#log-out-page)
-    - [Messages](#messages)
     - [Error pages](#error-pages)
     - [Different devices](#different-devices)
 4. [Bugs](#bugs)
@@ -533,9 +532,6 @@ to the home page.
 home page with a toast message displaying.
 - Type in ``/accounts/logout/`` at the end of the URL when a user has already logged out, and the user gets redirected 
 to the home page.
-
-### Messages
-shopping bag messages when full or empty
 
 ### Error pages
 #### 404 Page not found
