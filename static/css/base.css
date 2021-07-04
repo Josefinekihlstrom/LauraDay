@@ -216,7 +216,7 @@ footer {
     background-color: #9E532E;
 }
 
-/* ------------------------------------------- Index.html */
+/* ------------------------------------------- index.html */
 .index-hero {
     background: url('/media/index-hero.jpeg') no-repeat center center;
     background-size: cover;
@@ -266,7 +266,7 @@ footer {
 }
 
 
-/* ------------------------------------------- Products.html */
+/* ------------------------------------------- products.html */
 
 .header-container {
     position: fixed;
@@ -481,6 +481,13 @@ footer {
 }
 
 /* ------------------------------------------- Media Queries */
+/* Max width 360px */
+@media screen and (max-width: 360px) {
+    .message-container {
+        width: 90vw;
+    }
+}
+
 /* Max width 480px */
 @media screen and (max-width: 480px) {
     .allauth-col {
