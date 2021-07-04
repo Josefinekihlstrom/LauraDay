@@ -1,4 +1,16 @@
 # Laura Day
+## About
+<div align="center">
+    <img src="/readme_images/responsive.jpg" alt="I am responsive image">
+    <br>
+</div>
+
+Laura Day is an online webshop that offers artwork and ceramics by the fictional brand Laura Day. 
+The webshop also has a blog page where the team behind the brand adds blog posts for the visitor to 
+read more about the work behind the brand. 
+
+Link to live website [here](https://lauraday-josefinekihlstrom.herokuapp.com).
+
 ## Content
 - [About](#about)
 - [UX](#ux)
@@ -48,18 +60,6 @@
     - [Code](#code)
     - [Thank you](#thank-you)
 - [Disclaimer](#disclaimer)
-
-## About
-<div align="center">
-    <img src="/readme_images/responsive.jpg" alt="I am responsive image">
-    <br>
-</div>
-
-Laura Day is an online webshop that offers artwork and ceramics by the fictional brand Laura Day. 
-The webshop also has a blog page where the team behind the brand adds blog posts for the visitor to 
-read more about the work behind the brand. 
-
-Link to live website [here](https://lauraday-josefinekihlstrom.herokuapp.com).
 
 ## UX
 ### UX goals
