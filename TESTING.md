@@ -666,9 +666,8 @@ inside a column with the width of half of the page.
 5. Webhook 404 error. The webhook key was not exported correctly to my GitHub variables. This bug was solved by setting the variable
 and restarting the workspace.
 
-6. Circle images on index and blog pages not showing at all after adding it to S3. The images were already circle-shaped when I added them to the project and therefore in png format. 
-However, it seemed like png format was not supported by S3 so therefor I Solved it by simply adding the images in a square shape to the project folder and S3 folder and 
-added CSS styling to make them circle.
+6. Circle images on index and blog pages not showing at all after adding it to S3. After connecting this project with my AWS S3 bucket, the circled images on the index page and blog page would not show.
+To solve this bug I had to change the image source for the images on the site from ``media/image_name.jpg`` to ``{{ MEDIA_URL }}image_name.jpg``.
 
 7. The pagination on the products page would only link to the pages of the ceramics category, no matter what category you were on. I solved the bug by adding the if statement of ``{% url 'products' %}{% if not current_categories %}?page={% else %}?category={{ current_categories.0 }}&page={% endif %}{{products.previous_page_number}}`` within the 
 ``href=""``.
