@@ -117,7 +117,7 @@
 ### HTML
 All HTML templates were tested using [W3C Markup Validation Service](https://validator.w3.org/) by direct input of the code.
 The validation did not reveal any bigger issues with the code except for some forbidden placements of ``<p>`` tags as child elements and 
-missing ``<ul>`` tags.
+missing ``<ul>`` tags. These were all fixed.
 
 Errors caused by the Jinja templating were ignored because they were expected to occur. Changing the Jinja in the code
 would simply break the site entirely.
@@ -733,4 +733,4 @@ can, however, go into the admin panel to get an overview of all posts. An ideal 
 of 'Draft' and a link to get access to the 'Post Details' page to each post. A non-logged-in user or a regular user can also manually type in ``/blog/<blog post name here>`` to get access to the 
 blog post. At the moment this bug remains unsolved due to lack of time to fix it.
 
-7. When on a desktop view, the minus and plus buttons do not work correctly when a user wants to update the quantity of a product. The range limit is supposed to be between 1-99 but when on desktop view the user can exceed and fall below those limits. The problem does not seem to persist when the user uses mobile view. At the moment this bug remains unsolved due to lack of time to fix it. 
+7. When on a desktop view, the minus and plus buttons do not work correctly when a user wants to update the quantity of a product on the shopping bag page. The range limit is supposed to be between 1-99 but when on desktop view the user can exceed and fall below those limits. The problem does not seem to persist when the user uses mobile view. At the moment this bug remains unsolved due to lack of time to fix it. 

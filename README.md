@@ -161,6 +161,9 @@ The navigation bar is featured on the top of all pages of the website. It contai
     - Ceramics
     - Artwork.
 - **Blog** - Linked to the blog page.
+    - If a superuser is logged in, the blog link opens up a dropdown list with the following links:
+        - Blog Posts
+        - Add Post
 - **Search** - When clicked on a search box appears under the navigation bar.
 - **My Account** - When clicked on a dropdown list appear. The full list of the links in the dropdown list is the following:
     - Sign Up - *(If the user is not logged in)* Links to a page where the user can sign up.
@@ -181,6 +184,9 @@ The first row is divided into three sections that contain the following:
     - Instagram - Links to instagram.com
     - Facebook - Links to facebook.com
     - LinkedIn - Links to linkedin.com
+- A section with a heading text of 'Contact' followed by the following:
+    - Laura Day's email address
+    - Laura Day's phone number
 <br>
 
 The second row contains the following:
@@ -349,7 +355,8 @@ The checkout success page contains the following:
 
 ### Profile page
 The profile page contains the following:
-- A heading text of 'My Profile'.
+- A profile icon.
+- A heading text that includes the name of the user.
 - Delivery information section including a form the user can fill in with their delivery information.
 - Update button that updates the form.
 - Order history section that shows all orders made by the logged-in user including:
@@ -419,7 +426,7 @@ represents what kind of message is displayed. There are three types of messages:
 
 ## Features left to implement
 - Defensive programming when deleting a product from the shopping bag.
-- Back to top button in bag.html and product.html when many products.
+- Back to top button on the shopping bag page and the products page so the user doesn't have to scroll all the way up when reaching the bottom of the page.
 - A timer to the toast messages that automatically closes the message after a certain time.
 So the user doesn't have to click on the 'X' to close it.
 - Messages for when adding, editing, and deleting a blog post. Similar to the ones when adding, editing, and deleting
@@ -428,7 +435,7 @@ implement. Due to lack of tim, this will be something I will have to add in the 
 - F.A.Q template with a contact form. In my original idea, I wanted to add a F.A.Q page with a contact form for the user
 to be able to read questions and answers and/or get in touch with the shop owners. However, due to lack of time, this
 is something I will have to add in the future.
-- Pagination for the blog post page. Due to lack of time, I will have to add pagination in the future for the blog page.
+- Pagination for the blog post page.
 The idea was to make it similar to the pagination on the product pages.
 - When a superuser is logged in and wants to make a blog post, a nice feature to add on the 'Add post' page would
 be to make the Author field already filled in. This would make it easier for the logged-in superuser 
@@ -541,6 +548,7 @@ Plan name. After that click on the 'Provision' button.
     | STRIPE_PUBLIC_KEY | ``<STRIPE PUBLIC KEY HERE>`` |
     | STRIPE_SECRET_KEY | ``<STRIPE SECRET KEY HERE>`` |
     | STRIPE_WH_SECRET | ``<STRIPE WH SECRET HERE>`` |
+    | USE_AWS | ``<BOOLEAN>`` |
 8. To create the Postgres database you will type in the following in your terminal to migrate the models:
     - ``python3 manage.py makemigrations``
     - ``python3 manage.py migrate``
