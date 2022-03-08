@@ -9,8 +9,6 @@ Laura Day is an online webshop that offers artwork and ceramics by the fictional
 The webshop also has a blog page where the team behind the brand adds blog posts for the visitor to 
 read more about the work behind the brand. 
 
-Link to live website [here](https://lauraday-josefinekihlstrom.herokuapp.com).
-
 ## Content
 - [About](#about)
 - [UX](#ux)
